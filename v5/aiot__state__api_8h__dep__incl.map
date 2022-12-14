@@ -1,0 +1,14 @@
+<map id="device&#45;core/aiot_state_api.h" name="device&#45;core/aiot_state_api.h">
+<area shape="rect" id="node2" href="$aiot__device__api_8c.html" title="设备管理模块，管理设备的配置、行为、及运行时参数 " alt="" coords="5,184,164,225"/>
+<area shape="rect" id="node3" href="$aiot__device__api_8h.html" title="设备模块头文件, 提供设备的基础能力 " alt="" coords="64,95,223,136"/>
+<area shape="rect" id="node4" href="$aiot__linkconfig__api_8c.html" title="连接物联网平台的配置管理，包含tls/mqtt/http连接等参数配置 " alt="" coords="247,95,423,136"/>
+<area shape="rect" id="node5" href="$aiot__dm__api_8c.html" title="device&#45;modules/data\l&#45;model/aiot_dm_api.c" alt="" coords="447,95,594,136"/>
+<area shape="rect" id="node6" href="$aiot__devinfo__api_8c.html" title="device&#45;modules/devinfo\l/aiot_devinfo_api.c" alt="" coords="619,95,777,136"/>
+<area shape="rect" id="node7" href="$aiot__gateway__api_8c.html" title="device&#45;modules/gateway\l/aiot_gateway_api.c" alt="" coords="801,95,968,136"/>
+<area shape="rect" id="node8" href="$aiot__logpost__api_8c.html" title="device&#45;modules/logpost\l/aiot_logpost_api.c" alt="" coords="992,95,1151,136"/>
+<area shape="rect" id="node9" href="$aiot__ntp__api_8c.html" title="device&#45;modules/ntp\l/aiot_ntp_api.c" alt="" coords="1175,95,1309,136"/>
+<area shape="rect" id="node10" href="$aiot__ota__api_8c.html" title="device&#45;modules/ota\l/aiot_ota_api.c" alt="" coords="1333,95,1468,136"/>
+<area shape="rect" id="node11" href="$aiot__rc__api_8c.html" title="device&#45;modules/remote\l&#45;config/aiot_rc_api.c" alt="" coords="1493,95,1650,136"/>
+<area shape="rect" id="node12" href="$aiot__shadow__api_8c.html" title="device&#45;modules/shadow\l/aiot_shadow_api.c" alt="" coords="1674,95,1837,136"/>
+<area shape="rect" id="node13" href="$aiot__tunnel__switch__api_8c.html" title="device&#45;modules/tunnel\l/aiot_tunnel_switch_api.c" alt="" coords="1861,95,2031,136"/>
+</map>

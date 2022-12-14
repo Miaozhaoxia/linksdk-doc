@@ -1,0 +1,503 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: device-core/aiot_message_api.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">5.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_a5c085e7ac88bd273106c2d9d4685a6c.html">device-core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">aiot_message_api.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="aiot__message__api_8h_source.html">aiot_message_api.h</a>&quot;</code><br />
+<code>#include &quot;core_string.h&quot;</code><br />
+<code>#include &quot;core_os.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+aiot_message_api.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__message__api_8c__incl.png" border="0" usemap="#device-core_2aiot__message__api_8c" alt=""/></div>
+<map name="device-core_2aiot__message__api_8c" id="device-core_2aiot__message__api_8c">
+<area shape="rect" id="node3" href="aiot__message__api_8h.html" title="aiot_message_api.h" alt="" coords="91,95,229,121"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a2d612c88ab35678f0d1c5db4b6c3c0c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__message__api_8c.html#a2d612c88ab35678f0d1c5db4b6c3c0c1">USER_DEFINE_PREFIX</a>&#160;&#160;&#160;&quot;/%s/%s/user/%s&quot;</td></tr>
+<tr class="separator:a2d612c88ab35678f0d1c5db4b6c3c0c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a6e2fac400a607e77ce14c014e590c57c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structaiot__msg__t.html">aiot_msg_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__message__api_8c.html#a6e2fac400a607e77ce14c014e590c57c">core_origin_msg_init</a> ()</td></tr>
+<tr class="separator:a6e2fac400a607e77ce14c014e590c57c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf562841e53b0ab0550af8f17dd14aae"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__message__api_8c.html#acf562841e53b0ab0550af8f17dd14aae">core_origin_msg_deinit</a> (<a class="el" href="structaiot__msg__t.html">aiot_msg_t</a> *message)</td></tr>
+<tr class="separator:acf562841e53b0ab0550af8f17dd14aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45152707c592dc19f9a3737f25fdee1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structaiot__msg__t.html">aiot_msg_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__message__api_8c.html#a45152707c592dc19f9a3737f25fdee1a">aiot_msg_create_raw</a> (char *topic, uint8_t *payload, uint32_t payload_lenth)</td></tr>
+<tr class="memdesc:a45152707c592dc19f9a3737f25fdee1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化透传的消息，topic和payload都使用参数内的  <a href="#a45152707c592dc19f9a3737f25fdee1a">更多...</a><br /></td></tr>
+<tr class="separator:a45152707c592dc19f9a3737f25fdee1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8e50d3ee7df8c26fceac9b3c311f9c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structaiot__msg__t.html">aiot_msg_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__message__api_8c.html#aa8e50d3ee7df8c26fceac9b3c311f9c3">aiot_msg_create_user_define</a> (char *productKey, char *deviceName, char *sub_topic, uint8_t *payload, uint32_t payload_lenth)</td></tr>
+<tr class="memdesc:aa8e50d3ee7df8c26fceac9b3c311f9c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">生成自定义topic的消息  <a href="#aa8e50d3ee7df8c26fceac9b3c311f9c3">更多...</a><br /></td></tr>
+<tr class="separator:aa8e50d3ee7df8c26fceac9b3c311f9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad2803625c69e9a1be03c76a0b5c9504"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structaiot__msg__t.html">aiot_msg_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__message__api_8c.html#aad2803625c69e9a1be03c76a0b5c9504">aiot_msg_create_rrpc_reply</a> (const <a class="el" href="structaiot__msg__t.html">aiot_msg_t</a> *rrpc, uint8_t *payload, uint32_t payload_lenth)</td></tr>
+<tr class="memdesc:aad2803625c69e9a1be03c76a0b5c9504"><td class="mdescLeft">&#160;</td><td class="mdescRight">生成rrpc回复的消息  <a href="#aad2803625c69e9a1be03c76a0b5c9504">更多...</a><br /></td></tr>
+<tr class="separator:aad2803625c69e9a1be03c76a0b5c9504"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a852bce4584ba0f9fb02c5f1e20a5ad94"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structaiot__msg__t.html">aiot_msg_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__message__api_8c.html#a852bce4584ba0f9fb02c5f1e20a5ad94">aiot_msg_clone</a> (<a class="el" href="structaiot__msg__t.html">aiot_msg_t</a> *message)</td></tr>
+<tr class="memdesc:a852bce4584ba0f9fb02c5f1e20a5ad94"><td class="mdescLeft">&#160;</td><td class="mdescRight">克隆一条消息，深拷贝  <a href="#a852bce4584ba0f9fb02c5f1e20a5ad94">更多...</a><br /></td></tr>
+<tr class="separator:a852bce4584ba0f9fb02c5f1e20a5ad94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad78c30b2011b07ff6e29597928ef57fb"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__message__api_8c.html#ad78c30b2011b07ff6e29597928ef57fb">aiot_msg_delete</a> (<a class="el" href="structaiot__msg__t.html">aiot_msg_t</a> *message)</td></tr>
+<tr class="memdesc:ad78c30b2011b07ff6e29597928ef57fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">回收消息对象的资源  <a href="#ad78c30b2011b07ff6e29597928ef57fb">更多...</a><br /></td></tr>
+<tr class="separator:ad78c30b2011b07ff6e29597928ef57fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7969d9cd5acd0dd1847444ad0a7ea746"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__message__api_8c.html#a7969d9cd5acd0dd1847444ad0a7ea746">aiot_msg_set_qos</a> (<a class="el" href="structaiot__msg__t.html">aiot_msg_t</a> *message, uint8_t qos)</td></tr>
+<tr class="memdesc:a7969d9cd5acd0dd1847444ad0a7ea746"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置消息发送的qos  <a href="#a7969d9cd5acd0dd1847444ad0a7ea746">更多...</a><br /></td></tr>
+<tr class="separator:a7969d9cd5acd0dd1847444ad0a7ea746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="a2d612c88ab35678f0d1c5db4b6c3c0c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USER_DEFINE_PREFIX&#160;&#160;&#160;&quot;/%s/%s/user/%s&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a6e2fac400a607e77ce14c014e590c57c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structaiot__msg__t.html">aiot_msg_t</a>* core_origin_msg_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acf562841e53b0ab0550af8f17dd14aae"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t core_origin_msg_deinit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structaiot__msg__t.html">aiot_msg_t</a> *&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a45152707c592dc19f9a3737f25fdee1a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structaiot__msg__t.html">aiot_msg_t</a>* aiot_msg_create_raw </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>topic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>payload_lenth</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化透传的消息，topic和payload都使用参数内的 </p>
+<dl class="section return"><dt>返回</dt><dd>void* </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">非NULL</td><td>设备句柄 </td></tr>
+    <tr><td class="paramname">NULL</td><td>初始化失败, 一般是内存分配失败导致 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__message__api_8c_a45152707c592dc19f9a3737f25fdee1a_cgraph.png" border="0" usemap="#aiot__message__api_8c_a45152707c592dc19f9a3737f25fdee1a_cgraph" alt=""/></div>
+<map name="aiot__message__api_8c_a45152707c592dc19f9a3737f25fdee1a_cgraph" id="aiot__message__api_8c_a45152707c592dc19f9a3737f25fdee1a_cgraph">
+<area shape="rect" id="node2" href="aiot__message__api_8c.html#a6e2fac400a607e77ce14c014e590c57c" title="core_origin_msg_init" alt="" coords="207,5,348,32"/>
+<area shape="rect" id="node3" href="aiot__message__api_8c.html#acf562841e53b0ab0550af8f17dd14aae" title="core_origin_msg_deinit" alt="" coords="200,56,355,83"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa8e50d3ee7df8c26fceac9b3c311f9c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structaiot__msg__t.html">aiot_msg_t</a>* aiot_msg_create_user_define </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>productKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>deviceName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>sub_topic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>payload_lenth</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>生成自定义topic的消息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>设备句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sub_topic</td><td>自定义topic中自定义的部分 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">payload</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">payload_lenth</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void* </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">非NULL</td><td>设备句柄 </td></tr>
+    <tr><td class="paramname">NULL</td><td>初始化失败, 一般是内存分配失败导致 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__message__api_8c_aa8e50d3ee7df8c26fceac9b3c311f9c3_cgraph.png" border="0" usemap="#aiot__message__api_8c_aa8e50d3ee7df8c26fceac9b3c311f9c3_cgraph" alt=""/></div>
+<map name="aiot__message__api_8c_aa8e50d3ee7df8c26fceac9b3c311f9c3_cgraph" id="aiot__message__api_8c_aa8e50d3ee7df8c26fceac9b3c311f9c3_cgraph">
+<area shape="rect" id="node2" href="aiot__message__api_8c.html#a6e2fac400a607e77ce14c014e590c57c" title="core_origin_msg_init" alt="" coords="211,5,352,32"/>
+<area shape="rect" id="node3" href="aiot__message__api_8c.html#acf562841e53b0ab0550af8f17dd14aae" title="core_origin_msg_deinit" alt="" coords="204,56,359,83"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aad2803625c69e9a1be03c76a0b5c9504"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structaiot__msg__t.html">aiot_msg_t</a>* aiot_msg_create_rrpc_reply </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structaiot__msg__t.html">aiot_msg_t</a> *&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>payload_lenth</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>生成rrpc回复的消息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">message</td><td>接收到的rrpc消息 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">payload</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">payload_lenth</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void* </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">非NULL</td><td>设备句柄 </td></tr>
+    <tr><td class="paramname">NULL</td><td>初始化失败, 一般是内存分配失败导致 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__message__api_8c_aad2803625c69e9a1be03c76a0b5c9504_cgraph.png" border="0" usemap="#aiot__message__api_8c_aad2803625c69e9a1be03c76a0b5c9504_cgraph" alt=""/></div>
+<map name="aiot__message__api_8c_aad2803625c69e9a1be03c76a0b5c9504_cgraph" id="aiot__message__api_8c_aad2803625c69e9a1be03c76a0b5c9504_cgraph">
+<area shape="rect" id="node2" href="aiot__message__api_8c.html#a6e2fac400a607e77ce14c014e590c57c" title="core_origin_msg_init" alt="" coords="207,5,348,32"/>
+<area shape="rect" id="node3" href="aiot__message__api_8c.html#acf562841e53b0ab0550af8f17dd14aae" title="core_origin_msg_deinit" alt="" coords="200,56,355,83"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a852bce4584ba0f9fb02c5f1e20a5ad94"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structaiot__msg__t.html">aiot_msg_t</a>* aiot_msg_clone </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structaiot__msg__t.html">aiot_msg_t</a> *&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>克隆一条消息，深拷贝 </p>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败, 更多信息请参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__message__api_8c_a852bce4584ba0f9fb02c5f1e20a5ad94_cgraph.png" border="0" usemap="#aiot__message__api_8c_a852bce4584ba0f9fb02c5f1e20a5ad94_cgraph" alt=""/></div>
+<map name="aiot__message__api_8c_a852bce4584ba0f9fb02c5f1e20a5ad94_cgraph" id="aiot__message__api_8c_a852bce4584ba0f9fb02c5f1e20a5ad94_cgraph">
+<area shape="rect" id="node2" href="aiot__message__api_8c.html#a6e2fac400a607e77ce14c014e590c57c" title="core_origin_msg_init" alt="" coords="173,5,315,32"/>
+<area shape="rect" id="node3" href="aiot__message__api_8c.html#acf562841e53b0ab0550af8f17dd14aae" title="core_origin_msg_deinit" alt="" coords="167,56,321,83"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad78c30b2011b07ff6e29597928ef57fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_msg_delete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structaiot__msg__t.html">aiot_msg_t</a> *&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>回收消息对象的资源 </p>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败, 更多信息请参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__message__api_8c_ad78c30b2011b07ff6e29597928ef57fb_cgraph.png" border="0" usemap="#aiot__message__api_8c_ad78c30b2011b07ff6e29597928ef57fb_cgraph" alt=""/></div>
+<map name="aiot__message__api_8c_ad78c30b2011b07ff6e29597928ef57fb_cgraph" id="aiot__message__api_8c_ad78c30b2011b07ff6e29597928ef57fb_cgraph">
+<area shape="rect" id="node2" href="aiot__message__api_8c.html#acf562841e53b0ab0550af8f17dd14aae" title="core_origin_msg_deinit" alt="" coords="171,5,325,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7969d9cd5acd0dd1847444ad0a7ea746"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_msg_set_qos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structaiot__msg__t.html">aiot_msg_t</a> *&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>qos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置消息发送的qos </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">message</td><td>需要配置的消息 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">qos</td><td>[0, 不确认返回], [1, 需确认返回，无返回将重发] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败, 更多信息请参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

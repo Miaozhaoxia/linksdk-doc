@@ -1,0 +1,5 @@
+<map id="aiot_device_shadow_delete_reported" name="aiot_device_shadow_delete_reported">
+<area shape="rect" id="node2" href="$aiot__device__api_8c.html#ad1eaf497ad46c2aa07a90dec084997e3" title="设备向云平台发送消息 " alt="" coords="193,5,376,32"/>
+<area shape="rect" id="node3" href="$aiot__message__api_8c.html#ad78c30b2011b07ff6e29597928ef57fb" title="回收消息对象的资源 " alt="" coords="226,56,343,83"/>
+<area shape="rect" id="node4" href="$aiot__message__api_8c.html#acf562841e53b0ab0550af8f17dd14aae" title="core_origin_msg_deinit" alt="" coords="424,56,579,83"/>
+</map>

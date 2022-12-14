@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: aiot_dm_msg_service_invoke_t结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">5.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="structaiot__dm__msg__service__invoke__t-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">aiot_dm_msg_service_invoke_t结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><b>同步服务调用</b>消息结构体, 用户收到同步服务后, 必须在超时时间(默认7s)内进行应答  
+ <a href="structaiot__dm__msg__service__invoke__t.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="aiot__dm__api_8h_source.html">aiot_dm_api.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a7ba26f69f11717d48429766e82c7056a"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__dm__msg__service__invoke__t.html#a7ba26f69f11717d48429766e82c7056a">service_id</a></td></tr>
+<tr class="memdesc:a7ba26f69f11717d48429766e82c7056a"><td class="mdescLeft">&#160;</td><td class="mdescRight">服务标示符, 字符串内容由用户定义的物模型决定  <a href="#a7ba26f69f11717d48429766e82c7056a">更多...</a><br /></td></tr>
+<tr class="separator:a7ba26f69f11717d48429766e82c7056a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d319ddc48ebb3f98c953cb4aefd5a64"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__dm__msg__service__invoke__t.html#a8d319ddc48ebb3f98c953cb4aefd5a64">params</a></td></tr>
+<tr class="memdesc:a8d319ddc48ebb3f98c953cb4aefd5a64"><td class="mdescLeft">&#160;</td><td class="mdescRight">服务调用的输入参数数据, 为字符串形式的JSON结构体, 此字符串<b>不</b>以结束符'\0'结尾, 如<em>"{\"LightSwitch":0}"</em>  <a href="#a8d319ddc48ebb3f98c953cb4aefd5a64">更多...</a><br /></td></tr>
+<tr class="separator:a8d319ddc48ebb3f98c953cb4aefd5a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a598fa1a1bfd7d8ce0148c27a6b797506"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__dm__msg__service__invoke__t.html#a598fa1a1bfd7d8ce0148c27a6b797506">params_len</a></td></tr>
+<tr class="memdesc:a598fa1a1bfd7d8ce0148c27a6b797506"><td class="mdescLeft">&#160;</td><td class="mdescRight">输入参数的字符串长度  <a href="#a598fa1a1bfd7d8ce0148c27a6b797506">更多...</a><br /></td></tr>
+<tr class="separator:a598fa1a1bfd7d8ce0148c27a6b797506"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p><b>同步服务调用</b>消息结构体, 用户收到同步服务后, 必须在超时时间(默认7s)内进行应答 </p>
+</div><h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a7ba26f69f11717d48429766e82c7056a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* aiot_dm_msg_service_invoke_t::service_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>服务标示符, 字符串内容由用户定义的物模型决定 </p>
+
+</div>
+</div>
+<a class="anchor" id="a8d319ddc48ebb3f98c953cb4aefd5a64"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* aiot_dm_msg_service_invoke_t::params</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>服务调用的输入参数数据, 为字符串形式的JSON结构体, 此字符串<b>不</b>以结束符'\0'结尾, 如<em>"{\"LightSwitch":0}"</em> </p>
+
+</div>
+</div>
+<a class="anchor" id="a598fa1a1bfd7d8ce0148c27a6b797506"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t aiot_dm_msg_service_invoke_t::params_len</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>输入参数的字符串长度 </p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>device-modules/data-model/<a class="el" href="aiot__dm__api_8h_source.html">aiot_dm_api.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

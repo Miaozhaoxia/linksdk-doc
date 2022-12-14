@@ -1,0 +1,7 @@
+<map id="aiot_device_ota_set_callback" name="aiot_device_ota_set_callback">
+<area shape="rect" id="node2" href="$aiot__ota__api_8c.html#aa25f5c47881a7f0973c9274d47c29425" title="_ota_get_handle" alt="" coords="427,5,544,32"/>
+<area shape="rect" id="node3" href="$aiot__device__api_8c.html#aac2943ebe50e80a431f46a6452403cb6" title="设备注册感兴趣的topic，接收到该topic的消息，执行对应回调 " alt="" coords="209,82,348,123"/>
+<area shape="rect" id="node6" href="$aiot__ota__api_8c.html#ab395fc45de40b80be928223ee52a438e" title="_ota_msg_notify_callback" alt="" coords="192,31,365,57"/>
+<area shape="rect" id="node4" href="$aiot__device__api_8c.html#ae3b5c1fa33797955fab227411311939d" title="_core_device_topic\l_takeoff_pkdn" alt="" coords="418,69,553,110"/>
+<area shape="rect" id="node5" href="$aiot__device__api_8c.html#a17429491661f0c6c8773c1bf51ceedf7" title="_core_device_sublist\l_insert" alt="" coords="413,134,557,175"/>
+</map>

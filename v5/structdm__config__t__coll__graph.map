@@ -1,0 +1,7 @@
+<map id="dm_config_t" name="dm_config_t">
+<area shape="rect" id="node2" href="$structaiot__dm__msg__t.html" title="data&#45;model模块接收消息的结构体 " alt="" coords="316,101,427,127"/>
+<area shape="rect" id="node3" href="$structaiot__dm__msg__property__set__t.html" title="属性设置消息结构体 " alt="" coords="13,5,168,47"/>
+<area shape="rect" id="node4" href="$structaiot__dm__msg__raw__data__t.html" title="物模型二进制数据消息结构体, 服务器的JSON格式物模型数据将通过物联网平台的JavaScript脚本转化为二进制数�..." alt="" coords="5,71,176,98"/>
+<area shape="rect" id="node5" href="$structaiot__dm__msg__generic__reply__t.html" title="云端通用应答消息结构体, 设备端上报AIOT_DMMSG_PROPERTY_POST, AIOT_DMMSG_EVENT_POST 或者AIOT_DMMSG_GET_..." alt="" coords="16,123,165,164"/>
+<area shape="rect" id="node6" href="$structaiot__dm__msg__service__invoke__t.html" title="同步服务调用消息结构体, 用户收到同步服务后, 必须在超时时间(默认7s)内进行应答 " alt="" coords="16,188,165,229"/>
+</map>

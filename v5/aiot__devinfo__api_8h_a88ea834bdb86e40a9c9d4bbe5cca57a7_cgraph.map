@@ -1,0 +1,6 @@
+<map id="aiot_device_devinfo_delete" name="aiot_device_devinfo_delete">
+<area shape="rect" id="node2" href="$aiot__devinfo__api_8c.html#a9a16246472afb0dac6c6b7602a2e3338" title="_devinfo_get_handle" alt="" coords="211,5,353,32"/>
+<area shape="rect" id="node3" href="$aiot__device__api_8c.html#ad1eaf497ad46c2aa07a90dec084997e3" title="设备向云平台发送消息 " alt="" coords="191,56,373,83"/>
+<area shape="rect" id="node4" href="$aiot__message__api_8c.html#ad78c30b2011b07ff6e29597928ef57fb" title="回收消息对象的资源 " alt="" coords="223,107,341,133"/>
+<area shape="rect" id="node5" href="$aiot__message__api_8c.html#acf562841e53b0ab0550af8f17dd14aae" title="core_origin_msg_deinit" alt="" coords="421,107,576,133"/>
+</map>

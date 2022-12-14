@@ -1,0 +1,523 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: device-modules/remote-config/aiot_rc_api.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">5.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97807256e5481b5817f198b161bc0824.html">device-modules</a></li><li class="navelem"><a class="el" href="dir_80372ac386ace9ecd5f6bc1c129c877b.html">remote-config</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">aiot_rc_api.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;core_log.h&quot;</code><br />
+<code>#include &quot;core_time.h&quot;</code><br />
+<code>#include &quot;core_string.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="aiot__state__api_8h_source.html">aiot_state_api.h</a>&quot;</code><br />
+<code>#include &quot;device_private.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="aiot__message__api_8h_source.html">aiot_message_api.h</a>&quot;</code><br />
+<code>#include &quot;rc_message.h&quot;</code><br />
+<code>#include &quot;core_os.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+aiot_rc_api.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__rc__api_8c__incl.png" border="0" usemap="#device-modules_2remote-config_2aiot__rc__api_8c" alt=""/></div>
+<map name="device-modules_2remote-config_2aiot__rc__api_8c" id="device-modules_2remote-config_2aiot__rc__api_8c">
+<area shape="rect" id="node5" href="aiot__state__api_8h.html" title="SDK Core状态码头文件, 所有Core中的api返回值均在此列出 " alt="" coords="349,117,464,143"/>
+<area shape="rect" id="node8" href="aiot__message__api_8h.html" title="aiot_message_api.h" alt="" coords="680,117,819,143"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrc__config__t.html">rc_config_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrc__handle__t.html">rc_handle_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:afc3d101f633a076cc1ca84b85b6224b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__rc__api_8c.html#afc3d101f633a076cc1ca84b85b6224b2">TAG</a>&#160;&#160;&#160;&quot;REMOTE-CONFIG&quot;</td></tr>
+<tr class="separator:afc3d101f633a076cc1ca84b85b6224b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a87559ef66e223839bfd021a4500ab7ea"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structrc__handle__t.html">rc_handle_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__rc__api_8c.html#a87559ef66e223839bfd021a4500ab7ea">_rc_get_handle</a> (void *device)</td></tr>
+<tr class="separator:a87559ef66e223839bfd021a4500ab7ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae24a8e0baef6af8880fbf12a8113c8d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__rc__api_8c.html#ae24a8e0baef6af8880fbf12a8113c8d6">_rc_msg_get_reply_callback</a> (void *device, const <a class="el" href="structaiot__msg__t.html">aiot_msg_t</a> *message, void *userdata)</td></tr>
+<tr class="separator:ae24a8e0baef6af8880fbf12a8113c8d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d810b6d6cb0ad1dd64dc80b0c73deda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__rc__api_8c.html#a1d810b6d6cb0ad1dd64dc80b0c73deda">_rc_msg_push_callback</a> (void *device, const <a class="el" href="structaiot__msg__t.html">aiot_msg_t</a> *message, void *userdata)</td></tr>
+<tr class="separator:a1d810b6d6cb0ad1dd64dc80b0c73deda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ae68761522e36cee38f641dc60635aa"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__rc__api_8c.html#a8ae68761522e36cee38f641dc60635aa">aiot_device_rc_set_callback</a> (void *device, <a class="el" href="aiot__rc__api_8h.html#a41672306c0574657583ff258b7e9de44">rc_callback_t</a> callback, void *userdata)</td></tr>
+<tr class="memdesc:a8ae68761522e36cee38f641dc60635aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置远程配置  <a href="#a8ae68761522e36cee38f641dc60635aa">更多...</a><br /></td></tr>
+<tr class="separator:a8ae68761522e36cee38f641dc60635aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a975578c3bda814429388043319c7ab50"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__rc__api_8c.html#a975578c3bda814429388043319c7ab50">aiot_device_rc_request</a> (void *device)</td></tr>
+<tr class="memdesc:a975578c3bda814429388043319c7ab50"><td class="mdescLeft">&#160;</td><td class="mdescRight">请求远程配置文件信息  <a href="#a975578c3bda814429388043319c7ab50">更多...</a><br /></td></tr>
+<tr class="separator:a975578c3bda814429388043319c7ab50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59139fe0f6a71b8319b428d0d1602cb1"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__rc__api_8c.html#a59139fe0f6a71b8319b428d0d1602cb1">aiot_device_rc_push_reply</a> (void *device, int32_t code)</td></tr>
+<tr class="memdesc:a59139fe0f6a71b8319b428d0d1602cb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">云端下推的远程配置后，回复云端  <a href="#a59139fe0f6a71b8319b428d0d1602cb1">更多...</a><br /></td></tr>
+<tr class="separator:a59139fe0f6a71b8319b428d0d1602cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64dddca14478d720c674fc9009bd3890"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__rc__api_8c.html#a64dddca14478d720c674fc9009bd3890">_rc_init</a> ()</td></tr>
+<tr class="separator:a64dddca14478d720c674fc9009bd3890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62240ae1021f22d8d16e508c74e1e3e4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__rc__api_8c.html#a62240ae1021f22d8d16e508c74e1e3e4">_rc_deinit</a> (void *handle)</td></tr>
+<tr class="separator:a62240ae1021f22d8d16e508c74e1e3e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a9b1d265cb457b9d7c47c4ac6f78ffea7"><td class="memItemLeft" align="right" valign="top">static module_ops_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__rc__api_8c.html#a9b1d265cb457b9d7c47c4ac6f78ffea7">rc_ops</a></td></tr>
+<tr class="separator:a9b1d265cb457b9d7c47c4ac6f78ffea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="afc3d101f633a076cc1ca84b85b6224b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TAG&#160;&#160;&#160;&quot;REMOTE-CONFIG&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a87559ef66e223839bfd021a4500ab7ea"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structrc__handle__t.html">rc_handle_t</a> * _rc_get_handle </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae24a8e0baef6af8880fbf12a8113c8d6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _rc_msg_get_reply_callback </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structaiot__msg__t.html">aiot_msg_t</a> *&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userdata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__rc__api_8c_ae24a8e0baef6af8880fbf12a8113c8d6_cgraph.png" border="0" usemap="#aiot__rc__api_8c_ae24a8e0baef6af8880fbf12a8113c8d6_cgraph" alt=""/></div>
+<map name="aiot__rc__api_8c_ae24a8e0baef6af8880fbf12a8113c8d6_cgraph" id="aiot__rc__api_8c_ae24a8e0baef6af8880fbf12a8113c8d6_cgraph">
+<area shape="rect" id="node2" href="aiot__rc__api_8c.html#a87559ef66e223839bfd021a4500ab7ea" title="_rc_get_handle" alt="" coords="240,5,351,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1d810b6d6cb0ad1dd64dc80b0c73deda"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _rc_msg_push_callback </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structaiot__msg__t.html">aiot_msg_t</a> *&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userdata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__rc__api_8c_a1d810b6d6cb0ad1dd64dc80b0c73deda_cgraph.png" border="0" usemap="#aiot__rc__api_8c_a1d810b6d6cb0ad1dd64dc80b0c73deda_cgraph" alt=""/></div>
+<map name="aiot__rc__api_8c_a1d810b6d6cb0ad1dd64dc80b0c73deda_cgraph" id="aiot__rc__api_8c_a1d810b6d6cb0ad1dd64dc80b0c73deda_cgraph">
+<area shape="rect" id="node2" href="aiot__rc__api_8c.html#a87559ef66e223839bfd021a4500ab7ea" title="_rc_get_handle" alt="" coords="216,5,327,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8ae68761522e36cee38f641dc60635aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_device_rc_set_callback </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="aiot__rc__api_8h.html#a41672306c0574657583ff258b7e9de44">rc_callback_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userdata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置远程配置 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>设备句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>消息回调函数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userdata</td><td>执行回调消息的上下文 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>参数配置成功 </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>入参为空 </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__rc__api_8c_a8ae68761522e36cee38f641dc60635aa_cgraph.png" border="0" usemap="#aiot__rc__api_8c_a8ae68761522e36cee38f641dc60635aa_cgraph" alt=""/></div>
+<map name="aiot__rc__api_8c_a8ae68761522e36cee38f641dc60635aa_cgraph" id="aiot__rc__api_8c_a8ae68761522e36cee38f641dc60635aa_cgraph">
+<area shape="rect" id="node2" href="aiot__rc__api_8c.html#a87559ef66e223839bfd021a4500ab7ea" title="_rc_get_handle" alt="" coords="435,26,546,53"/>
+<area shape="rect" id="node3" href="aiot__device__api_8c.html#aac2943ebe50e80a431f46a6452403cb6" title="设备注册感兴趣的topic，接收到该topic的消息，执行对应回调 " alt="" coords="208,128,347,170"/>
+<area shape="rect" id="node6" href="aiot__rc__api_8c.html#ae24a8e0baef6af8880fbf12a8113c8d6" title="_rc_msg_get_reply_callback" alt="" coords="184,26,371,53"/>
+<area shape="rect" id="node7" href="aiot__rc__api_8c.html#a1d810b6d6cb0ad1dd64dc80b0c73deda" title="_rc_msg_push_callback" alt="" coords="196,77,359,104"/>
+<area shape="rect" id="node4" href="aiot__device__api_8c.html#ae3b5c1fa33797955fab227411311939d" title="_core_device_topic\l_takeoff_pkdn" alt="" coords="423,103,558,144"/>
+<area shape="rect" id="node5" href="aiot__device__api_8c.html#a17429491661f0c6c8773c1bf51ceedf7" title="_core_device_sublist\l_insert" alt="" coords="419,168,563,210"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a975578c3bda814429388043319c7ab50"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_device_rc_request </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>请求远程配置文件信息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>设备句柄 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>发送请求成功 </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>入参为空 </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__rc__api_8c_a975578c3bda814429388043319c7ab50_cgraph.png" border="0" usemap="#aiot__rc__api_8c_a975578c3bda814429388043319c7ab50_cgraph" alt=""/></div>
+<map name="aiot__rc__api_8c_a975578c3bda814429388043319c7ab50_cgraph" id="aiot__rc__api_8c_a975578c3bda814429388043319c7ab50_cgraph">
+<area shape="rect" id="node2" href="aiot__rc__api_8c.html#a87559ef66e223839bfd021a4500ab7ea" title="_rc_get_handle" alt="" coords="245,5,356,32"/>
+<area shape="rect" id="node3" href="aiot__device__api_8c.html#ad1eaf497ad46c2aa07a90dec084997e3" title="设备向云平台发送消息 " alt="" coords="209,56,392,83"/>
+<area shape="rect" id="node4" href="aiot__message__api_8c.html#ad78c30b2011b07ff6e29597928ef57fb" title="回收消息对象的资源 " alt="" coords="242,107,359,133"/>
+<area shape="rect" id="node5" href="aiot__message__api_8c.html#acf562841e53b0ab0550af8f17dd14aae" title="core_origin_msg_deinit" alt="" coords="440,107,595,133"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a59139fe0f6a71b8319b428d0d1602cb1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_device_rc_push_reply </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>云端下推的远程配置后，回复云端 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>设备句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">code</td><td>远程配置结果 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>回复消息成功 </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>入参为空 </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__rc__api_8c_a59139fe0f6a71b8319b428d0d1602cb1_cgraph.png" border="0" usemap="#aiot__rc__api_8c_a59139fe0f6a71b8319b428d0d1602cb1_cgraph" alt=""/></div>
+<map name="aiot__rc__api_8c_a59139fe0f6a71b8319b428d0d1602cb1_cgraph" id="aiot__rc__api_8c_a59139fe0f6a71b8319b428d0d1602cb1_cgraph">
+<area shape="rect" id="node2" href="aiot__rc__api_8c.html#a87559ef66e223839bfd021a4500ab7ea" title="_rc_get_handle" alt="" coords="231,5,341,32"/>
+<area shape="rect" id="node3" href="aiot__device__api_8c.html#ad1eaf497ad46c2aa07a90dec084997e3" title="设备向云平台发送消息 " alt="" coords="195,56,377,83"/>
+<area shape="rect" id="node4" href="aiot__message__api_8c.html#ad78c30b2011b07ff6e29597928ef57fb" title="回收消息对象的资源 " alt="" coords="227,107,345,133"/>
+<area shape="rect" id="node5" href="aiot__message__api_8c.html#acf562841e53b0ab0550af8f17dd14aae" title="core_origin_msg_deinit" alt="" coords="425,107,580,133"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a64dddca14478d720c674fc9009bd3890"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void* _rc_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a62240ae1021f22d8d16e508c74e1e3e4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void _rc_deinit </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a class="anchor" id="a9b1d265cb457b9d7c47c4ac6f78ffea7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">module_ops_t rc_ops</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>初始值:</b><div class="fragment"><div class="line">= {</div><div class="line">    .internal_ms = -1,</div><div class="line">    .on_init = <a class="code" href="aiot__rc__api_8c.html#a64dddca14478d720c674fc9009bd3890">_rc_init</a>,</div><div class="line">    .on_process = NULL,</div><div class="line">    .on_status = NULL,</div><div class="line">    .on_deinit = <a class="code" href="aiot__rc__api_8c.html#a62240ae1021f22d8d16e508c74e1e3e4">_rc_deinit</a>,</div><div class="line">}</div><div class="ttc" id="aiot__rc__api_8c_html_a64dddca14478d720c674fc9009bd3890"><div class="ttname"><a href="aiot__rc__api_8c.html#a64dddca14478d720c674fc9009bd3890">_rc_init</a></div><div class="ttdeci">static void * _rc_init()</div><div class="ttdef"><b>Definition:</b> aiot_rc_api.c:133</div></div>
+<div class="ttc" id="aiot__rc__api_8c_html_a62240ae1021f22d8d16e508c74e1e3e4"><div class="ttname"><a href="aiot__rc__api_8c.html#a62240ae1021f22d8d16e508c74e1e3e4">_rc_deinit</a></div><div class="ttdeci">static void _rc_deinit(void *handle)</div><div class="ttdef"><b>Definition:</b> aiot_rc_api.c:143</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

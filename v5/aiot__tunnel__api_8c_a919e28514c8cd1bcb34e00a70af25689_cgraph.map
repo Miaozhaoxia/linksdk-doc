@@ -1,0 +1,5 @@
+<map id="tunnel_closed_state_process" name="tunnel_closed_state_process">
+<area shape="rect" id="node2" href="$aiot__tunnel__api_8c.html#acd4d1f87bf7e1be39e60be7c1d82833e" title="whether_connect_time_up" alt="" coords="192,5,367,32"/>
+<area shape="rect" id="node4" href="$aiot__tunnel__api_8c.html#a835772f36aeb23502d74048adc4ec6fa" title="_tunnel_connect" alt="" coords="221,56,338,83"/>
+<area shape="rect" id="node3" href="$aiot__tunnel__api_8c.html#a66a17e62888e76a95be846a4282abf3e" title="get_wait_time_period" alt="" coords="415,5,560,32"/>
+</map>

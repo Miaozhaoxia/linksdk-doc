@@ -1,0 +1,935 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: device-modules/data-model/aiot_dm_api.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">5.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97807256e5481b5817f198b161bc0824.html">device-modules</a></li><li class="navelem"><a class="el" href="dir_b793f8bdb3cd44267bffdd3791968b7e.html">data-model</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">aiot_dm_api.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+aiot_dm_api.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__dm__api_8h__incl.png" border="0" usemap="#device-modules_2data-model_2aiot__dm__api_8h" alt=""/></div>
+<map name="device-modules_2data-model_2aiot__dm__api_8h" id="device-modules_2data-model_2aiot__dm__api_8h">
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__dm__api_8h__dep__incl.png" border="0" usemap="#device-modules_2data-model_2aiot__dm__api_8hdep" alt=""/></div>
+<map name="device-modules_2data-model_2aiot__dm__api_8hdep" id="device-modules_2data-model_2aiot__dm__api_8hdep">
+<area shape="rect" id="node2" href="aiot__dm__api_8c.html" title="device&#45;modules/data\l&#45;model/aiot_dm_api.c" alt="" coords="5,95,152,136"/>
+</map>
+</div>
+</div>
+<p><a href="aiot__dm__api_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__dm__msg__generic__reply__t.html">aiot_dm_msg_generic_reply_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>云端通用应答</b>消息结构体, 设备端上报AIOT_DMMSG_PROPERTY_POST, AIOT_DMMSG_EVENT_POST 或者AIOT_DMMSG_GET_DESIRED 等消息后, 服务器会应答此消息  <a href="structaiot__dm__msg__generic__reply__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__dm__msg__property__set__t.html">aiot_dm_msg_property_set_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>属性设置</b>消息结构体  <a href="structaiot__dm__msg__property__set__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__dm__msg__service__invoke__t.html">aiot_dm_msg_service_invoke_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>同步服务调用</b>消息结构体, 用户收到同步服务后, 必须在超时时间(默认7s)内进行应答  <a href="structaiot__dm__msg__service__invoke__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__dm__msg__raw__data__t.html">aiot_dm_msg_raw_data_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>物模型二进制数据</b>消息结构体, 服务器的JSON格式物模型数据将通过物联网平台的JavaScript脚本转化为二进制数据, 用户在接收此消息前应确保已正确启用云端解析脚本  <a href="structaiot__dm__msg__raw__data__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__dm__msg__t.html">aiot_dm_msg_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">data-model模块接收消息的结构体  <a href="structaiot__dm__msg__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a1486fda74106a40a48dec667e8614175"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dm__api_8h.html#a1486fda74106a40a48dec667e8614175">dm_msg_callback_t</a>) (void *device, const <a class="el" href="structaiot__dm__msg__t.html">aiot_dm_msg_t</a> *msg, void *userdata)</td></tr>
+<tr class="separator:a1486fda74106a40a48dec667e8614175"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a2f10245b1e1d34dc3365d99f0e2a393c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393c">aiot_dm_msg_type_t</a> { <br />
+&#160;&#160;<a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393cad3dbc9ce2db0fcffc8d4cde8aa58a3a2">AIOT_DMRECV_POST_REPLY</a>, 
+<a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393caf5b50d0da9b340f58b50fff5f114a813">AIOT_DMRECV_BATCH_POST_REPLY</a>, 
+<a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393ca02b5dab4b45a2b537c1574dc231d3a7d">AIOT_DMRECV_PROPERTY_SET</a>, 
+<a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393ca131cff38a8ca21ef37448f7ed423a5b9">AIOT_DMRECV_SERVICE_INVOKE</a>, 
+<br />
+&#160;&#160;<a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393ca6c930a6542af664f2679ad258be33e9b">AIOT_DMRECV_GET_DESIRED_REPLY</a>, 
+<a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393cac446f103709fdc52a765012558478782">AIOT_DMRECV_DELETE_DESIRED_REPLY</a>, 
+<a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393ca3f1b98c5d24c0a769f782975d8acd4b4">AIOT_DMRECV_RAW_REPLY</a>, 
+<a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393ca031398f7c1fc041200a32540332d323f">AIOT_DMRECV_RAW_DOWN</a>, 
+<br />
+&#160;&#160;<a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393caec15cae976dbc18530d5e4ab882de99e">AIOT_DMRECV_MAX</a>
+<br />
+ }<tr class="memdesc:a2f10245b1e1d34dc3365d99f0e2a393c"><td class="mdescLeft">&#160;</td><td class="mdescRight">data-model模块接受消息类型枚举  <a href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393c">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a2f10245b1e1d34dc3365d99f0e2a393c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ac078510e02e1d556f7b9e3808599c1ef"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dm__api_8h.html#ac078510e02e1d556f7b9e3808599c1ef">aiot_device_dm_set_post_reply</a> (void *device, int8_t post_reply)</td></tr>
+<tr class="memdesc:ac078510e02e1d556f7b9e3808599c1ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是否主动发送消息需要回复  <a href="#ac078510e02e1d556f7b9e3808599c1ef">更多...</a><br /></td></tr>
+<tr class="separator:ac078510e02e1d556f7b9e3808599c1ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae735806c95ed8f8a61efdcc73d569253"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dm__api_8h.html#ae735806c95ed8f8a61efdcc73d569253">aiot_device_dm_set_msg_callback</a> (void *device, <a class="el" href="aiot__dm__api_8h.html#a1486fda74106a40a48dec667e8614175">dm_msg_callback_t</a> msg_callback, void *userdata)</td></tr>
+<tr class="memdesc:ae735806c95ed8f8a61efdcc73d569253"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置设备接收到物模型消息后的回调函数  <a href="#ae735806c95ed8f8a61efdcc73d569253">更多...</a><br /></td></tr>
+<tr class="separator:ae735806c95ed8f8a61efdcc73d569253"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f91d5883a67c9899e5c2865d365f3de"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dm__api_8h.html#a7f91d5883a67c9899e5c2865d365f3de">aiot_device_dm_property_post</a> (void *device, char *params)</td></tr>
+<tr class="memdesc:a7f91d5883a67c9899e5c2865d365f3de"><td class="mdescLeft">&#160;</td><td class="mdescRight">物模型属性消息上报  <a href="#a7f91d5883a67c9899e5c2865d365f3de">更多...</a><br /></td></tr>
+<tr class="separator:a7f91d5883a67c9899e5c2865d365f3de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19f5559634db4c5b56694bb93c3f168c"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dm__api_8h.html#a19f5559634db4c5b56694bb93c3f168c">aiot_device_dm_event_post</a> (void *device, char *event_id, char *params)</td></tr>
+<tr class="memdesc:a19f5559634db4c5b56694bb93c3f168c"><td class="mdescLeft">&#160;</td><td class="mdescRight">物模型事件消息上报  <a href="#a19f5559634db4c5b56694bb93c3f168c">更多...</a><br /></td></tr>
+<tr class="separator:a19f5559634db4c5b56694bb93c3f168c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ee9aebc9f727ed0e322cc2aaa568c26"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dm__api_8h.html#a9ee9aebc9f727ed0e322cc2aaa568c26">aiot_device_dm_batch_post</a> (void *device, char *params)</td></tr>
+<tr class="separator:a9ee9aebc9f727ed0e322cc2aaa568c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a045295bdc8c42eed88acfebd085e155b"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dm__api_8h.html#a045295bdc8c42eed88acfebd085e155b">aiot_device_dm_get_desired</a> (void *device, char *params)</td></tr>
+<tr class="separator:a045295bdc8c42eed88acfebd085e155b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1631052f2eddebe9cbfb823b46dde324"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dm__api_8h.html#a1631052f2eddebe9cbfb823b46dde324">aiot_device_dm_delete_desired</a> (void *device, char *params)</td></tr>
+<tr class="separator:a1631052f2eddebe9cbfb823b46dde324"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9306d16951faf8e606692bc4ca5b7adb"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dm__api_8h.html#a9306d16951faf8e606692bc4ca5b7adb">aiot_device_dm_raw_post</a> (void *device, uint8_t *data, uint32_t data_len)</td></tr>
+<tr class="separator:a9306d16951faf8e606692bc4ca5b7adb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4992aec82afd56a3b4da0c1a97c35075"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dm__api_8h.html#a4992aec82afd56a3b4da0c1a97c35075">aiot_device_dm_propertyset_reply</a> (void *device, void *context, uint32_t code, char *data)</td></tr>
+<tr class="separator:a4992aec82afd56a3b4da0c1a97c35075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a119f8e434882507b38839f27894db230"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dm__api_8h.html#a119f8e434882507b38839f27894db230">aiot_device_dm_service_reply</a> (void *device, void *context, char *service_id, uint32_t code, char *data)</td></tr>
+<tr class="separator:a119f8e434882507b38839f27894db230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65e80b507a7a05c1df3ba0a4cf0e07e7"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dm__api_8h.html#a65e80b507a7a05c1df3ba0a4cf0e07e7">aiot_device_dm_raw_reply</a> (void *device, void *context, uint8_t *data, uint32_t data_len)</td></tr>
+<tr class="separator:a65e80b507a7a05c1df3ba0a4cf0e07e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab95de9d55e6412806a3b07348b24107f"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dm__api_8h.html#ab95de9d55e6412806a3b07348b24107f">aiot_dm_msg_context_clone</a> (void *context)</td></tr>
+<tr class="separator:ab95de9d55e6412806a3b07348b24107f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2acaf2ace3b1e90dd3d8b1730b70b598"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dm__api_8h.html#a2acaf2ace3b1e90dd3d8b1730b70b598">aiot_dm_msg_context_free</a> (void *context)</td></tr>
+<tr class="separator:a2acaf2ace3b1e90dd3d8b1730b70b598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">类型定义说明</h2>
+<a class="anchor" id="a1486fda74106a40a48dec667e8614175"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* dm_msg_callback_t) (void *device, const <a class="el" href="structaiot__dm__msg__t.html">aiot_dm_msg_t</a> *msg, void *userdata)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a class="anchor" id="a2f10245b1e1d34dc3365d99f0e2a393c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393c">aiot_dm_msg_type_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>data-model模块接受消息类型枚举 </p>
+<p>这个枚举类型包括了dm模块支持接收的所有数据类型, 不同的消息类型将对于不同的消息结构体 用户可查看网页文档<a href="https://help.aliyun.com/document_detail/89301.html">设备属性/事件/服务</a>进一步了解各种数据类型 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a2f10245b1e1d34dc3365d99f0e2a393cad3dbc9ce2db0fcffc8d4cde8aa58a3a2"></a>AIOT_DMRECV_POST_REPLY&#160;</td><td class="fielddoc">
+<p>上报属性/实践后服务器返回的应答消息, 消息数据结构体参考<a class="el" href="structaiot__dm__msg__generic__reply__t.html">aiot_dm_msg_generic_reply_t</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2f10245b1e1d34dc3365d99f0e2a393caf5b50d0da9b340f58b50fff5f114a813"></a>AIOT_DMRECV_BATCH_POST_REPLY&#160;</td><td class="fielddoc">
+<p>上报属性/实践后服务器返回的应答消息, 消息数据结构体参考<a class="el" href="structaiot__dm__msg__generic__reply__t.html">aiot_dm_msg_generic_reply_t</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2f10245b1e1d34dc3365d99f0e2a393ca02b5dab4b45a2b537c1574dc231d3a7d"></a>AIOT_DMRECV_PROPERTY_SET&#160;</td><td class="fielddoc">
+<p>服务器下发的属性设置消息, 消息数据结构体参考<a class="el" href="structaiot__dm__msg__property__set__t.html">aiot_dm_msg_property_set_t</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2f10245b1e1d34dc3365d99f0e2a393ca131cff38a8ca21ef37448f7ed423a5b9"></a>AIOT_DMRECV_SERVICE_INVOKE&#160;</td><td class="fielddoc">
+<p>服务器下发的异步服务调用消息, 消息数据结构体参考aiot_dm_msg_async_service_invoke_t </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2f10245b1e1d34dc3365d99f0e2a393ca6c930a6542af664f2679ad258be33e9b"></a>AIOT_DMRECV_GET_DESIRED_REPLY&#160;</td><td class="fielddoc">
+<p>上报属性/实践后服务器返回的应答消息, 消息数据结构体参考<a class="el" href="structaiot__dm__msg__generic__reply__t.html">aiot_dm_msg_generic_reply_t</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2f10245b1e1d34dc3365d99f0e2a393cac446f103709fdc52a765012558478782"></a>AIOT_DMRECV_DELETE_DESIRED_REPLY&#160;</td><td class="fielddoc">
+<p>上报属性/实践后服务器返回的应答消息, 消息数据结构体参考<a class="el" href="structaiot__dm__msg__generic__reply__t.html">aiot_dm_msg_generic_reply_t</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2f10245b1e1d34dc3365d99f0e2a393ca3f1b98c5d24c0a769f782975d8acd4b4"></a>AIOT_DMRECV_RAW_REPLY&#160;</td><td class="fielddoc">
+<p>服务器对设备上报的二进制数据应答, 消息数据结构体参考<a class="el" href="structaiot__dm__msg__raw__data__t.html">aiot_dm_msg_raw_data_t</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2f10245b1e1d34dc3365d99f0e2a393ca031398f7c1fc041200a32540332d323f"></a>AIOT_DMRECV_RAW_DOWN&#160;</td><td class="fielddoc">
+<p>服务器下发的物模型二进制数据, 消息数据结构体参考<a class="el" href="structaiot__dm__msg__raw__data__t.html">aiot_dm_msg_raw_data_t</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2f10245b1e1d34dc3365d99f0e2a393caec15cae976dbc18530d5e4ab882de99e"></a>AIOT_DMRECV_MAX&#160;</td><td class="fielddoc">
+<p>消息数量最大值, 不可用作消息类型 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="ac078510e02e1d556f7b9e3808599c1ef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_device_dm_set_post_reply </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int8_t&#160;</td>
+          <td class="paramname"><em>post_reply</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置是否主动发送消息需要回复 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>设备句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">post_reply</td><td>[0] 不需要回复 [1] 需要回复</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>参数配置成功 </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>入参为空 </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__dm__api_8h_ac078510e02e1d556f7b9e3808599c1ef_cgraph.png" border="0" usemap="#aiot__dm__api_8h_ac078510e02e1d556f7b9e3808599c1ef_cgraph" alt=""/></div>
+<map name="aiot__dm__api_8h_ac078510e02e1d556f7b9e3808599c1ef_cgraph" id="aiot__dm__api_8h_ac078510e02e1d556f7b9e3808599c1ef_cgraph">
+<area shape="rect" id="node2" href="aiot__dm__api_8c.html#a38671c3d1b7ee578678e2a84865def43" title="_dm_get_handle" alt="" coords="192,115,309,141"/>
+<area shape="rect" id="node3" href="aiot__device__api_8c.html#a53ade36ca27a6aa7b1001a3fc1c50935" title="查询设备的状态 " alt="" coords="371,64,500,91"/>
+<area shape="rect" id="node4" href="aiot__dm__api_8c.html#a035fb860bb066e68c8865ee34b59d32b" title="_sub_batch_post_topic" alt="" coords="357,115,513,141"/>
+<area shape="rect" id="node5" href="aiot__device__api_8c.html#a1e58b077a51ef375e26e8c8927a08855" title="查询设备的product_key " alt="" coords="561,5,728,32"/>
+<area shape="rect" id="node6" href="aiot__device__api_8c.html#a1add2b0c42c073722cfa72b53a872e96" title="查询设备的device_name " alt="" coords="581,56,708,83"/>
+<area shape="rect" id="node7" href="aiot__device__api_8c.html#aac2943ebe50e80a431f46a6452403cb6" title="设备注册感兴趣的topic，接收到该topic的消息，执行对应回调 " alt="" coords="575,107,714,149"/>
+<area shape="rect" id="node10" href="aiot__dm__api_8c.html#afc752f2aa725f574554731b6628fcf45" title="_dm_msg_batch_post\l_reply_callback" alt="" coords="569,173,720,214"/>
+<area shape="rect" id="node8" href="aiot__device__api_8c.html#ae3b5c1fa33797955fab227411311939d" title="_core_device_topic\l_takeoff_pkdn" alt="" coords="781,74,915,115"/>
+<area shape="rect" id="node9" href="aiot__device__api_8c.html#a17429491661f0c6c8773c1bf51ceedf7" title="_core_device_sublist\l_insert" alt="" coords="776,139,920,181"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae735806c95ed8f8a61efdcc73d569253"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_device_dm_set_msg_callback </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="aiot__dm__api_8h.html#a1486fda74106a40a48dec667e8614175">dm_msg_callback_t</a>&#160;</td>
+          <td class="paramname"><em>msg_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userdata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置设备接收到物模型消息后的回调函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>设备句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">msg_callback</td><td>回调函数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userdata</td><td>执行回调函数后的上下文指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>参数配置成功 </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>入参为空 </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__dm__api_8h_ae735806c95ed8f8a61efdcc73d569253_cgraph.png" border="0" usemap="#aiot__dm__api_8h_ae735806c95ed8f8a61efdcc73d569253_cgraph" alt=""/></div>
+<map name="aiot__dm__api_8h_ae735806c95ed8f8a61efdcc73d569253_cgraph" id="aiot__dm__api_8h_ae735806c95ed8f8a61efdcc73d569253_cgraph">
+<area shape="rect" id="node2" href="aiot__dm__api_8c.html#a38671c3d1b7ee578678e2a84865def43" title="_dm_get_handle" alt="" coords="192,95,309,122"/>
+<area shape="rect" id="node7" href="aiot__device__api_8c.html#aac2943ebe50e80a431f46a6452403cb6" title="设备注册感兴趣的topic，接收到该topic的消息，执行对应回调 " alt="" coords="575,173,714,215"/>
+<area shape="rect" id="node3" href="aiot__device__api_8c.html#a53ade36ca27a6aa7b1001a3fc1c50935" title="查询设备的状态 " alt="" coords="371,70,500,97"/>
+<area shape="rect" id="node4" href="aiot__dm__api_8c.html#a035fb860bb066e68c8865ee34b59d32b" title="_sub_batch_post_topic" alt="" coords="357,121,513,147"/>
+<area shape="rect" id="node5" href="aiot__device__api_8c.html#a1e58b077a51ef375e26e8c8927a08855" title="查询设备的product_key " alt="" coords="561,122,728,149"/>
+<area shape="rect" id="node6" href="aiot__device__api_8c.html#a1add2b0c42c073722cfa72b53a872e96" title="查询设备的device_name " alt="" coords="581,71,708,98"/>
+<area shape="rect" id="node10" href="aiot__dm__api_8c.html#afc752f2aa725f574554731b6628fcf45" title="_dm_msg_batch_post\l_reply_callback" alt="" coords="569,5,720,47"/>
+<area shape="rect" id="node8" href="aiot__device__api_8c.html#ae3b5c1fa33797955fab227411311939d" title="_core_device_topic\l_takeoff_pkdn" alt="" coords="781,140,915,181"/>
+<area shape="rect" id="node9" href="aiot__device__api_8c.html#a17429491661f0c6c8773c1bf51ceedf7" title="_core_device_sublist\l_insert" alt="" coords="776,205,920,247"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7f91d5883a67c9899e5c2865d365f3de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_device_dm_property_post </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>物模型属性消息上报 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>设备句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">params</td><td>字符串形式的JSON结构体, <b>必须以结束符'\0'结尾</b>. 包含用户要上报的属性数据, 如<em>"{\"LightSwitch":0}"</em></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>消息发送成功, 返回消息id </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>入参<em>device</em>或<em>params</em>为NULL </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> 中对应的错误码说明 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__dm__api_8h_a7f91d5883a67c9899e5c2865d365f3de_cgraph.png" border="0" usemap="#aiot__dm__api_8h_a7f91d5883a67c9899e5c2865d365f3de_cgraph" alt=""/></div>
+<map name="aiot__dm__api_8h_a7f91d5883a67c9899e5c2865d365f3de_cgraph" id="aiot__dm__api_8h_a7f91d5883a67c9899e5c2865d365f3de_cgraph">
+<area shape="rect" id="node2" href="aiot__dm__api_8c.html#a38671c3d1b7ee578678e2a84865def43" title="_dm_get_handle" alt="" coords="285,115,402,141"/>
+<area shape="rect" id="node11" href="aiot__device__api_8c.html#ad1eaf497ad46c2aa07a90dec084997e3" title="设备向云平台发送消息 " alt="" coords="252,165,435,192"/>
+<area shape="rect" id="node12" href="aiot__message__api_8c.html#ad78c30b2011b07ff6e29597928ef57fb" title="回收消息对象的资源 " alt="" coords="285,216,402,243"/>
+<area shape="rect" id="node3" href="aiot__device__api_8c.html#a53ade36ca27a6aa7b1001a3fc1c50935" title="查询设备的状态 " alt="" coords="496,64,625,91"/>
+<area shape="rect" id="node4" href="aiot__dm__api_8c.html#a035fb860bb066e68c8865ee34b59d32b" title="_sub_batch_post_topic" alt="" coords="483,115,639,141"/>
+<area shape="rect" id="node5" href="aiot__device__api_8c.html#a1e58b077a51ef375e26e8c8927a08855" title="查询设备的product_key " alt="" coords="687,5,853,32"/>
+<area shape="rect" id="node6" href="aiot__device__api_8c.html#a1add2b0c42c073722cfa72b53a872e96" title="查询设备的device_name " alt="" coords="707,56,833,83"/>
+<area shape="rect" id="node7" href="aiot__device__api_8c.html#aac2943ebe50e80a431f46a6452403cb6" title="设备注册感兴趣的topic，接收到该topic的消息，执行对应回调 " alt="" coords="701,107,839,149"/>
+<area shape="rect" id="node10" href="aiot__dm__api_8c.html#afc752f2aa725f574554731b6628fcf45" title="_dm_msg_batch_post\l_reply_callback" alt="" coords="695,173,845,214"/>
+<area shape="rect" id="node8" href="aiot__device__api_8c.html#ae3b5c1fa33797955fab227411311939d" title="_core_device_topic\l_takeoff_pkdn" alt="" coords="906,74,1041,115"/>
+<area shape="rect" id="node9" href="aiot__device__api_8c.html#a17429491661f0c6c8773c1bf51ceedf7" title="_core_device_sublist\l_insert" alt="" coords="901,139,1045,181"/>
+<area shape="rect" id="node13" href="aiot__message__api_8c.html#acf562841e53b0ab0550af8f17dd14aae" title="core_origin_msg_deinit" alt="" coords="483,216,638,243"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a19f5559634db4c5b56694bb93c3f168c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_device_dm_event_post </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>event_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>物模型事件消息上报 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>设备句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">event_id</td><td>事件标示符, <b>必须为以结束符'\0'结尾的字符串</b> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">params</td><td>字符串形式的JSON结构体, <b>必须以结束符'\0'结尾</b>. 包含用户要上报的事件数据, 如<em>"{\"ErrorNum":0}"</em></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>消息发送成功, 返回消息id </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>入参<em>device</em>或<em>event_id</em>或<em>params</em>为NULL </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> 中对应的错误码说明 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__dm__api_8h_a19f5559634db4c5b56694bb93c3f168c_cgraph.png" border="0" usemap="#aiot__dm__api_8h_a19f5559634db4c5b56694bb93c3f168c_cgraph" alt=""/></div>
+<map name="aiot__dm__api_8h_a19f5559634db4c5b56694bb93c3f168c_cgraph" id="aiot__dm__api_8h_a19f5559634db4c5b56694bb93c3f168c_cgraph">
+<area shape="rect" id="node2" href="aiot__dm__api_8c.html#a38671c3d1b7ee578678e2a84865def43" title="_dm_get_handle" alt="" coords="270,115,387,141"/>
+<area shape="rect" id="node11" href="aiot__device__api_8c.html#ad1eaf497ad46c2aa07a90dec084997e3" title="设备向云平台发送消息 " alt="" coords="237,165,420,192"/>
+<area shape="rect" id="node12" href="aiot__message__api_8c.html#ad78c30b2011b07ff6e29597928ef57fb" title="回收消息对象的资源 " alt="" coords="270,216,387,243"/>
+<area shape="rect" id="node3" href="aiot__device__api_8c.html#a53ade36ca27a6aa7b1001a3fc1c50935" title="查询设备的状态 " alt="" coords="481,64,611,91"/>
+<area shape="rect" id="node4" href="aiot__dm__api_8c.html#a035fb860bb066e68c8865ee34b59d32b" title="_sub_batch_post_topic" alt="" coords="468,115,624,141"/>
+<area shape="rect" id="node5" href="aiot__device__api_8c.html#a1e58b077a51ef375e26e8c8927a08855" title="查询设备的product_key " alt="" coords="672,5,839,32"/>
+<area shape="rect" id="node6" href="aiot__device__api_8c.html#a1add2b0c42c073722cfa72b53a872e96" title="查询设备的device_name " alt="" coords="692,56,819,83"/>
+<area shape="rect" id="node7" href="aiot__device__api_8c.html#aac2943ebe50e80a431f46a6452403cb6" title="设备注册感兴趣的topic，接收到该topic的消息，执行对应回调 " alt="" coords="686,107,825,149"/>
+<area shape="rect" id="node10" href="aiot__dm__api_8c.html#afc752f2aa725f574554731b6628fcf45" title="_dm_msg_batch_post\l_reply_callback" alt="" coords="680,173,831,214"/>
+<area shape="rect" id="node8" href="aiot__device__api_8c.html#ae3b5c1fa33797955fab227411311939d" title="_core_device_topic\l_takeoff_pkdn" alt="" coords="891,74,1026,115"/>
+<area shape="rect" id="node9" href="aiot__device__api_8c.html#a17429491661f0c6c8773c1bf51ceedf7" title="_core_device_sublist\l_insert" alt="" coords="887,139,1031,181"/>
+<area shape="rect" id="node13" href="aiot__message__api_8c.html#acf562841e53b0ab0550af8f17dd14aae" title="core_origin_msg_deinit" alt="" coords="469,216,623,243"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9ee9aebc9f727ed0e322cc2aaa568c26"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_device_dm_batch_post </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__dm__api_8h_a9ee9aebc9f727ed0e322cc2aaa568c26_cgraph.png" border="0" usemap="#aiot__dm__api_8h_a9ee9aebc9f727ed0e322cc2aaa568c26_cgraph" alt=""/></div>
+<map name="aiot__dm__api_8h_a9ee9aebc9f727ed0e322cc2aaa568c26_cgraph" id="aiot__dm__api_8h_a9ee9aebc9f727ed0e322cc2aaa568c26_cgraph">
+<area shape="rect" id="node2" href="aiot__dm__api_8c.html#a38671c3d1b7ee578678e2a84865def43" title="_dm_get_handle" alt="" coords="270,115,387,141"/>
+<area shape="rect" id="node11" href="aiot__device__api_8c.html#ad1eaf497ad46c2aa07a90dec084997e3" title="设备向云平台发送消息 " alt="" coords="237,165,420,192"/>
+<area shape="rect" id="node12" href="aiot__message__api_8c.html#ad78c30b2011b07ff6e29597928ef57fb" title="回收消息对象的资源 " alt="" coords="270,216,387,243"/>
+<area shape="rect" id="node3" href="aiot__device__api_8c.html#a53ade36ca27a6aa7b1001a3fc1c50935" title="查询设备的状态 " alt="" coords="481,64,611,91"/>
+<area shape="rect" id="node4" href="aiot__dm__api_8c.html#a035fb860bb066e68c8865ee34b59d32b" title="_sub_batch_post_topic" alt="" coords="468,115,624,141"/>
+<area shape="rect" id="node5" href="aiot__device__api_8c.html#a1e58b077a51ef375e26e8c8927a08855" title="查询设备的product_key " alt="" coords="672,5,839,32"/>
+<area shape="rect" id="node6" href="aiot__device__api_8c.html#a1add2b0c42c073722cfa72b53a872e96" title="查询设备的device_name " alt="" coords="692,56,819,83"/>
+<area shape="rect" id="node7" href="aiot__device__api_8c.html#aac2943ebe50e80a431f46a6452403cb6" title="设备注册感兴趣的topic，接收到该topic的消息，执行对应回调 " alt="" coords="686,107,825,149"/>
+<area shape="rect" id="node10" href="aiot__dm__api_8c.html#afc752f2aa725f574554731b6628fcf45" title="_dm_msg_batch_post\l_reply_callback" alt="" coords="680,173,831,214"/>
+<area shape="rect" id="node8" href="aiot__device__api_8c.html#ae3b5c1fa33797955fab227411311939d" title="_core_device_topic\l_takeoff_pkdn" alt="" coords="891,74,1026,115"/>
+<area shape="rect" id="node9" href="aiot__device__api_8c.html#a17429491661f0c6c8773c1bf51ceedf7" title="_core_device_sublist\l_insert" alt="" coords="887,139,1031,181"/>
+<area shape="rect" id="node13" href="aiot__message__api_8c.html#acf562841e53b0ab0550af8f17dd14aae" title="core_origin_msg_deinit" alt="" coords="469,216,623,243"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a045295bdc8c42eed88acfebd085e155b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_device_dm_get_desired </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__dm__api_8h_a045295bdc8c42eed88acfebd085e155b_cgraph.png" border="0" usemap="#aiot__dm__api_8h_a045295bdc8c42eed88acfebd085e155b_cgraph" alt=""/></div>
+<map name="aiot__dm__api_8h_a045295bdc8c42eed88acfebd085e155b_cgraph" id="aiot__dm__api_8h_a045295bdc8c42eed88acfebd085e155b_cgraph">
+<area shape="rect" id="node2" href="aiot__dm__api_8c.html#a38671c3d1b7ee578678e2a84865def43" title="_dm_get_handle" alt="" coords="225,115,342,141"/>
+<area shape="rect" id="node11" href="aiot__device__api_8c.html#ad1eaf497ad46c2aa07a90dec084997e3" title="设备向云平台发送消息 " alt="" coords="192,165,375,192"/>
+<area shape="rect" id="node12" href="aiot__message__api_8c.html#ad78c30b2011b07ff6e29597928ef57fb" title="回收消息对象的资源 " alt="" coords="225,216,342,243"/>
+<area shape="rect" id="node3" href="aiot__device__api_8c.html#a53ade36ca27a6aa7b1001a3fc1c50935" title="查询设备的状态 " alt="" coords="436,64,565,91"/>
+<area shape="rect" id="node4" href="aiot__dm__api_8c.html#a035fb860bb066e68c8865ee34b59d32b" title="_sub_batch_post_topic" alt="" coords="423,115,579,141"/>
+<area shape="rect" id="node5" href="aiot__device__api_8c.html#a1e58b077a51ef375e26e8c8927a08855" title="查询设备的product_key " alt="" coords="627,5,793,32"/>
+<area shape="rect" id="node6" href="aiot__device__api_8c.html#a1add2b0c42c073722cfa72b53a872e96" title="查询设备的device_name " alt="" coords="647,56,773,83"/>
+<area shape="rect" id="node7" href="aiot__device__api_8c.html#aac2943ebe50e80a431f46a6452403cb6" title="设备注册感兴趣的topic，接收到该topic的消息，执行对应回调 " alt="" coords="641,107,779,149"/>
+<area shape="rect" id="node10" href="aiot__dm__api_8c.html#afc752f2aa725f574554731b6628fcf45" title="_dm_msg_batch_post\l_reply_callback" alt="" coords="635,173,785,214"/>
+<area shape="rect" id="node8" href="aiot__device__api_8c.html#ae3b5c1fa33797955fab227411311939d" title="_core_device_topic\l_takeoff_pkdn" alt="" coords="846,74,981,115"/>
+<area shape="rect" id="node9" href="aiot__device__api_8c.html#a17429491661f0c6c8773c1bf51ceedf7" title="_core_device_sublist\l_insert" alt="" coords="841,139,985,181"/>
+<area shape="rect" id="node13" href="aiot__message__api_8c.html#acf562841e53b0ab0550af8f17dd14aae" title="core_origin_msg_deinit" alt="" coords="423,216,578,243"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1631052f2eddebe9cbfb823b46dde324"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_device_dm_delete_desired </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__dm__api_8h_a1631052f2eddebe9cbfb823b46dde324_cgraph.png" border="0" usemap="#aiot__dm__api_8h_a1631052f2eddebe9cbfb823b46dde324_cgraph" alt=""/></div>
+<map name="aiot__dm__api_8h_a1631052f2eddebe9cbfb823b46dde324_cgraph" id="aiot__dm__api_8h_a1631052f2eddebe9cbfb823b46dde324_cgraph">
+<area shape="rect" id="node2" href="aiot__dm__api_8c.html#a38671c3d1b7ee578678e2a84865def43" title="_dm_get_handle" alt="" coords="241,115,358,141"/>
+<area shape="rect" id="node11" href="aiot__device__api_8c.html#ad1eaf497ad46c2aa07a90dec084997e3" title="设备向云平台发送消息 " alt="" coords="208,165,391,192"/>
+<area shape="rect" id="node12" href="aiot__message__api_8c.html#ad78c30b2011b07ff6e29597928ef57fb" title="回收消息对象的资源 " alt="" coords="241,216,358,243"/>
+<area shape="rect" id="node3" href="aiot__device__api_8c.html#a53ade36ca27a6aa7b1001a3fc1c50935" title="查询设备的状态 " alt="" coords="452,64,581,91"/>
+<area shape="rect" id="node4" href="aiot__dm__api_8c.html#a035fb860bb066e68c8865ee34b59d32b" title="_sub_batch_post_topic" alt="" coords="439,115,595,141"/>
+<area shape="rect" id="node5" href="aiot__device__api_8c.html#a1e58b077a51ef375e26e8c8927a08855" title="查询设备的product_key " alt="" coords="643,5,809,32"/>
+<area shape="rect" id="node6" href="aiot__device__api_8c.html#a1add2b0c42c073722cfa72b53a872e96" title="查询设备的device_name " alt="" coords="663,56,789,83"/>
+<area shape="rect" id="node7" href="aiot__device__api_8c.html#aac2943ebe50e80a431f46a6452403cb6" title="设备注册感兴趣的topic，接收到该topic的消息，执行对应回调 " alt="" coords="657,107,795,149"/>
+<area shape="rect" id="node10" href="aiot__dm__api_8c.html#afc752f2aa725f574554731b6628fcf45" title="_dm_msg_batch_post\l_reply_callback" alt="" coords="651,173,801,214"/>
+<area shape="rect" id="node8" href="aiot__device__api_8c.html#ae3b5c1fa33797955fab227411311939d" title="_core_device_topic\l_takeoff_pkdn" alt="" coords="862,74,997,115"/>
+<area shape="rect" id="node9" href="aiot__device__api_8c.html#a17429491661f0c6c8773c1bf51ceedf7" title="_core_device_sublist\l_insert" alt="" coords="857,139,1001,181"/>
+<area shape="rect" id="node13" href="aiot__message__api_8c.html#acf562841e53b0ab0550af8f17dd14aae" title="core_origin_msg_deinit" alt="" coords="439,216,594,243"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9306d16951faf8e606692bc4ca5b7adb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_device_dm_raw_post </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>data_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__dm__api_8h_a9306d16951faf8e606692bc4ca5b7adb_cgraph.png" border="0" usemap="#aiot__dm__api_8h_a9306d16951faf8e606692bc4ca5b7adb_cgraph" alt=""/></div>
+<map name="aiot__dm__api_8h_a9306d16951faf8e606692bc4ca5b7adb_cgraph" id="aiot__dm__api_8h_a9306d16951faf8e606692bc4ca5b7adb_cgraph">
+<area shape="rect" id="node2" href="aiot__dm__api_8c.html#a38671c3d1b7ee578678e2a84865def43" title="_dm_get_handle" alt="" coords="259,115,377,141"/>
+<area shape="rect" id="node11" href="aiot__device__api_8c.html#ad1eaf497ad46c2aa07a90dec084997e3" title="设备向云平台发送消息 " alt="" coords="227,165,409,192"/>
+<area shape="rect" id="node12" href="aiot__message__api_8c.html#ad78c30b2011b07ff6e29597928ef57fb" title="回收消息对象的资源 " alt="" coords="259,216,377,243"/>
+<area shape="rect" id="node3" href="aiot__device__api_8c.html#a53ade36ca27a6aa7b1001a3fc1c50935" title="查询设备的状态 " alt="" coords="471,64,600,91"/>
+<area shape="rect" id="node4" href="aiot__dm__api_8c.html#a035fb860bb066e68c8865ee34b59d32b" title="_sub_batch_post_topic" alt="" coords="457,115,613,141"/>
+<area shape="rect" id="node5" href="aiot__device__api_8c.html#a1e58b077a51ef375e26e8c8927a08855" title="查询设备的product_key " alt="" coords="661,5,828,32"/>
+<area shape="rect" id="node6" href="aiot__device__api_8c.html#a1add2b0c42c073722cfa72b53a872e96" title="查询设备的device_name " alt="" coords="681,56,808,83"/>
+<area shape="rect" id="node7" href="aiot__device__api_8c.html#aac2943ebe50e80a431f46a6452403cb6" title="设备注册感兴趣的topic，接收到该topic的消息，执行对应回调 " alt="" coords="675,107,814,149"/>
+<area shape="rect" id="node10" href="aiot__dm__api_8c.html#afc752f2aa725f574554731b6628fcf45" title="_dm_msg_batch_post\l_reply_callback" alt="" coords="669,173,820,214"/>
+<area shape="rect" id="node8" href="aiot__device__api_8c.html#ae3b5c1fa33797955fab227411311939d" title="_core_device_topic\l_takeoff_pkdn" alt="" coords="881,74,1015,115"/>
+<area shape="rect" id="node9" href="aiot__device__api_8c.html#a17429491661f0c6c8773c1bf51ceedf7" title="_core_device_sublist\l_insert" alt="" coords="876,139,1020,181"/>
+<area shape="rect" id="node13" href="aiot__message__api_8c.html#acf562841e53b0ab0550af8f17dd14aae" title="core_origin_msg_deinit" alt="" coords="458,216,613,243"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4992aec82afd56a3b4da0c1a97c35075"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_device_dm_propertyset_reply </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__dm__api_8h_a4992aec82afd56a3b4da0c1a97c35075_cgraph.png" border="0" usemap="#aiot__dm__api_8h_a4992aec82afd56a3b4da0c1a97c35075_cgraph" alt=""/></div>
+<map name="aiot__dm__api_8h_a4992aec82afd56a3b4da0c1a97c35075_cgraph" id="aiot__dm__api_8h_a4992aec82afd56a3b4da0c1a97c35075_cgraph">
+<area shape="rect" id="node2" href="aiot__dm__api_8c.html#a38671c3d1b7ee578678e2a84865def43" title="_dm_get_handle" alt="" coords="271,115,389,141"/>
+<area shape="rect" id="node11" href="aiot__device__api_8c.html#ad1eaf497ad46c2aa07a90dec084997e3" title="设备向云平台发送消息 " alt="" coords="239,165,421,192"/>
+<area shape="rect" id="node12" href="aiot__message__api_8c.html#ad78c30b2011b07ff6e29597928ef57fb" title="回收消息对象的资源 " alt="" coords="271,216,389,243"/>
+<area shape="rect" id="node3" href="aiot__device__api_8c.html#a53ade36ca27a6aa7b1001a3fc1c50935" title="查询设备的状态 " alt="" coords="483,64,612,91"/>
+<area shape="rect" id="node4" href="aiot__dm__api_8c.html#a035fb860bb066e68c8865ee34b59d32b" title="_sub_batch_post_topic" alt="" coords="469,115,625,141"/>
+<area shape="rect" id="node5" href="aiot__device__api_8c.html#a1e58b077a51ef375e26e8c8927a08855" title="查询设备的product_key " alt="" coords="673,5,840,32"/>
+<area shape="rect" id="node6" href="aiot__device__api_8c.html#a1add2b0c42c073722cfa72b53a872e96" title="查询设备的device_name " alt="" coords="693,56,820,83"/>
+<area shape="rect" id="node7" href="aiot__device__api_8c.html#aac2943ebe50e80a431f46a6452403cb6" title="设备注册感兴趣的topic，接收到该topic的消息，执行对应回调 " alt="" coords="687,107,826,149"/>
+<area shape="rect" id="node10" href="aiot__dm__api_8c.html#afc752f2aa725f574554731b6628fcf45" title="_dm_msg_batch_post\l_reply_callback" alt="" coords="681,173,832,214"/>
+<area shape="rect" id="node8" href="aiot__device__api_8c.html#ae3b5c1fa33797955fab227411311939d" title="_core_device_topic\l_takeoff_pkdn" alt="" coords="893,74,1027,115"/>
+<area shape="rect" id="node9" href="aiot__device__api_8c.html#a17429491661f0c6c8773c1bf51ceedf7" title="_core_device_sublist\l_insert" alt="" coords="888,139,1032,181"/>
+<area shape="rect" id="node13" href="aiot__message__api_8c.html#acf562841e53b0ab0550af8f17dd14aae" title="core_origin_msg_deinit" alt="" coords="470,216,625,243"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a119f8e434882507b38839f27894db230"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_device_dm_service_reply </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>service_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__dm__api_8h_a119f8e434882507b38839f27894db230_cgraph.png" border="0" usemap="#aiot__dm__api_8h_a119f8e434882507b38839f27894db230_cgraph" alt=""/></div>
+<map name="aiot__dm__api_8h_a119f8e434882507b38839f27894db230_cgraph" id="aiot__dm__api_8h_a119f8e434882507b38839f27894db230_cgraph">
+<area shape="rect" id="node2" href="aiot__dm__api_8c.html#a38671c3d1b7ee578678e2a84865def43" title="_dm_get_handle" alt="" coords="249,115,366,141"/>
+<area shape="rect" id="node11" href="aiot__device__api_8c.html#ad1eaf497ad46c2aa07a90dec084997e3" title="设备向云平台发送消息 " alt="" coords="216,165,399,192"/>
+<area shape="rect" id="node12" href="aiot__message__api_8c.html#ad78c30b2011b07ff6e29597928ef57fb" title="回收消息对象的资源 " alt="" coords="249,216,366,243"/>
+<area shape="rect" id="node3" href="aiot__device__api_8c.html#a53ade36ca27a6aa7b1001a3fc1c50935" title="查询设备的状态 " alt="" coords="460,64,589,91"/>
+<area shape="rect" id="node4" href="aiot__dm__api_8c.html#a035fb860bb066e68c8865ee34b59d32b" title="_sub_batch_post_topic" alt="" coords="447,115,603,141"/>
+<area shape="rect" id="node5" href="aiot__device__api_8c.html#a1e58b077a51ef375e26e8c8927a08855" title="查询设备的product_key " alt="" coords="651,5,817,32"/>
+<area shape="rect" id="node6" href="aiot__device__api_8c.html#a1add2b0c42c073722cfa72b53a872e96" title="查询设备的device_name " alt="" coords="671,56,797,83"/>
+<area shape="rect" id="node7" href="aiot__device__api_8c.html#aac2943ebe50e80a431f46a6452403cb6" title="设备注册感兴趣的topic，接收到该topic的消息，执行对应回调 " alt="" coords="665,107,803,149"/>
+<area shape="rect" id="node10" href="aiot__dm__api_8c.html#afc752f2aa725f574554731b6628fcf45" title="_dm_msg_batch_post\l_reply_callback" alt="" coords="659,173,809,214"/>
+<area shape="rect" id="node8" href="aiot__device__api_8c.html#ae3b5c1fa33797955fab227411311939d" title="_core_device_topic\l_takeoff_pkdn" alt="" coords="870,74,1005,115"/>
+<area shape="rect" id="node9" href="aiot__device__api_8c.html#a17429491661f0c6c8773c1bf51ceedf7" title="_core_device_sublist\l_insert" alt="" coords="865,139,1009,181"/>
+<area shape="rect" id="node13" href="aiot__message__api_8c.html#acf562841e53b0ab0550af8f17dd14aae" title="core_origin_msg_deinit" alt="" coords="447,216,602,243"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a65e80b507a7a05c1df3ba0a4cf0e07e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_device_dm_raw_reply </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>data_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__dm__api_8h_a65e80b507a7a05c1df3ba0a4cf0e07e7_cgraph.png" border="0" usemap="#aiot__dm__api_8h_a65e80b507a7a05c1df3ba0a4cf0e07e7_cgraph" alt=""/></div>
+<map name="aiot__dm__api_8h_a65e80b507a7a05c1df3ba0a4cf0e07e7_cgraph" id="aiot__dm__api_8h_a65e80b507a7a05c1df3ba0a4cf0e07e7_cgraph">
+<area shape="rect" id="node2" href="aiot__dm__api_8c.html#a38671c3d1b7ee578678e2a84865def43" title="_dm_get_handle" alt="" coords="227,115,345,141"/>
+<area shape="rect" id="node11" href="aiot__device__api_8c.html#ad1eaf497ad46c2aa07a90dec084997e3" title="设备向云平台发送消息 " alt="" coords="195,165,377,192"/>
+<area shape="rect" id="node12" href="aiot__message__api_8c.html#ad78c30b2011b07ff6e29597928ef57fb" title="回收消息对象的资源 " alt="" coords="227,216,345,243"/>
+<area shape="rect" id="node3" href="aiot__device__api_8c.html#a53ade36ca27a6aa7b1001a3fc1c50935" title="查询设备的状态 " alt="" coords="439,64,568,91"/>
+<area shape="rect" id="node4" href="aiot__dm__api_8c.html#a035fb860bb066e68c8865ee34b59d32b" title="_sub_batch_post_topic" alt="" coords="425,115,581,141"/>
+<area shape="rect" id="node5" href="aiot__device__api_8c.html#a1e58b077a51ef375e26e8c8927a08855" title="查询设备的product_key " alt="" coords="629,5,796,32"/>
+<area shape="rect" id="node6" href="aiot__device__api_8c.html#a1add2b0c42c073722cfa72b53a872e96" title="查询设备的device_name " alt="" coords="649,56,776,83"/>
+<area shape="rect" id="node7" href="aiot__device__api_8c.html#aac2943ebe50e80a431f46a6452403cb6" title="设备注册感兴趣的topic，接收到该topic的消息，执行对应回调 " alt="" coords="643,107,782,149"/>
+<area shape="rect" id="node10" href="aiot__dm__api_8c.html#afc752f2aa725f574554731b6628fcf45" title="_dm_msg_batch_post\l_reply_callback" alt="" coords="637,173,788,214"/>
+<area shape="rect" id="node8" href="aiot__device__api_8c.html#ae3b5c1fa33797955fab227411311939d" title="_core_device_topic\l_takeoff_pkdn" alt="" coords="849,74,983,115"/>
+<area shape="rect" id="node9" href="aiot__device__api_8c.html#a17429491661f0c6c8773c1bf51ceedf7" title="_core_device_sublist\l_insert" alt="" coords="844,139,988,181"/>
+<area shape="rect" id="node13" href="aiot__message__api_8c.html#acf562841e53b0ab0550af8f17dd14aae" title="core_origin_msg_deinit" alt="" coords="426,216,581,243"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab95de9d55e6412806a3b07348b24107f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* aiot_dm_msg_context_clone </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2acaf2ace3b1e90dd3d8b1730b70b598"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_dm_msg_context_free </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

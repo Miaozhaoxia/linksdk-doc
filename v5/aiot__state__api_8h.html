@@ -1,0 +1,2571 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: device-core/aiot_state_api.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">5.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_a5c085e7ac88bd273106c2d9d4685a6c.html">device-core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">aiot_state_api.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>SDK Core状态码头文件, 所有Core中的api返回值均在此列出  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+aiot_state_api.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__state__api_8h__incl.png" border="0" usemap="#device-core_2aiot__state__api_8h" alt=""/></div>
+<map name="device-core_2aiot__state__api_8h" id="device-core_2aiot__state__api_8h">
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__state__api_8h__dep__incl.png" border="0" usemap="#device-core_2aiot__state__api_8hdep" alt=""/></div>
+<map name="device-core_2aiot__state__api_8hdep" id="device-core_2aiot__state__api_8hdep">
+<area shape="rect" id="node2" href="aiot__device__api_8c.html" title="设备管理模块，管理设备的配置、行为、及运行时参数 " alt="" coords="5,184,164,225"/>
+<area shape="rect" id="node3" href="aiot__device__api_8h.html" title="设备模块头文件, 提供设备的基础能力 " alt="" coords="64,95,223,136"/>
+<area shape="rect" id="node4" href="aiot__linkconfig__api_8c.html" title="连接物联网平台的配置管理，包含tls/mqtt/http连接等参数配置 " alt="" coords="247,95,423,136"/>
+<area shape="rect" id="node5" href="aiot__dm__api_8c.html" title="device&#45;modules/data\l&#45;model/aiot_dm_api.c" alt="" coords="447,95,594,136"/>
+<area shape="rect" id="node6" href="aiot__devinfo__api_8c.html" title="device&#45;modules/devinfo\l/aiot_devinfo_api.c" alt="" coords="619,95,777,136"/>
+<area shape="rect" id="node7" href="aiot__gateway__api_8c.html" title="device&#45;modules/gateway\l/aiot_gateway_api.c" alt="" coords="801,95,968,136"/>
+<area shape="rect" id="node8" href="aiot__logpost__api_8c.html" title="device&#45;modules/logpost\l/aiot_logpost_api.c" alt="" coords="992,95,1151,136"/>
+<area shape="rect" id="node9" href="aiot__ntp__api_8c.html" title="device&#45;modules/ntp\l/aiot_ntp_api.c" alt="" coords="1175,95,1309,136"/>
+<area shape="rect" id="node10" href="aiot__ota__api_8c.html" title="device&#45;modules/ota\l/aiot_ota_api.c" alt="" coords="1333,95,1468,136"/>
+<area shape="rect" id="node11" href="aiot__rc__api_8c.html" title="device&#45;modules/remote\l&#45;config/aiot_rc_api.c" alt="" coords="1493,95,1650,136"/>
+<area shape="rect" id="node12" href="aiot__shadow__api_8c.html" title="device&#45;modules/shadow\l/aiot_shadow_api.c" alt="" coords="1674,95,1837,136"/>
+<area shape="rect" id="node13" href="aiot__tunnel__switch__api_8c.html" title="device&#45;modules/tunnel\l/aiot_tunnel_switch_api.c" alt="" coords="1861,95,2031,136"/>
+</map>
+</div>
+</div>
+<p><a href="aiot__state__api_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a7b36021d61b367dfd00007b42a7b4ef4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a7b36021d61b367dfd00007b42a7b4ef4">STATE_SUCCESS</a>&#160;&#160;&#160;(0x0000)</td></tr>
+<tr class="memdesc:a7b36021d61b367dfd00007b42a7b4ef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">API执行成功  <a href="#a7b36021d61b367dfd00007b42a7b4ef4">更多...</a><br /></td></tr>
+<tr class="separator:a7b36021d61b367dfd00007b42a7b4ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b8fb1a80adec10cc927d3c346e06ed6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a0b8fb1a80adec10cc927d3c346e06ed6">STATE_USER_INPUT_BASE</a>&#160;&#160;&#160;(-0x0100)</td></tr>
+<tr class="memdesc:a0b8fb1a80adec10cc927d3c346e06ed6"><td class="mdescLeft">&#160;</td><td class="mdescRight">-0x0100~-0x01FF表达SDK检查用户输入参数时反馈的状态码  <a href="#a0b8fb1a80adec10cc927d3c346e06ed6">更多...</a><br /></td></tr>
+<tr class="separator:a0b8fb1a80adec10cc927d3c346e06ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab97dda492951148f1ec1401ef37eab3f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#ab97dda492951148f1ec1401ef37eab3f">STATE_USER_INPUT_NULL_POINTER</a>&#160;&#160;&#160;(-0x0101)</td></tr>
+<tr class="memdesc:ab97dda492951148f1ec1401ef37eab3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">用户输入参数中包含非法的空指针  <a href="#ab97dda492951148f1ec1401ef37eab3f">更多...</a><br /></td></tr>
+<tr class="separator:ab97dda492951148f1ec1401ef37eab3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa081db74048e904ade84697ba6cdb5c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#aa081db74048e904ade84697ba6cdb5c8">STATE_USER_INPUT_OUT_RANGE</a>&#160;&#160;&#160;(-0x0102)</td></tr>
+<tr class="memdesc:aa081db74048e904ade84697ba6cdb5c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">用户输入参数中包含越界的值  <a href="#aa081db74048e904ade84697ba6cdb5c8">更多...</a><br /></td></tr>
+<tr class="separator:aa081db74048e904ade84697ba6cdb5c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76fff4cb0184c74f8eb3ce1645314b26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a76fff4cb0184c74f8eb3ce1645314b26">STATE_USER_INPUT_UNKNOWN_OPTION</a>&#160;&#160;&#160;(-0x0103)</td></tr>
+<tr class="memdesc:a76fff4cb0184c74f8eb3ce1645314b26"><td class="mdescLeft">&#160;</td><td class="mdescRight">用户输入的配置项不能被SDK的模块所理解  <a href="#a76fff4cb0184c74f8eb3ce1645314b26">更多...</a><br /></td></tr>
+<tr class="separator:a76fff4cb0184c74f8eb3ce1645314b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a807609e6daaa2c9de3ffee947f493e32"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a807609e6daaa2c9de3ffee947f493e32">STATE_USER_INPUT_MISSING_PRODUCT_KEY</a>&#160;&#160;&#160;(-0x0104)</td></tr>
+<tr class="memdesc:a807609e6daaa2c9de3ffee947f493e32"><td class="mdescLeft">&#160;</td><td class="mdescRight">用户输入参数中缺少productKey  <a href="#a807609e6daaa2c9de3ffee947f493e32">更多...</a><br /></td></tr>
+<tr class="separator:a807609e6daaa2c9de3ffee947f493e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a844416f748f9c465c011a8694b4dc7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a4a844416f748f9c465c011a8694b4dc7">STATE_USER_INPUT_MISSING_DEVICE_NAME</a>&#160;&#160;&#160;(-0x0105)</td></tr>
+<tr class="memdesc:a4a844416f748f9c465c011a8694b4dc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">用户输入参数中缺少deviceName  <a href="#a4a844416f748f9c465c011a8694b4dc7">更多...</a><br /></td></tr>
+<tr class="separator:a4a844416f748f9c465c011a8694b4dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad83086da2f1d07cdd735b6a9e0692a48"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#ad83086da2f1d07cdd735b6a9e0692a48">STATE_USER_INPUT_MISSING_DEVICE_SECRET</a>&#160;&#160;&#160;(-0x0106)</td></tr>
+<tr class="memdesc:ad83086da2f1d07cdd735b6a9e0692a48"><td class="mdescLeft">&#160;</td><td class="mdescRight">用户输入参数中缺少deviceSecret  <a href="#ad83086da2f1d07cdd735b6a9e0692a48">更多...</a><br /></td></tr>
+<tr class="separator:ad83086da2f1d07cdd735b6a9e0692a48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14145622a0668edcfa61dd4e68040ca5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a14145622a0668edcfa61dd4e68040ca5">STATE_USER_INPUT_MISSING_PRODUCT_SECRET</a>&#160;&#160;&#160;(-0x0107)</td></tr>
+<tr class="memdesc:a14145622a0668edcfa61dd4e68040ca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">用户输入参数中缺少productSecret  <a href="#a14145622a0668edcfa61dd4e68040ca5">更多...</a><br /></td></tr>
+<tr class="separator:a14145622a0668edcfa61dd4e68040ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4ba3af2f486da8e7062b4ac363d3063"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#af4ba3af2f486da8e7062b4ac363d3063">STATE_USER_INPUT_MISSING_HOST</a>&#160;&#160;&#160;(-0x0108)</td></tr>
+<tr class="memdesc:af4ba3af2f486da8e7062b4ac363d3063"><td class="mdescLeft">&#160;</td><td class="mdescRight">用户输入参数中缺少域名地址或IP地址  <a href="#af4ba3af2f486da8e7062b4ac363d3063">更多...</a><br /></td></tr>
+<tr class="separator:af4ba3af2f486da8e7062b4ac363d3063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b9b1bacae6b65a43f868a62d6df5e86"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a5b9b1bacae6b65a43f868a62d6df5e86">STATE_USER_INPUT_EXEC_DISABLED</a>&#160;&#160;&#160;(-0x0109)</td></tr>
+<tr class="memdesc:a5b9b1bacae6b65a43f868a62d6df5e86"><td class="mdescLeft">&#160;</td><td class="mdescRight">用户已调用销毁函数销毁了实例(如aiot_mqtt_deinit), 其余对该实例操作的API不应该再被调用  <a href="#a5b9b1bacae6b65a43f868a62d6df5e86">更多...</a><br /></td></tr>
+<tr class="separator:a5b9b1bacae6b65a43f868a62d6df5e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3363e284f345b1189c9278af4b8c619"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#ad3363e284f345b1189c9278af4b8c619">STATE_USER_INPUT_JSON_PARSE_FAILED</a>&#160;&#160;&#160;(-0x010A)</td></tr>
+<tr class="memdesc:ad3363e284f345b1189c9278af4b8c619"><td class="mdescLeft">&#160;</td><td class="mdescRight">用户输入的JSON字符串解析失败  <a href="#ad3363e284f345b1189c9278af4b8c619">更多...</a><br /></td></tr>
+<tr class="separator:ad3363e284f345b1189c9278af4b8c619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cb19cb92c9919486ce129eb07ab7d2c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a3cb19cb92c9919486ce129eb07ab7d2c">STATE_SYS_DEPEND_BASE</a>&#160;&#160;&#160;(-0x0200)</td></tr>
+<tr class="memdesc:a3cb19cb92c9919486ce129eb07ab7d2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">-0x0200~-0x02FF表达SDK调用系统依赖函数时反馈的状态码  <a href="#a3cb19cb92c9919486ce129eb07ab7d2c">更多...</a><br /></td></tr>
+<tr class="separator:a3cb19cb92c9919486ce129eb07ab7d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff76e61ec8fbba012aa83ff9451fa2bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#aff76e61ec8fbba012aa83ff9451fa2bf">STATE_SYS_DEPEND_MALLOC_FAILED</a>&#160;&#160;&#160;(-0x0201)</td></tr>
+<tr class="memdesc:aff76e61ec8fbba012aa83ff9451fa2bf"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structaiot__sysdep__portfile__t.html#ac10d085b738fb58f4e5d4a7e8ba00a71">aiot_sysdep_portfile_t::core_sysdep_malloc</a> 申请内存失败  <a href="#aff76e61ec8fbba012aa83ff9451fa2bf">更多...</a><br /></td></tr>
+<tr class="separator:aff76e61ec8fbba012aa83ff9451fa2bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7d01542984e12fee7495f83832e805e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#aa7d01542984e12fee7495f83832e805e">STATE_SYS_DEPEND_NWK_INVALID_OPTION</a>&#160;&#160;&#160;(-0x0202)</td></tr>
+<tr class="memdesc:aa7d01542984e12fee7495f83832e805e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structaiot__sysdep__portfile__t.html#a7bffd3e7520469faf57ea0f3b83883fa">aiot_sysdep_portfile_t::core_sysdep_network_setopt</a> 的某个cred之外的入参非法  <a href="#aa7d01542984e12fee7495f83832e805e">更多...</a><br /></td></tr>
+<tr class="separator:aa7d01542984e12fee7495f83832e805e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88048e674b0b59f7793a08d5befb62a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a88048e674b0b59f7793a08d5befb62a5">STATE_SYS_DEPEND_NWK_EST_FAILED</a>&#160;&#160;&#160;(-0x0203)</td></tr>
+<tr class="memdesc:a88048e674b0b59f7793a08d5befb62a5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structaiot__sysdep__portfile__t.html#a21ed15cbc00f5c03d5fd6e287e7bffce">aiot_sysdep_portfile_t::core_sysdep_network_establish</a> 建立网络失败  <a href="#a88048e674b0b59f7793a08d5befb62a5">更多...</a><br /></td></tr>
+<tr class="separator:a88048e674b0b59f7793a08d5befb62a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a6e29ffcd9dab0d5f614451b0a12465"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a6a6e29ffcd9dab0d5f614451b0a12465">STATE_SYS_DEPEND_NWK_CLOSED</a>&#160;&#160;&#160;(-0x0204)</td></tr>
+<tr class="memdesc:a6a6e29ffcd9dab0d5f614451b0a12465"><td class="mdescLeft">&#160;</td><td class="mdescRight">SDK检测到网络已断开  <a href="#a6a6e29ffcd9dab0d5f614451b0a12465">更多...</a><br /></td></tr>
+<tr class="separator:a6a6e29ffcd9dab0d5f614451b0a12465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad696eb67c87503cd29b94b62ec7f5b00"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#ad696eb67c87503cd29b94b62ec7f5b00">STATE_SYS_DEPEND_NWK_READ_LESSDATA</a>&#160;&#160;&#160;(-0x0205)</td></tr>
+<tr class="memdesc:ad696eb67c87503cd29b94b62ec7f5b00"><td class="mdescLeft">&#160;</td><td class="mdescRight">SDK从网络上实际读取的数据比期望读取的少  <a href="#ad696eb67c87503cd29b94b62ec7f5b00">更多...</a><br /></td></tr>
+<tr class="separator:ad696eb67c87503cd29b94b62ec7f5b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41e468a0cf129f14a11dbb170c8b6f61"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a41e468a0cf129f14a11dbb170c8b6f61">STATE_SYS_DEPEND_NWK_WRITE_LESSDATA</a>&#160;&#160;&#160;(-0x0206)</td></tr>
+<tr class="memdesc:a41e468a0cf129f14a11dbb170c8b6f61"><td class="mdescLeft">&#160;</td><td class="mdescRight">SDK向网络上写入的实际数据比期望写入的少  <a href="#a41e468a0cf129f14a11dbb170c8b6f61">更多...</a><br /></td></tr>
+<tr class="separator:a41e468a0cf129f14a11dbb170c8b6f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a398e6d75cf82c34a841cab1a64d69098"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a398e6d75cf82c34a841cab1a64d69098">STATE_SYS_DEPEND_NWK_READ_OVERTIME</a>&#160;&#160;&#160;(-0x0207)</td></tr>
+<tr class="memdesc:a398e6d75cf82c34a841cab1a64d69098"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structaiot__sysdep__portfile__t.html#a453f23d2579495bb4aba617781858944">aiot_sysdep_portfile_t::core_sysdep_network_recv</a> 超时返回  <a href="#a398e6d75cf82c34a841cab1a64d69098">更多...</a><br /></td></tr>
+<tr class="separator:a398e6d75cf82c34a841cab1a64d69098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b70668a7e2d19b6d0d995f8b51acb49"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a5b70668a7e2d19b6d0d995f8b51acb49">STATE_SYS_DEPEND_NWK_INVALID_CRED</a>&#160;&#160;&#160;(-0x0208)</td></tr>
+<tr class="memdesc:a5b70668a7e2d19b6d0d995f8b51acb49"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structaiot__sysdep__portfile__t.html#a7bffd3e7520469faf57ea0f3b83883fa">aiot_sysdep_portfile_t::core_sysdep_network_setopt</a> 的cred入参非法  <a href="#a5b70668a7e2d19b6d0d995f8b51acb49">更多...</a><br /></td></tr>
+<tr class="separator:a5b70668a7e2d19b6d0d995f8b51acb49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a255a8479f0f230cd86511864a6325f8f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a255a8479f0f230cd86511864a6325f8f">STATE_SYS_DEPEND_NWK_SEND_ERR</a>&#160;&#160;&#160;(-0x0209)</td></tr>
+<tr class="memdesc:a255a8479f0f230cd86511864a6325f8f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structaiot__sysdep__portfile__t.html#a61e25854c0eb53816b011c0186f33259">aiot_sysdep_portfile_t::core_sysdep_network_send</a> 发送数据遭遇异常  <a href="#a255a8479f0f230cd86511864a6325f8f">更多...</a><br /></td></tr>
+<tr class="separator:a255a8479f0f230cd86511864a6325f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60a91ad53c62b6ef0b2a722f24218ead"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a60a91ad53c62b6ef0b2a722f24218ead">STATE_SYS_DEPEND_NWK_RECV_ERR</a>&#160;&#160;&#160;(-0x020A)</td></tr>
+<tr class="memdesc:a60a91ad53c62b6ef0b2a722f24218ead"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structaiot__sysdep__portfile__t.html#a453f23d2579495bb4aba617781858944">aiot_sysdep_portfile_t::core_sysdep_network_recv</a> 接收数据遭遇异常  <a href="#a60a91ad53c62b6ef0b2a722f24218ead">更多...</a><br /></td></tr>
+<tr class="separator:a60a91ad53c62b6ef0b2a722f24218ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83db3d5fd7878a249a69b298b6dbd706"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a83db3d5fd7878a249a69b298b6dbd706">STATE_MQTT_BASE</a>&#160;&#160;&#160;(-0x0300)</td></tr>
+<tr class="memdesc:a83db3d5fd7878a249a69b298b6dbd706"><td class="mdescLeft">&#160;</td><td class="mdescRight">-0x0300~-0x03FF表达SDK在MQTT模块内的状态码  <a href="#a83db3d5fd7878a249a69b298b6dbd706">更多...</a><br /></td></tr>
+<tr class="separator:a83db3d5fd7878a249a69b298b6dbd706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af406f117a189e1dc62632caaa4f6bee7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#af406f117a189e1dc62632caaa4f6bee7">STATE_MQTT_CONNACK_FMT_ERROR</a>&#160;&#160;&#160;(-0x0301)</td></tr>
+<tr class="memdesc:af406f117a189e1dc62632caaa4f6bee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT尝试建立连接时, 从服务端返回的CONNACK报文格式错误  <a href="#af406f117a189e1dc62632caaa4f6bee7">更多...</a><br /></td></tr>
+<tr class="separator:af406f117a189e1dc62632caaa4f6bee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3013673762fa179fc6a71ff0aee4bcde"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a3013673762fa179fc6a71ff0aee4bcde">STATE_MQTT_CONNACK_RCODE_UNACCEPTABLE_PROTOCOL_VERSION</a>&#160;&#160;&#160;(-0x0302)</td></tr>
+<tr class="memdesc:a3013673762fa179fc6a71ff0aee4bcde"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT建连时, 服务端报错与当前客户端使用的MQTT协议版本不兼容  <a href="#a3013673762fa179fc6a71ff0aee4bcde">更多...</a><br /></td></tr>
+<tr class="separator:a3013673762fa179fc6a71ff0aee4bcde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b91df476086fe57733751b4bd0846b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a9b91df476086fe57733751b4bd0846b4">STATE_MQTT_CONNACK_RCODE_SERVER_UNAVAILABLE</a>&#160;&#160;&#160;(-0x0303)</td></tr>
+<tr class="memdesc:a9b91df476086fe57733751b4bd0846b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT建连时, 服务端报错服务不可用, 可能是clientId取值不正确或心跳间隔不合理  <a href="#a9b91df476086fe57733751b4bd0846b4">更多...</a><br /></td></tr>
+<tr class="separator:a9b91df476086fe57733751b4bd0846b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca297f1342d9e8411a649296a3929d83"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#aca297f1342d9e8411a649296a3929d83">STATE_MQTT_CONNACK_RCODE_BAD_USERNAME_PASSWORD</a>&#160;&#160;&#160;(-0x0304)</td></tr>
+<tr class="memdesc:aca297f1342d9e8411a649296a3929d83"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT建连时, 服务端返回用户名密码不合法  <a href="#aca297f1342d9e8411a649296a3929d83">更多...</a><br /></td></tr>
+<tr class="separator:aca297f1342d9e8411a649296a3929d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e8c02ab8e8ed5c91a61bb94d913bc5d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a9e8c02ab8e8ed5c91a61bb94d913bc5d">STATE_MQTT_CONNACK_RCODE_NOT_AUTHORIZED</a>&#160;&#160;&#160;(-0x0305)</td></tr>
+<tr class="memdesc:a9e8c02ab8e8ed5c91a61bb94d913bc5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT建连时, 服务端返回认证失败, 用户名或者密码错误, 一般为三元组错误导致  <a href="#a9e8c02ab8e8ed5c91a61bb94d913bc5d">更多...</a><br /></td></tr>
+<tr class="separator:a9e8c02ab8e8ed5c91a61bb94d913bc5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32d65d9b636b2e651f07909648ffd260"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a32d65d9b636b2e651f07909648ffd260">STATE_MQTT_CONNACK_RCODE_UNKNOWN</a>&#160;&#160;&#160;(-0x0306)</td></tr>
+<tr class="memdesc:a32d65d9b636b2e651f07909648ffd260"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT建连时, 服务端返回未知的CONNACK报文  <a href="#a32d65d9b636b2e651f07909648ffd260">更多...</a><br /></td></tr>
+<tr class="separator:a32d65d9b636b2e651f07909648ffd260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5745fd468a727eb47c4602697124d493"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a5745fd468a727eb47c4602697124d493">STATE_MQTT_PUBLIST_PACKET_ID_ROLL</a>&#160;&#160;&#160;(-0x0307)</td></tr>
+<tr class="memdesc:a5745fd468a727eb47c4602697124d493"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT缓存QoS1消息时, 检测到packetId发生卷绕  <a href="#a5745fd468a727eb47c4602697124d493">更多...</a><br /></td></tr>
+<tr class="separator:a5745fd468a727eb47c4602697124d493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b0950b9be7f3ec44709878c3cddb1b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a9b0950b9be7f3ec44709878c3cddb1b3">STATE_MQTT_TOPIC_INVALID</a>&#160;&#160;&#160;(-0x0308)</td></tr>
+<tr class="memdesc:a9b0950b9be7f3ec44709878c3cddb1b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT发布或订阅时, 检测到Topic格式不符合协议规范  <a href="#a9b0950b9be7f3ec44709878c3cddb1b3">更多...</a><br /></td></tr>
+<tr class="separator:a9b0950b9be7f3ec44709878c3cddb1b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc2c2bb09d99eb1a884d0fa3f170394f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#acc2c2bb09d99eb1a884d0fa3f170394f">STATE_MQTT_LOG_TOPIC</a>&#160;&#160;&#160;(-0x0309)</td></tr>
+<tr class="memdesc:acc2c2bb09d99eb1a884d0fa3f170394f"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT发布或订阅或取消订阅时, SDK反馈Topic内容的状态码  <a href="#acc2c2bb09d99eb1a884d0fa3f170394f">更多...</a><br /></td></tr>
+<tr class="separator:acc2c2bb09d99eb1a884d0fa3f170394f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1a7c56ef6648bd9398c837ba59c6b36"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#af1a7c56ef6648bd9398c837ba59c6b36">STATE_MQTT_LOG_HEXDUMP</a>&#160;&#160;&#160;(-0x030A)</td></tr>
+<tr class="memdesc:af1a7c56ef6648bd9398c837ba59c6b36"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT收发消息时, SDK反馈MQTT消息内容的状态码  <a href="#af1a7c56ef6648bd9398c837ba59c6b36">更多...</a><br /></td></tr>
+<tr class="separator:af1a7c56ef6648bd9398c837ba59c6b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbe3c0c5bc51db67c1eba13d6ad49fea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#afbe3c0c5bc51db67c1eba13d6ad49fea">STATE_MQTT_CONNECT_SUCCESS</a>&#160;&#160;&#160;(-0x030B)</td></tr>
+<tr class="memdesc:afbe3c0c5bc51db67c1eba13d6ad49fea"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT连接建立成功  <a href="#afbe3c0c5bc51db67c1eba13d6ad49fea">更多...</a><br /></td></tr>
+<tr class="separator:afbe3c0c5bc51db67c1eba13d6ad49fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a637e686448c54956997a678a56fb8164"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a637e686448c54956997a678a56fb8164">STATE_MQTT_MALFORMED_REMAINING_LEN</a>&#160;&#160;&#160;(-0x030C)</td></tr>
+<tr class="memdesc:a637e686448c54956997a678a56fb8164"><td class="mdescLeft">&#160;</td><td class="mdescRight">SDK读取到的MQTT报文含有不符合协议规范的报文长度字段  <a href="#a637e686448c54956997a678a56fb8164">更多...</a><br /></td></tr>
+<tr class="separator:a637e686448c54956997a678a56fb8164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93cb136cd8724f2af9d792c974778ac4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a93cb136cd8724f2af9d792c974778ac4">STATE_MQTT_MALFORMED_REMAINING_BYTES</a>&#160;&#160;&#160;(-0x030D)</td></tr>
+<tr class="memdesc:a93cb136cd8724f2af9d792c974778ac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">SDK读取到的MQTT报文不符合按协议规范所解析的字节数  <a href="#a93cb136cd8724f2af9d792c974778ac4">更多...</a><br /></td></tr>
+<tr class="separator:a93cb136cd8724f2af9d792c974778ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8be1d84e57ee702fb7df8c0e6b8953d0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a8be1d84e57ee702fb7df8c0e6b8953d0">STATE_MQTT_PACKET_TYPE_UNKNOWN</a>&#160;&#160;&#160;(-0x030E)</td></tr>
+<tr class="memdesc:a8be1d84e57ee702fb7df8c0e6b8953d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">SDK读取到尚不支持的MQTT报文类型  <a href="#a8be1d84e57ee702fb7df8c0e6b8953d0">更多...</a><br /></td></tr>
+<tr class="separator:a8be1d84e57ee702fb7df8c0e6b8953d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a801521fea34edd27e413a08b4f731b3b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a801521fea34edd27e413a08b4f731b3b">STATE_MQTT_SUBACK_RCODE_FAILURE</a>&#160;&#160;&#160;(-0x030F)</td></tr>
+<tr class="memdesc:a801521fea34edd27e413a08b4f731b3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT订阅或取消订阅时, 从服务端得到操作失败的回应  <a href="#a801521fea34edd27e413a08b4f731b3b">更多...</a><br /></td></tr>
+<tr class="separator:a801521fea34edd27e413a08b4f731b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17bbd0dcfa58e6fdee8c04bab645b154"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a17bbd0dcfa58e6fdee8c04bab645b154">STATE_MQTT_SUBACK_RCODE_UNKNOWN</a>&#160;&#160;&#160;(-0x0310)</td></tr>
+<tr class="memdesc:a17bbd0dcfa58e6fdee8c04bab645b154"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT订阅或取消订阅时, 从服务端得到无法解析的应答  <a href="#a17bbd0dcfa58e6fdee8c04bab645b154">更多...</a><br /></td></tr>
+<tr class="separator:a17bbd0dcfa58e6fdee8c04bab645b154"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1bd27cab1e3c06062b60982483eff8a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#ab1bd27cab1e3c06062b60982483eff8a">STATE_MQTT_TOPIC_COMPARE_FAILED</a>&#160;&#160;&#160;(-0x0311)</td></tr>
+<tr class="memdesc:ab1bd27cab1e3c06062b60982483eff8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT接收消息时, 消息中的Topic与可理解的Topic列表匹配失败  <a href="#ab1bd27cab1e3c06062b60982483eff8a">更多...</a><br /></td></tr>
+<tr class="separator:ab1bd27cab1e3c06062b60982483eff8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dedb9291b6e09572c4ff78fdc7ab895"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a7dedb9291b6e09572c4ff78fdc7ab895">STATE_MQTT_DEINIT_TIMEOUT</a>&#160;&#160;&#160;(-0x0312)</td></tr>
+<tr class="memdesc:a7dedb9291b6e09572c4ff78fdc7ab895"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行aiot_mqtt_deinit 时, 为等待其他API执行结束, 超过设定的超时时间, MQTT实例销毁失败  <a href="#a7dedb9291b6e09572c4ff78fdc7ab895">更多...</a><br /></td></tr>
+<tr class="separator:a7dedb9291b6e09572c4ff78fdc7ab895"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f6a35767b983cbf67fff0f151aee885"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a8f6a35767b983cbf67fff0f151aee885">STATE_MQTT_LOG_CONNECT</a>&#160;&#160;&#160;(-0x0313)</td></tr>
+<tr class="memdesc:a8f6a35767b983cbf67fff0f151aee885"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT主动连接服务器相关的日志状态码  <a href="#a8f6a35767b983cbf67fff0f151aee885">更多...</a><br /></td></tr>
+<tr class="separator:a8f6a35767b983cbf67fff0f151aee885"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a776a809beb1c20da0d5ccbd255414187"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a776a809beb1c20da0d5ccbd255414187">STATE_MQTT_LOG_RECONNECTING</a>&#160;&#160;&#160;(-0x0314)</td></tr>
+<tr class="memdesc:a776a809beb1c20da0d5ccbd255414187"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT断线后, 自动重连服务器相关的日志状态码  <a href="#a776a809beb1c20da0d5ccbd255414187">更多...</a><br /></td></tr>
+<tr class="separator:a776a809beb1c20da0d5ccbd255414187"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a177512e3d88e04a0bbc98c66d1591a3e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a177512e3d88e04a0bbc98c66d1591a3e">STATE_MQTT_LOG_CONNECT_TIMEOUT</a>&#160;&#160;&#160;(-0x0315)</td></tr>
+<tr class="memdesc:a177512e3d88e04a0bbc98c66d1591a3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT连接服务器超时相关的日志状态码  <a href="#a177512e3d88e04a0bbc98c66d1591a3e">更多...</a><br /></td></tr>
+<tr class="separator:a177512e3d88e04a0bbc98c66d1591a3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4d980ea46d853a659b4851a6ef19d53"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#aa4d980ea46d853a659b4851a6ef19d53">STATE_MQTT_LOG_DISCONNECT</a>&#160;&#160;&#160;(-0x0316)</td></tr>
+<tr class="memdesc:aa4d980ea46d853a659b4851a6ef19d53"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT主动与服务器断开连接相关的日志状态码  <a href="#aa4d980ea46d853a659b4851a6ef19d53">更多...</a><br /></td></tr>
+<tr class="separator:aa4d980ea46d853a659b4851a6ef19d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f7158ffd8cc7dbb4d8a8ae04138d6e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a0f7158ffd8cc7dbb4d8a8ae04138d6e5">STATE_MQTT_LOG_USERNAME</a>&#160;&#160;&#160;(-0x0317)</td></tr>
+<tr class="memdesc:a0f7158ffd8cc7dbb4d8a8ae04138d6e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT连接服务器时, 使用的用户名相关的日志状态码  <a href="#a0f7158ffd8cc7dbb4d8a8ae04138d6e5">更多...</a><br /></td></tr>
+<tr class="separator:a0f7158ffd8cc7dbb4d8a8ae04138d6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8e0e21ff4603a54ba849d021d630f9f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#ab8e0e21ff4603a54ba849d021d630f9f">STATE_MQTT_LOG_PASSWORD</a>&#160;&#160;&#160;(-0x0318)</td></tr>
+<tr class="memdesc:ab8e0e21ff4603a54ba849d021d630f9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT连接服务器时, 使用的密码相关的日志状态码  <a href="#ab8e0e21ff4603a54ba849d021d630f9f">更多...</a><br /></td></tr>
+<tr class="separator:ab8e0e21ff4603a54ba849d021d630f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a3e1411a82a86d1059d7ef81f6934c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a9a3e1411a82a86d1059d7ef81f6934c1">STATE_MQTT_LOG_CLIENTID</a>&#160;&#160;&#160;(-0x0319)</td></tr>
+<tr class="memdesc:a9a3e1411a82a86d1059d7ef81f6934c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT连接服务器时, 使用的clientId相关的日志状态码  <a href="#a9a3e1411a82a86d1059d7ef81f6934c1">更多...</a><br /></td></tr>
+<tr class="separator:a9a3e1411a82a86d1059d7ef81f6934c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87a2d99e7b3d0c255541a715ce28f412"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a87a2d99e7b3d0c255541a715ce28f412">STATE_MQTT_LOG_TLS_PSK</a>&#160;&#160;&#160;(-0x031A)</td></tr>
+<tr class="memdesc:a87a2d99e7b3d0c255541a715ce28f412"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT连接服务器时, 使用的PSK-TLS密钥相关的日志状态码  <a href="#a87a2d99e7b3d0c255541a715ce28f412">更多...</a><br /></td></tr>
+<tr class="separator:a87a2d99e7b3d0c255541a715ce28f412"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b2bede730dc355952a2dc3e7e3ec7f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a4b2bede730dc355952a2dc3e7e3ec7f4">STATE_MQTT_TOPIC_TOO_LONG</a>&#160;&#160;&#160;(-0x031B)</td></tr>
+<tr class="memdesc:a4b2bede730dc355952a2dc3e7e3ec7f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT发布或订阅或取消订阅时, Topic的长度超出物联网平台的限制, 中止执行  <a href="#a4b2bede730dc355952a2dc3e7e3ec7f4">更多...</a><br /></td></tr>
+<tr class="separator:a4b2bede730dc355952a2dc3e7e3ec7f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b1b51b7cccd7390b3fdf33b8b10c684"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a7b1b51b7cccd7390b3fdf33b8b10c684">STATE_MQTT_PUB_PAYLOAD_TOO_LONG</a>&#160;&#160;&#160;(-0x031C)</td></tr>
+<tr class="memdesc:a7b1b51b7cccd7390b3fdf33b8b10c684"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT发布消息时, Payload的长度超出物联网平台的限制, 中止执行  <a href="#a7b1b51b7cccd7390b3fdf33b8b10c684">更多...</a><br /></td></tr>
+<tr class="separator:a7b1b51b7cccd7390b3fdf33b8b10c684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a362d988648b0a9b8fe52efc4d2741d73"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a362d988648b0a9b8fe52efc4d2741d73">STATE_MQTT_LOG_BACKUP_IP</a>&#160;&#160;&#160;(-0x031D)</td></tr>
+<tr class="memdesc:a362d988648b0a9b8fe52efc4d2741d73"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT连接服务器时, 使用的备用ip地址  <a href="#a362d988648b0a9b8fe52efc4d2741d73">更多...</a><br /></td></tr>
+<tr class="separator:a362d988648b0a9b8fe52efc4d2741d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d66d7b055c4b08d12cb2e047c0651aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a9d66d7b055c4b08d12cb2e047c0651aa">STATE_MQTT_RECV_INVALID_PINRESP_PACKET</a>&#160;&#160;&#160;(-0x031E)</td></tr>
+<tr class="memdesc:a9d66d7b055c4b08d12cb2e047c0651aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">接收到非法的MQTT PINRESP报文  <a href="#a9d66d7b055c4b08d12cb2e047c0651aa">更多...</a><br /></td></tr>
+<tr class="separator:a9d66d7b055c4b08d12cb2e047c0651aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e4be49162d5e1d3d35aef608e766acb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a5e4be49162d5e1d3d35aef608e766acb">STATE_MQTT_RECV_INVALID_PUBLISH_PACKET</a>&#160;&#160;&#160;(-0x031F)</td></tr>
+<tr class="memdesc:a5e4be49162d5e1d3d35aef608e766acb"><td class="mdescLeft">&#160;</td><td class="mdescRight">接收到非法的MQTT PUBLISH报文  <a href="#a5e4be49162d5e1d3d35aef608e766acb">更多...</a><br /></td></tr>
+<tr class="separator:a5e4be49162d5e1d3d35aef608e766acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f4e6db30a62f5102c6ca0c95e396389"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a0f4e6db30a62f5102c6ca0c95e396389">STATE_MQTT_RECV_INVALID_PUBACK_PACKET</a>&#160;&#160;&#160;(-0x0320)</td></tr>
+<tr class="memdesc:a0f4e6db30a62f5102c6ca0c95e396389"><td class="mdescLeft">&#160;</td><td class="mdescRight">接收到非法的MQTT PUBACK报文  <a href="#a0f4e6db30a62f5102c6ca0c95e396389">更多...</a><br /></td></tr>
+<tr class="separator:a0f4e6db30a62f5102c6ca0c95e396389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa309b228b9d24355393acb6596eec3c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#aa309b228b9d24355393acb6596eec3c5">STATE_MQTT_UNKNOWN_PROPERTY_OPTION</a>&#160;&#160;&#160;(-0x0321)</td></tr>
+<tr class="memdesc:aa309b228b9d24355393acb6596eec3c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">mqtt 5.0属性未解析成功  <a href="#aa309b228b9d24355393acb6596eec3c5">更多...</a><br /></td></tr>
+<tr class="separator:aa309b228b9d24355393acb6596eec3c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe3ad8d20175040d0592c830f06cc9ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#afe3ad8d20175040d0592c830f06cc9ac">STATE_MQTT_INVALID_PROTOCOL_VERSION</a>&#160;&#160;&#160;(-0x0322)</td></tr>
+<tr class="memdesc:afe3ad8d20175040d0592c830f06cc9ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">mqtt协议版本号未设置正确. 在使用5.0协议的接口(_with_prop结尾)时, 如果没有通过AIOT_MQTTOPT_VERSION将版本号设置为AIOT_MQTT_VERSION_5_0就会报这个错误  <a href="#afe3ad8d20175040d0592c830f06cc9ac">更多...</a><br /></td></tr>
+<tr class="separator:afe3ad8d20175040d0592c830f06cc9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7766b6f60c1bbc71444db338b0e2586c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a7766b6f60c1bbc71444db338b0e2586c">STATE_MQTT_RECV_INVALID_SERVER_DISCONNECT_PACKET</a>&#160;&#160;&#160;(-0x0323)</td></tr>
+<tr class="memdesc:a7766b6f60c1bbc71444db338b0e2586c"><td class="mdescLeft">&#160;</td><td class="mdescRight">云端下行的server disconnect报文格式不对  <a href="#a7766b6f60c1bbc71444db338b0e2586c">更多...</a><br /></td></tr>
+<tr class="separator:a7766b6f60c1bbc71444db338b0e2586c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22abf12547abb157cd9edafd5310da56"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a22abf12547abb157cd9edafd5310da56">STATE_MQTT_INVALID_USER_PERPERTY_DATA</a>&#160;&#160;&#160;(-0x0324)</td></tr>
+<tr class="memdesc:a22abf12547abb157cd9edafd5310da56"><td class="mdescLeft">&#160;</td><td class="mdescRight">在用户输入的用户属性的len值&gt;0的情况下, 用户输入的user property的value为空指针  <a href="#a22abf12547abb157cd9edafd5310da56">更多...</a><br /></td></tr>
+<tr class="separator:a22abf12547abb157cd9edafd5310da56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bb7c423bfdcf732b99115169a893184"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a0bb7c423bfdcf732b99115169a893184">STATE_MQTT_INVALID_USER_PERPERTY_LEN</a>&#160;&#160;&#160;(-0x0325)</td></tr>
+<tr class="memdesc:a0bb7c423bfdcf732b99115169a893184"><td class="mdescLeft">&#160;</td><td class="mdescRight">用户属性的长度值超出范围(当前是0-128个字节)  <a href="#a0bb7c423bfdcf732b99115169a893184">更多...</a><br /></td></tr>
+<tr class="separator:a0bb7c423bfdcf732b99115169a893184"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f4802337c41b555cb1ccc7e39b6ff5c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a7f4802337c41b555cb1ccc7e39b6ff5c">STATE_MQTT_INVALID_TX_PACK_SIZE</a>&#160;&#160;&#160;(-0x0326)</td></tr>
+<tr class="memdesc:a7f4802337c41b555cb1ccc7e39b6ff5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">用户上行报文的大小超过平台限制(默认是256KB)  <a href="#a7f4802337c41b555cb1ccc7e39b6ff5c">更多...</a><br /></td></tr>
+<tr class="separator:a7f4802337c41b555cb1ccc7e39b6ff5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae6f3150c6a3ebd54cf484ccbd9b40f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#aae6f3150c6a3ebd54cf484ccbd9b40f2">STATE_MQTT_RECEIVE_MAX_EXCEEDED</a>&#160;&#160;&#160;(-0x0327)</td></tr>
+<tr class="memdesc:aae6f3150c6a3ebd54cf484ccbd9b40f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">设备上行的qos 1报文超过流控限制  <a href="#aae6f3150c6a3ebd54cf484ccbd9b40f2">更多...</a><br /></td></tr>
+<tr class="separator:aae6f3150c6a3ebd54cf484ccbd9b40f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9361faaeff32a92e3b0b1990da14727"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#ab9361faaeff32a92e3b0b1990da14727">STATE_MQTT_INVALID_SUBSCRIPTION_IDENTIFIER</a>&#160;&#160;&#160;(-0x0328)</td></tr>
+<tr class="memdesc:ab9361faaeff32a92e3b0b1990da14727"><td class="mdescLeft">&#160;</td><td class="mdescRight">用户输入的subscription identifier值超过限制(0-0xFFFFFFF)  <a href="#ab9361faaeff32a92e3b0b1990da14727">更多...</a><br /></td></tr>
+<tr class="separator:ab9361faaeff32a92e3b0b1990da14727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a1157c352344c2f3edea11d01df5dc8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a5a1157c352344c2f3edea11d01df5dc8">STATE_MQTT_INVALID_PROPERTY_LEN</a>&#160;&#160;&#160;(-0x0329)</td></tr>
+<tr class="memdesc:a5a1157c352344c2f3edea11d01df5dc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">属性的长度为非法值, 比如大于MQTT的remainLen长度值  <a href="#a5a1157c352344c2f3edea11d01df5dc8">更多...</a><br /></td></tr>
+<tr class="separator:a5a1157c352344c2f3edea11d01df5dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad715b1fb65c88fba9b945dcd3e47fbdb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#ad715b1fb65c88fba9b945dcd3e47fbdb">STATE_MQTT_LOG_HOST</a>&#160;&#160;&#160;(-0x032A)</td></tr>
+<tr class="memdesc:ad715b1fb65c88fba9b945dcd3e47fbdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT连接服务器时, 使用的host的日志状态码  <a href="#ad715b1fb65c88fba9b945dcd3e47fbdb">更多...</a><br /></td></tr>
+<tr class="separator:ad715b1fb65c88fba9b945dcd3e47fbdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a432324f026330aca1a0c0597a4c06b08"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a432324f026330aca1a0c0597a4c06b08">STATE_HTTP_BASE</a>&#160;&#160;&#160;(-0x0400)</td></tr>
+<tr class="memdesc:a432324f026330aca1a0c0597a4c06b08"><td class="mdescLeft">&#160;</td><td class="mdescRight">-0x0400~-0x04FF表达SDK在HTTP模块内的状态码  <a href="#a432324f026330aca1a0c0597a4c06b08">更多...</a><br /></td></tr>
+<tr class="separator:a432324f026330aca1a0c0597a4c06b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb02f0ac9c88ab811dba65250e250ee7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#adb02f0ac9c88ab811dba65250e250ee7">STATE_HTTP_STATUS_LINE_INVALID</a>&#160;&#160;&#160;(-0x0401)</td></tr>
+<tr class="memdesc:adb02f0ac9c88ab811dba65250e250ee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">解析收到的HTTP报文时, 无法获取有效的状态行, 得不到HTTP StatusCode  <a href="#adb02f0ac9c88ab811dba65250e250ee7">更多...</a><br /></td></tr>
+<tr class="separator:adb02f0ac9c88ab811dba65250e250ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56eff6e12e2ddc6159853be8337f5d04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a56eff6e12e2ddc6159853be8337f5d04">STATE_HTTP_READ_BODY_FINISHED</a>&#160;&#160;&#160;(-0x0402)</td></tr>
+<tr class="memdesc:a56eff6e12e2ddc6159853be8337f5d04"><td class="mdescLeft">&#160;</td><td class="mdescRight">解析收到的HTTP报文时, 报文的body部分已接收完毕, 没有更多数据  <a href="#a56eff6e12e2ddc6159853be8337f5d04">更多...</a><br /></td></tr>
+<tr class="separator:a56eff6e12e2ddc6159853be8337f5d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5361b763d2b6f8a0e58c7763d58d5d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#ae5361b763d2b6f8a0e58c7763d58d5d7">STATE_HTTP_DEINIT_TIMEOUT</a>&#160;&#160;&#160;(-0x0403)</td></tr>
+<tr class="memdesc:ae5361b763d2b6f8a0e58c7763d58d5d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行aiot_http_deinit 时, 等待其他API执行结束超过设定的超时时间, HTTP实例销毁失败  <a href="#ae5361b763d2b6f8a0e58c7763d58d5d7">更多...</a><br /></td></tr>
+<tr class="separator:ae5361b763d2b6f8a0e58c7763d58d5d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a875b6e77568d6fc3d6a560e3b89913b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a875b6e77568d6fc3d6a560e3b89913b3">STATE_HTTP_AUTH_CODE_FAILED</a>&#160;&#160;&#160;(-0x0404)</td></tr>
+<tr class="memdesc:a875b6e77568d6fc3d6a560e3b89913b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">因为HTTP认证应答的StatusCode不是200, 认证失败  <a href="#a875b6e77568d6fc3d6a560e3b89913b3">更多...</a><br /></td></tr>
+<tr class="separator:a875b6e77568d6fc3d6a560e3b89913b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a9de11979fa4d9f598a061a2d89048d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a4a9de11979fa4d9f598a061a2d89048d">STATE_HTTP_AUTH_NOT_FINISHED</a>&#160;&#160;&#160;(-0x0405)</td></tr>
+<tr class="memdesc:a4a9de11979fa4d9f598a061a2d89048d"><td class="mdescLeft">&#160;</td><td class="mdescRight">因为HTTP认证应答接收未完成, 认证失败  <a href="#a4a9de11979fa4d9f598a061a2d89048d">更多...</a><br /></td></tr>
+<tr class="separator:a4a9de11979fa4d9f598a061a2d89048d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a900fb581d2f1ac1c445b1068243eba3b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a900fb581d2f1ac1c445b1068243eba3b">STATE_HTTP_AUTH_TOKEN_FAILED</a>&#160;&#160;&#160;(-0x0406)</td></tr>
+<tr class="memdesc:a900fb581d2f1ac1c445b1068243eba3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">因为HTTP认证应答中未能解析到Token, 认证失败  <a href="#a900fb581d2f1ac1c445b1068243eba3b">更多...</a><br /></td></tr>
+<tr class="separator:a900fb581d2f1ac1c445b1068243eba3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2c951d34d573653197a07229fa1ca77"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#aa2c951d34d573653197a07229fa1ca77">STATE_HTTP_NEED_AUTH</a>&#160;&#160;&#160;(-0x0407)</td></tr>
+<tr class="memdesc:aa2c951d34d573653197a07229fa1ca77"><td class="mdescLeft">&#160;</td><td class="mdescRight">设备尚未认证, 需要先调用aiot_http_auth 进行设备认证  <a href="#aa2c951d34d573653197a07229fa1ca77">更多...</a><br /></td></tr>
+<tr class="separator:aa2c951d34d573653197a07229fa1ca77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbdd0e1d901c4accec1d3e4abef5e110"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#afbdd0e1d901c4accec1d3e4abef5e110">STATE_HTTP_RECV_NOT_FINISHED</a>&#160;&#160;&#160;(-0x0408)</td></tr>
+<tr class="memdesc:afbdd0e1d901c4accec1d3e4abef5e110"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP应答数据接收未完成, 需确认网络是否异常  <a href="#afbdd0e1d901c4accec1d3e4abef5e110">更多...</a><br /></td></tr>
+<tr class="separator:afbdd0e1d901c4accec1d3e4abef5e110"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2996597c6645b2db9411631f38ae3b33"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a2996597c6645b2db9411631f38ae3b33">STATE_HTTP_HEADER_BUFFER_TOO_SHORT</a>&#160;&#160;&#160;(-0x0409)</td></tr>
+<tr class="memdesc:a2996597c6645b2db9411631f38ae3b33"><td class="mdescLeft">&#160;</td><td class="mdescRight">内部buffer长度过短, 需调用aiot_http_setopt 配置AIOT_HTTPOPT_HEADER_BUFFER_LEN 选项增大buffer长度  <a href="#a2996597c6645b2db9411631f38ae3b33">更多...</a><br /></td></tr>
+<tr class="separator:a2996597c6645b2db9411631f38ae3b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad34908729a85d636c2f464cf90a4b404"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#ad34908729a85d636c2f464cf90a4b404">STATE_HTTP_HEADER_INVALID</a>&#160;&#160;&#160;(-0x040A)</td></tr>
+<tr class="memdesc:ad34908729a85d636c2f464cf90a4b404"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP首部接收异常  <a href="#ad34908729a85d636c2f464cf90a4b404">更多...</a><br /></td></tr>
+<tr class="separator:ad34908729a85d636c2f464cf90a4b404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1fecad06405c0d82f13fe3ba3f2d2c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#ae1fecad06405c0d82f13fe3ba3f2d2c9">STATE_HTTP_LOG_SEND_HEADER</a>&#160;&#160;&#160;(-0x040B)</td></tr>
+<tr class="memdesc:ae1fecad06405c0d82f13fe3ba3f2d2c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP首部发送相关日志使用的状态码  <a href="#ae1fecad06405c0d82f13fe3ba3f2d2c9">更多...</a><br /></td></tr>
+<tr class="separator:ae1fecad06405c0d82f13fe3ba3f2d2c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a981a767bd81718abe8fe24b99930e66c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a981a767bd81718abe8fe24b99930e66c">STATE_HTTP_LOG_SEND_CONTENT</a>&#160;&#160;&#160;(-0x040C)</td></tr>
+<tr class="memdesc:a981a767bd81718abe8fe24b99930e66c"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP内容发送相关日志使用的状态码  <a href="#a981a767bd81718abe8fe24b99930e66c">更多...</a><br /></td></tr>
+<tr class="separator:a981a767bd81718abe8fe24b99930e66c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fb3b274a22f8911e2cf4d92107d19f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a2fb3b274a22f8911e2cf4d92107d19f4">STATE_HTTP_LOG_RECV_HEADER</a>&#160;&#160;&#160;(-0x040D)</td></tr>
+<tr class="memdesc:a2fb3b274a22f8911e2cf4d92107d19f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP首部接收相关日志使用的状态码  <a href="#a2fb3b274a22f8911e2cf4d92107d19f4">更多...</a><br /></td></tr>
+<tr class="separator:a2fb3b274a22f8911e2cf4d92107d19f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a536e133d46ffb8707b2bd908cbe9561f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a536e133d46ffb8707b2bd908cbe9561f">STATE_HTTP_LOG_RECV_CONTENT</a>&#160;&#160;&#160;(-0x040E)</td></tr>
+<tr class="memdesc:a536e133d46ffb8707b2bd908cbe9561f"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP内容接收相关日志使用的状态码  <a href="#a536e133d46ffb8707b2bd908cbe9561f">更多...</a><br /></td></tr>
+<tr class="separator:a536e133d46ffb8707b2bd908cbe9561f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a361bca763af18ce5ab04197c98edf4e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a361bca763af18ce5ab04197c98edf4e7">STATE_HTTP_LOG_DISCONNECT</a>&#160;&#160;&#160;(-0x040F)</td></tr>
+<tr class="memdesc:a361bca763af18ce5ab04197c98edf4e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP连接断开相关日志使用的状态码  <a href="#a361bca763af18ce5ab04197c98edf4e7">更多...</a><br /></td></tr>
+<tr class="separator:a361bca763af18ce5ab04197c98edf4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa398af3f0a3fe531f17c1aa631c9b338"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#aa398af3f0a3fe531f17c1aa631c9b338">STATE_HTTP_LOG_AUTH</a>&#160;&#160;&#160;(-0x0410)</td></tr>
+<tr class="memdesc:aa398af3f0a3fe531f17c1aa631c9b338"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP认证交互相关日志使用的状态码  <a href="#aa398af3f0a3fe531f17c1aa631c9b338">更多...</a><br /></td></tr>
+<tr class="separator:aa398af3f0a3fe531f17c1aa631c9b338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a095e8a49e42d992fcbb32c8bb55731b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a095e8a49e42d992fcbb32c8bb55731b7">STATE_HTTP_AUTH_NOT_EXPECTED</a>&#160;&#160;&#160;(-0x0411)</td></tr>
+<tr class="memdesc:a095e8a49e42d992fcbb32c8bb55731b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">因为HTTP应答报文的内容不符合预期, 认证失败  <a href="#a095e8a49e42d992fcbb32c8bb55731b7">更多...</a><br /></td></tr>
+<tr class="separator:a095e8a49e42d992fcbb32c8bb55731b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7a366d13f02ac98d41f14967fb07c8a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#ad7a366d13f02ac98d41f14967fb07c8a">STATE_HTTP_READ_BODY_EMPTY</a>&#160;&#160;&#160;(-0x0412)</td></tr>
+<tr class="memdesc:ad7a366d13f02ac98d41f14967fb07c8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP报文的负载部分为空, 接收已完成  <a href="#ad7a366d13f02ac98d41f14967fb07c8a">更多...</a><br /></td></tr>
+<tr class="separator:ad7a366d13f02ac98d41f14967fb07c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabdbc58c82c69f4dd2af16943df2a31e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#aabdbc58c82c69f4dd2af16943df2a31e">STATE_PORT_BASE</a>&#160;&#160;&#160;(-0x0F00)</td></tr>
+<tr class="memdesc:aabdbc58c82c69f4dd2af16943df2a31e"><td class="mdescLeft">&#160;</td><td class="mdescRight">-0x0F00~-0x0FFF表达SDK在系统底层依赖模块内的状态码  <a href="#aabdbc58c82c69f4dd2af16943df2a31e">更多...</a><br /></td></tr>
+<tr class="separator:aabdbc58c82c69f4dd2af16943df2a31e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7a8d2e0d7f8c440a2473fbb460d8d9a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#ab7a8d2e0d7f8c440a2473fbb460d8d9a">STATE_PORT_INPUT_NULL_POINTER</a>&#160;&#160;&#160;(-0x0F01)</td></tr>
+<tr class="memdesc:ab7a8d2e0d7f8c440a2473fbb460d8d9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数遇到非法的空指针参数, 执行失败  <a href="#ab7a8d2e0d7f8c440a2473fbb460d8d9a">更多...</a><br /></td></tr>
+<tr class="separator:ab7a8d2e0d7f8c440a2473fbb460d8d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b5caff2281e5366c0784566edd38023"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a8b5caff2281e5366c0784566edd38023">STATE_PORT_INPUT_OUT_RANGE</a>&#160;&#160;&#160;(-0x0F02)</td></tr>
+<tr class="memdesc:a8b5caff2281e5366c0784566edd38023"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数遇到输入参数超出合理值域, 执行失败  <a href="#a8b5caff2281e5366c0784566edd38023">更多...</a><br /></td></tr>
+<tr class="separator:a8b5caff2281e5366c0784566edd38023"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adae0857b8832e383525c7d77964761b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#adae0857b8832e383525c7d77964761b4">STATE_PORT_MALLOC_FAILED</a>&#160;&#160;&#160;(-0x0F03)</td></tr>
+<tr class="memdesc:adae0857b8832e383525c7d77964761b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数遇到申请内存错误, 执行失败  <a href="#adae0857b8832e383525c7d77964761b4">更多...</a><br /></td></tr>
+<tr class="separator:adae0857b8832e383525c7d77964761b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ecef7fc4d82e804de86208279531f03"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a5ecef7fc4d82e804de86208279531f03">STATE_PORT_MISSING_HOST</a>&#160;&#160;&#160;(-0x0F04)</td></tr>
+<tr class="memdesc:a5ecef7fc4d82e804de86208279531f03"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数遇到域名地址或IP地址缺失, 执行失败  <a href="#a5ecef7fc4d82e804de86208279531f03">更多...</a><br /></td></tr>
+<tr class="separator:a5ecef7fc4d82e804de86208279531f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae98178c414fb319ef20314e51f51b2c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#ae98178c414fb319ef20314e51f51b2c1">STATE_PORT_TCP_CLIENT_NOT_IMPLEMENT</a>&#160;&#160;&#160;(-0x0F05)</td></tr>
+<tr class="memdesc:ae98178c414fb319ef20314e51f51b2c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数遇到TCP客户端建立过程尚未实现, 执行失败  <a href="#ae98178c414fb319ef20314e51f51b2c1">更多...</a><br /></td></tr>
+<tr class="separator:ae98178c414fb319ef20314e51f51b2c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a009fdbd312ea9b47db3db5642f7848"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a7a009fdbd312ea9b47db3db5642f7848">STATE_PORT_TCP_SERVER_NOT_IMPLEMENT</a>&#160;&#160;&#160;(-0x0F06)</td></tr>
+<tr class="memdesc:a7a009fdbd312ea9b47db3db5642f7848"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数遇到TCP服务端建立过程尚未实现, 执行失败  <a href="#a7a009fdbd312ea9b47db3db5642f7848">更多...</a><br /></td></tr>
+<tr class="separator:a7a009fdbd312ea9b47db3db5642f7848"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaf07b6b2e7763dc2a3158ca619f46e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#adaf07b6b2e7763dc2a3158ca619f46e0">STATE_PORT_UDP_CLIENT_NOT_IMPLEMENT</a>&#160;&#160;&#160;(-0x0F07)</td></tr>
+<tr class="memdesc:adaf07b6b2e7763dc2a3158ca619f46e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数遇到UDP客户端建立过程尚未实现, 执行失败  <a href="#adaf07b6b2e7763dc2a3158ca619f46e0">更多...</a><br /></td></tr>
+<tr class="separator:adaf07b6b2e7763dc2a3158ca619f46e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58f069fe80d3462583aa62a790e13b68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a58f069fe80d3462583aa62a790e13b68">STATE_PORT_UDP_SERVER_NOT_IMPLEMENT</a>&#160;&#160;&#160;(-0x0F08)</td></tr>
+<tr class="memdesc:a58f069fe80d3462583aa62a790e13b68"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数遇到UDP服务端建立过程尚未实现, 执行失败  <a href="#a58f069fe80d3462583aa62a790e13b68">更多...</a><br /></td></tr>
+<tr class="separator:a58f069fe80d3462583aa62a790e13b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae632eccefa89b11fd9a199886a3c9564"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#ae632eccefa89b11fd9a199886a3c9564">STATE_PORT_NETWORK_UNKNOWN_OPTION</a>&#160;&#160;&#160;(-0x0F09)</td></tr>
+<tr class="memdesc:ae632eccefa89b11fd9a199886a3c9564"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数遇到不能理解的网络层设置选项, 执行失败  <a href="#ae632eccefa89b11fd9a199886a3c9564">更多...</a><br /></td></tr>
+<tr class="separator:ae632eccefa89b11fd9a199886a3c9564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53f0d77ba22b6ca8ae8d66afd9eae8a7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a53f0d77ba22b6ca8ae8d66afd9eae8a7">STATE_PORT_NETWORK_UNKNOWN_SOCKET_TYPE</a>&#160;&#160;&#160;(-0x0F0A)</td></tr>
+<tr class="memdesc:a53f0d77ba22b6ca8ae8d66afd9eae8a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数遇到不能理解的socket类型, 执行失败  <a href="#a53f0d77ba22b6ca8ae8d66afd9eae8a7">更多...</a><br /></td></tr>
+<tr class="separator:a53f0d77ba22b6ca8ae8d66afd9eae8a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ca34fdf0da40337984d728bc994704f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a5ca34fdf0da40337984d728bc994704f">STATE_PORT_NETWORK_DNS_FAILED</a>&#160;&#160;&#160;(-0x0F0B)</td></tr>
+<tr class="memdesc:a5ca34fdf0da40337984d728bc994704f"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数遇到域名DNS解析错误, 执行失败  <a href="#a5ca34fdf0da40337984d728bc994704f">更多...</a><br /></td></tr>
+<tr class="separator:a5ca34fdf0da40337984d728bc994704f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cfe87c4479285575c04909a34fc2441"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a6cfe87c4479285575c04909a34fc2441">STATE_PORT_NETWORK_SOCKET_CREATE_FAILED</a>&#160;&#160;&#160;(-0x0F0C)</td></tr>
+<tr class="memdesc:a6cfe87c4479285575c04909a34fc2441"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数建立网络连接时遇到socket创建错误, 执行失败  <a href="#a6cfe87c4479285575c04909a34fc2441">更多...</a><br /></td></tr>
+<tr class="separator:a6cfe87c4479285575c04909a34fc2441"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a311a35ad4f7f1a4c91d911adb0784935"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a311a35ad4f7f1a4c91d911adb0784935">STATE_PORT_NETWORK_SOCKET_CONFIG_FAILED</a>&#160;&#160;&#160;(-0x0F0D)</td></tr>
+<tr class="memdesc:a311a35ad4f7f1a4c91d911adb0784935"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数建立网络连接时遇到socket配置错误, 执行失败  <a href="#a311a35ad4f7f1a4c91d911adb0784935">更多...</a><br /></td></tr>
+<tr class="separator:a311a35ad4f7f1a4c91d911adb0784935"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02a78cbf5dbb5c00e662d8640cc3c792"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a02a78cbf5dbb5c00e662d8640cc3c792">STATE_PORT_NETWORK_SOCKET_BIND_FAILED</a>&#160;&#160;&#160;(-0x0F0E)</td></tr>
+<tr class="memdesc:a02a78cbf5dbb5c00e662d8640cc3c792"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数建立网络连接时遇到bind错误, 执行失败  <a href="#a02a78cbf5dbb5c00e662d8640cc3c792">更多...</a><br /></td></tr>
+<tr class="separator:a02a78cbf5dbb5c00e662d8640cc3c792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04becd32c2915109c764486c6132e71c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a04becd32c2915109c764486c6132e71c">STATE_PORT_NETWORK_CONNECT_TIMEOUT</a>&#160;&#160;&#160;(-0x0F0F)</td></tr>
+<tr class="memdesc:a04becd32c2915109c764486c6132e71c"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数遇到TCP连接超时未成功, 执行失败  <a href="#a04becd32c2915109c764486c6132e71c">更多...</a><br /></td></tr>
+<tr class="separator:a04becd32c2915109c764486c6132e71c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae554bd1d170cf2d8f4c79b39d753ba1b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#ae554bd1d170cf2d8f4c79b39d753ba1b">STATE_PORT_NETWORK_CONNECT_FAILED</a>&#160;&#160;&#160;(-0x0F10)</td></tr>
+<tr class="memdesc:ae554bd1d170cf2d8f4c79b39d753ba1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数遇到TCP连接建立错误, 执行失败  <a href="#ae554bd1d170cf2d8f4c79b39d753ba1b">更多...</a><br /></td></tr>
+<tr class="separator:ae554bd1d170cf2d8f4c79b39d753ba1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a729be949940ebeed228f40aa3f1e2da8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a729be949940ebeed228f40aa3f1e2da8">STATE_PORT_NETWORK_SELECT_FAILED</a>&#160;&#160;&#160;(-0x0F11)</td></tr>
+<tr class="memdesc:a729be949940ebeed228f40aa3f1e2da8"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数遇到套接字select错误, 执行失败  <a href="#a729be949940ebeed228f40aa3f1e2da8">更多...</a><br /></td></tr>
+<tr class="separator:a729be949940ebeed228f40aa3f1e2da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64cee05fa9608c1a39ee917c58a6ac4c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a64cee05fa9608c1a39ee917c58a6ac4c">STATE_PORT_NETWORK_SEND_FAILED</a>&#160;&#160;&#160;(-0x0F12)</td></tr>
+<tr class="memdesc:a64cee05fa9608c1a39ee917c58a6ac4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数遇到网络层发送数据错误, 执行失败  <a href="#a64cee05fa9608c1a39ee917c58a6ac4c">更多...</a><br /></td></tr>
+<tr class="separator:a64cee05fa9608c1a39ee917c58a6ac4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a995b0829a06f01728153fb1816bc5519"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a995b0829a06f01728153fb1816bc5519">STATE_PORT_NETWORK_RECV_FAILED</a>&#160;&#160;&#160;(-0x0F13)</td></tr>
+<tr class="memdesc:a995b0829a06f01728153fb1816bc5519"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数遇到网络层接收数据错误, 执行失败  <a href="#a995b0829a06f01728153fb1816bc5519">更多...</a><br /></td></tr>
+<tr class="separator:a995b0829a06f01728153fb1816bc5519"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48c2cfc631829acb978bf2c6c0663b3c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a48c2cfc631829acb978bf2c6c0663b3c">STATE_PORT_NETWORK_SEND_CONNECTION_CLOSED</a>&#160;&#160;&#160;(-0x0F14)</td></tr>
+<tr class="memdesc:a48c2cfc631829acb978bf2c6c0663b3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数发送数据时遇到连接已关闭, 执行失败  <a href="#a48c2cfc631829acb978bf2c6c0663b3c">更多...</a><br /></td></tr>
+<tr class="separator:a48c2cfc631829acb978bf2c6c0663b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1882943d92ef17649082f71b4827ed09"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a1882943d92ef17649082f71b4827ed09">STATE_PORT_NETWORK_RECV_CONNECTION_CLOSED</a>&#160;&#160;&#160;(-0x0F15)</td></tr>
+<tr class="memdesc:a1882943d92ef17649082f71b4827ed09"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数接收数据时遇到连接已关闭, 执行失败  <a href="#a1882943d92ef17649082f71b4827ed09">更多...</a><br /></td></tr>
+<tr class="separator:a1882943d92ef17649082f71b4827ed09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0daadbaf6c2c0f29daf7d0c6e3748269"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a0daadbaf6c2c0f29daf7d0c6e3748269">STATE_PORT_TLS_INVALID_CRED_OPTION</a>&#160;&#160;&#160;(-0x0F16)</td></tr>
+<tr class="memdesc:a0daadbaf6c2c0f29daf7d0c6e3748269"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数遇到不能理解的安全凭据选项, 执行失败  <a href="#a0daadbaf6c2c0f29daf7d0c6e3748269">更多...</a><br /></td></tr>
+<tr class="separator:a0daadbaf6c2c0f29daf7d0c6e3748269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85ca16ec9d5eebd8ee737f0ed226be7f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a85ca16ec9d5eebd8ee737f0ed226be7f">STATE_PORT_TLS_INVALID_MAX_FRAGMENT</a>&#160;&#160;&#160;(-0x0F17)</td></tr>
+<tr class="memdesc:a85ca16ec9d5eebd8ee737f0ed226be7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数遇到不合法的最大TLS分片长度配置, 执行失败  <a href="#a85ca16ec9d5eebd8ee737f0ed226be7f">更多...</a><br /></td></tr>
+<tr class="separator:a85ca16ec9d5eebd8ee737f0ed226be7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa52309160643956c68dd26f000f65f54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#aa52309160643956c68dd26f000f65f54">STATE_PORT_TLS_INVALID_SERVER_CERT</a>&#160;&#160;&#160;(-0x0F18)</td></tr>
+<tr class="memdesc:aa52309160643956c68dd26f000f65f54"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数遇到不合法的服务端证书, 执行失败  <a href="#aa52309160643956c68dd26f000f65f54">更多...</a><br /></td></tr>
+<tr class="separator:aa52309160643956c68dd26f000f65f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7985731192281972ae68366debd03e04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a7985731192281972ae68366debd03e04">STATE_PORT_TLS_INVALID_CLIENT_CERT</a>&#160;&#160;&#160;(-0x0F19)</td></tr>
+<tr class="memdesc:a7985731192281972ae68366debd03e04"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数遇到不合法的客户端证书, 执行失败  <a href="#a7985731192281972ae68366debd03e04">更多...</a><br /></td></tr>
+<tr class="separator:a7985731192281972ae68366debd03e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78d3dc41dadc98cc1b0eaedee015b39f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a78d3dc41dadc98cc1b0eaedee015b39f">STATE_PORT_TLS_INVALID_CLIENT_KEY</a>&#160;&#160;&#160;(-0x0F1A)</td></tr>
+<tr class="memdesc:a78d3dc41dadc98cc1b0eaedee015b39f"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数遇到不合法的客户端密钥, 执行失败  <a href="#a78d3dc41dadc98cc1b0eaedee015b39f">更多...</a><br /></td></tr>
+<tr class="separator:a78d3dc41dadc98cc1b0eaedee015b39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7510a3897dfd4456bf336cedbaed1a2d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a7510a3897dfd4456bf336cedbaed1a2d">STATE_PORT_TLS_SOCKET_CREATE_FAILED</a>&#160;&#160;&#160;(-0x0F1B)</td></tr>
+<tr class="memdesc:a7510a3897dfd4456bf336cedbaed1a2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数建立TLS连接时遇到socket创建错误, 执行失败  <a href="#a7510a3897dfd4456bf336cedbaed1a2d">更多...</a><br /></td></tr>
+<tr class="separator:a7510a3897dfd4456bf336cedbaed1a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca598d841a74dad550638d57d0b12523"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#aca598d841a74dad550638d57d0b12523">STATE_PORT_TLS_SOCKET_CONNECT_FAILED</a>&#160;&#160;&#160;(-0x0F1C)</td></tr>
+<tr class="memdesc:aca598d841a74dad550638d57d0b12523"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数建立TLS连接时遇到socket连接建立错误, 执行失败  <a href="#aca598d841a74dad550638d57d0b12523">更多...</a><br /></td></tr>
+<tr class="separator:aca598d841a74dad550638d57d0b12523"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a914601c3e05fefc50a0042821c958c96"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a914601c3e05fefc50a0042821c958c96">STATE_PORT_TLS_INVALID_RECORD</a>&#160;&#160;&#160;(-0x0F1D)</td></tr>
+<tr class="memdesc:a914601c3e05fefc50a0042821c958c96"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数建立TLS连接时遇到握手失败, 执行失败  <a href="#a914601c3e05fefc50a0042821c958c96">更多...</a><br /></td></tr>
+<tr class="separator:a914601c3e05fefc50a0042821c958c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaefe195828b85de7a484ce9fabaf3401"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#aaefe195828b85de7a484ce9fabaf3401">STATE_PORT_TLS_RECV_FAILED</a>&#160;&#160;&#160;(-0x0F1E)</td></tr>
+<tr class="memdesc:aaefe195828b85de7a484ce9fabaf3401"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数在TLS连接上, 遇到数据接收错误, 执行失败  <a href="#aaefe195828b85de7a484ce9fabaf3401">更多...</a><br /></td></tr>
+<tr class="separator:aaefe195828b85de7a484ce9fabaf3401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8831528063ebba7674e55d3777be17d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#ad8831528063ebba7674e55d3777be17d">STATE_PORT_TLS_SEND_FAILED</a>&#160;&#160;&#160;(-0x0F1F)</td></tr>
+<tr class="memdesc:ad8831528063ebba7674e55d3777be17d"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数在TLS连接上, 遇到数据发送错误, 执行失败  <a href="#ad8831528063ebba7674e55d3777be17d">更多...</a><br /></td></tr>
+<tr class="separator:ad8831528063ebba7674e55d3777be17d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a583adc6e5a3970e5ecab84623502eaa0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a583adc6e5a3970e5ecab84623502eaa0">STATE_PORT_TLS_RECV_CONNECTION_CLOSED</a>&#160;&#160;&#160;(-0x0F20)</td></tr>
+<tr class="memdesc:a583adc6e5a3970e5ecab84623502eaa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数在TLS连接上, 接收数据时遇到连接已关闭, 执行失败  <a href="#a583adc6e5a3970e5ecab84623502eaa0">更多...</a><br /></td></tr>
+<tr class="separator:a583adc6e5a3970e5ecab84623502eaa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a911dfd525917dd6422838d2b3363e5a2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a911dfd525917dd6422838d2b3363e5a2">STATE_PORT_TLS_SEND_CONNECTION_CLOSED</a>&#160;&#160;&#160;(-0x0F21)</td></tr>
+<tr class="memdesc:a911dfd525917dd6422838d2b3363e5a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数在TLS连接上, 发送数据时遇到连接已关闭, 执行失败  <a href="#a911dfd525917dd6422838d2b3363e5a2">更多...</a><br /></td></tr>
+<tr class="separator:a911dfd525917dd6422838d2b3363e5a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea1d3774e6d4026fb48e7991181b8a64"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#aea1d3774e6d4026fb48e7991181b8a64">STATE_PORT_TLS_CONFIG_PSK_FAILED</a>&#160;&#160;&#160;(-0x0F22)</td></tr>
+<tr class="memdesc:aea1d3774e6d4026fb48e7991181b8a64"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数建立TLS连接时遇到PSK配置错误, 执行失败  <a href="#aea1d3774e6d4026fb48e7991181b8a64">更多...</a><br /></td></tr>
+<tr class="separator:aea1d3774e6d4026fb48e7991181b8a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20fd2cb0457c93712c3d4a2d107020a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a20fd2cb0457c93712c3d4a2d107020a6">STATE_PORT_TLS_INVALID_HANDSHAKE</a>&#160;&#160;&#160;(-0x0F23)</td></tr>
+<tr class="memdesc:a20fd2cb0457c93712c3d4a2d107020a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层依赖函数建立TLS连接时遇到非法记录以外的握手错误, 执行失败  <a href="#a20fd2cb0457c93712c3d4a2d107020a6">更多...</a><br /></td></tr>
+<tr class="separator:a20fd2cb0457c93712c3d4a2d107020a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0ed46f32a2e183357b3fe751b0ec7f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#ae0ed46f32a2e183357b3fe751b0ec7f9">STATE_PORT_DTLS_CONFIG_PSK_FAILED</a>&#160;&#160;&#160;(-0x0F24)</td></tr>
+<tr class="memdesc:ae0ed46f32a2e183357b3fe751b0ec7f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">DTLS握手时设置PSK配置错误, 执行失败  <a href="#ae0ed46f32a2e183357b3fe751b0ec7f9">更多...</a><br /></td></tr>
+<tr class="separator:ae0ed46f32a2e183357b3fe751b0ec7f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad38feaba474c3fbd92e64c36adac2ff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#aad38feaba474c3fbd92e64c36adac2ff">STATE_PORT_DTLS_HANDSHAKE_FAILED</a>&#160;&#160;&#160;(-0x0F25)</td></tr>
+<tr class="memdesc:aad38feaba474c3fbd92e64c36adac2ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">DTLS握手失败, 执行失败  <a href="#aad38feaba474c3fbd92e64c36adac2ff">更多...</a><br /></td></tr>
+<tr class="separator:aad38feaba474c3fbd92e64c36adac2ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b43d64363041f3d065c6dc9ae86148a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a7b43d64363041f3d065c6dc9ae86148a">STATE_PORT_NETWORK_DTLS_CONNECT_FAILED</a>&#160;&#160;&#160;(-0x0F26)</td></tr>
+<tr class="memdesc:a7b43d64363041f3d065c6dc9ae86148a"><td class="mdescLeft">&#160;</td><td class="mdescRight">DTLS建立连接时失败, 执行失败  <a href="#a7b43d64363041f3d065c6dc9ae86148a">更多...</a><br /></td></tr>
+<tr class="separator:a7b43d64363041f3d065c6dc9ae86148a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf3eb567fd1619692a43fc847153e048"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#aaf3eb567fd1619692a43fc847153e048">STATE_PORT_DTLS_HANDSHAKE_IN_PROGRESS</a>&#160;&#160;&#160;(-0x0F27)</td></tr>
+<tr class="memdesc:aaf3eb567fd1619692a43fc847153e048"><td class="mdescLeft">&#160;</td><td class="mdescRight">之前的DTLS握手还在进行中  <a href="#aaf3eb567fd1619692a43fc847153e048">更多...</a><br /></td></tr>
+<tr class="separator:aaf3eb567fd1619692a43fc847153e048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0010b7165000e4bf682efa3b10225e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#ab0010b7165000e4bf682efa3b10225e0">STATE_PORT_PTHREAD_CREATE_FAILED</a>&#160;&#160;&#160;(-0x0F28)</td></tr>
+<tr class="memdesc:ab0010b7165000e4bf682efa3b10225e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">线程创建失败  <a href="#ab0010b7165000e4bf682efa3b10225e0">更多...</a><br /></td></tr>
+<tr class="separator:ab0010b7165000e4bf682efa3b10225e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5baed8aa59df8f4cd8e7cc654f12d5e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a5baed8aa59df8f4cd8e7cc654f12d5e1">STATE_ADAPTER_COMMON</a>&#160;&#160;&#160;(-0x1000)</td></tr>
+<tr class="memdesc:a5baed8aa59df8f4cd8e7cc654f12d5e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">core_adapter适配模块  <a href="#a5baed8aa59df8f4cd8e7cc654f12d5e1">更多...</a><br /></td></tr>
+<tr class="separator:a5baed8aa59df8f4cd8e7cc654f12d5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bdbf958ee97cdc651c96a12d0cdadd0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a9bdbf958ee97cdc651c96a12d0cdadd0">STATE_NONSUPPORT</a>&#160;&#160;&#160;(-0x1001)</td></tr>
+<tr class="memdesc:a9bdbf958ee97cdc651c96a12d0cdadd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">暂不支持使用  <a href="#a9bdbf958ee97cdc651c96a12d0cdadd0">更多...</a><br /></td></tr>
+<tr class="separator:a9bdbf958ee97cdc651c96a12d0cdadd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c40dbfd5f0b7ebfc7d6ff2248fe3652"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a8c40dbfd5f0b7ebfc7d6ff2248fe3652">STATE_DEVICE_REPEATED_CONNECT</a>&#160;&#160;&#160;(-0x1101)</td></tr>
+<tr class="memdesc:a8c40dbfd5f0b7ebfc7d6ff2248fe3652"><td class="mdescLeft">&#160;</td><td class="mdescRight">设备重复建连  <a href="#a8c40dbfd5f0b7ebfc7d6ff2248fe3652">更多...</a><br /></td></tr>
+<tr class="separator:a8c40dbfd5f0b7ebfc7d6ff2248fe3652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac043422b0618c9170c3ea1790372c47c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#ac043422b0618c9170c3ea1790372c47c">STATE_DEVICE_MISSING_CONNECT_ARGS</a>&#160;&#160;&#160;(-0x1102)</td></tr>
+<tr class="memdesc:ac043422b0618c9170c3ea1790372c47c"><td class="mdescLeft">&#160;</td><td class="mdescRight">设备建连参数缺失  <a href="#ac043422b0618c9170c3ea1790372c47c">更多...</a><br /></td></tr>
+<tr class="separator:ac043422b0618c9170c3ea1790372c47c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade9e00f636a1e3707bb5825b3b2200c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#ade9e00f636a1e3707bb5825b3b2200c4">STATE_DEVICE_OFFLINE</a>&#160;&#160;&#160;(-0x1103)</td></tr>
+<tr class="memdesc:ade9e00f636a1e3707bb5825b3b2200c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">设备处于离线状态，不能执行消息发布/订阅操作  <a href="#ade9e00f636a1e3707bb5825b3b2200c4">更多...</a><br /></td></tr>
+<tr class="separator:ade9e00f636a1e3707bb5825b3b2200c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a558a95d904aa0d533a359653c5fd6354"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a558a95d904aa0d533a359653c5fd6354">STATE_DEVICE_REPEATED_DISCONNECT</a>&#160;&#160;&#160;(-0x1104)</td></tr>
+<tr class="memdesc:a558a95d904aa0d533a359653c5fd6354"><td class="mdescLeft">&#160;</td><td class="mdescRight">设备重复断连  <a href="#a558a95d904aa0d533a359653c5fd6354">更多...</a><br /></td></tr>
+<tr class="separator:a558a95d904aa0d533a359653c5fd6354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e96c64628a9d59062c0c905bae6adcf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a7e96c64628a9d59062c0c905bae6adcf">STATE_DEVICE_UNKOWN_ERROR</a>&#160;&#160;&#160;(-0x1105)</td></tr>
+<tr class="memdesc:a7e96c64628a9d59062c0c905bae6adcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">设备发生未知错误  <a href="#a7e96c64628a9d59062c0c905bae6adcf">更多...</a><br /></td></tr>
+<tr class="separator:a7e96c64628a9d59062c0c905bae6adcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0adaca05b4eae81c3ab56f377756e94"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#ae0adaca05b4eae81c3ab56f377756e94">STATE_DEVICE_DYNREG_TIMEOUT</a>&#160;&#160;&#160;(-0x1106)</td></tr>
+<tr class="memdesc:ae0adaca05b4eae81c3ab56f377756e94"><td class="mdescLeft">&#160;</td><td class="mdescRight">设备动态注册接收超时  <a href="#ae0adaca05b4eae81c3ab56f377756e94">更多...</a><br /></td></tr>
+<tr class="separator:ae0adaca05b4eae81c3ab56f377756e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad73f9ac9dffc0025a0caf692771a6774"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#ad73f9ac9dffc0025a0caf692771a6774">STATE_MESSAGE_CREATE_ERROR</a>&#160;&#160;&#160;(-0x1201)</td></tr>
+<tr class="memdesc:ad73f9ac9dffc0025a0caf692771a6774"><td class="mdescLeft">&#160;</td><td class="mdescRight">消息创建错误，请检查参数是否正确  <a href="#ad73f9ac9dffc0025a0caf692771a6774">更多...</a><br /></td></tr>
+<tr class="separator:ad73f9ac9dffc0025a0caf692771a6774"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4868d2bc25df2fd0c699b331fef008fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a4868d2bc25df2fd0c699b331fef008fb">STATE_MESSAGE_PARSE_ERROR</a>&#160;&#160;&#160;(-0x1202)</td></tr>
+<tr class="memdesc:a4868d2bc25df2fd0c699b331fef008fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">解析JSON消息出错  <a href="#a4868d2bc25df2fd0c699b331fef008fb">更多...</a><br /></td></tr>
+<tr class="separator:a4868d2bc25df2fd0c699b331fef008fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a3e9de40a93283786f17ce6ef6f37eab2"><td class="memItemLeft" align="right" valign="top">typedef int32_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a3e9de40a93283786f17ce6ef6f37eab2">aiot_state_logcb_t</a>) (int32_t code, char *message)</td></tr>
+<tr class="memdesc:a3e9de40a93283786f17ce6ef6f37eab2"><td class="mdescLeft">&#160;</td><td class="mdescRight">SDK的日志信息输出回调函数原型  <a href="#a3e9de40a93283786f17ce6ef6f37eab2">更多...</a><br /></td></tr>
+<tr class="separator:a3e9de40a93283786f17ce6ef6f37eab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a98121d38a8cf3daf5246a349f912ca1d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a98121d38a8cf3daf5246a349f912ca1d">log_level_t</a> { <a class="el" href="aiot__state__api_8h.html#a98121d38a8cf3daf5246a349f912ca1da69dacb1837e1e37c6ed34cc2ee1d8848">LOG_LEVEL_NONE</a> = 0, 
+<a class="el" href="aiot__state__api_8h.html#a98121d38a8cf3daf5246a349f912ca1da5b40f003febbc3b535649d63f4b8a44f">LOG_LEVEL_ERROR</a>, 
+<a class="el" href="aiot__state__api_8h.html#a98121d38a8cf3daf5246a349f912ca1daedee1e3159bfe7d918b6e29873c5aee4">LOG_LEVEL_INFO</a>, 
+<a class="el" href="aiot__state__api_8h.html#a98121d38a8cf3daf5246a349f912ca1da538b2b6e011479d408ecd2be0f6d6177">LOG_LEVEL_DEBUG</a>
+ }</td></tr>
+<tr class="separator:a98121d38a8cf3daf5246a349f912ca1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a2c31a7dc3f5281d0029abcbbcf17f046"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a2c31a7dc3f5281d0029abcbbcf17f046">aiot_state_set_logcb</a> (<a class="el" href="aiot__state__api_8h.html#a3e9de40a93283786f17ce6ef6f37eab2">aiot_state_logcb_t</a> handler)</td></tr>
+<tr class="memdesc:a2c31a7dc3f5281d0029abcbbcf17f046"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置SDK的日志信息输出使用的回调函数  <a href="#a2c31a7dc3f5281d0029abcbbcf17f046">更多...</a><br /></td></tr>
+<tr class="separator:a2c31a7dc3f5281d0029abcbbcf17f046"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ea553a1ed26d9f40d0c738b8e8bc8cc"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a0ea553a1ed26d9f40d0c738b8e8bc8cc">aiot_state_set_log_level</a> (<a class="el" href="aiot__state__api_8h.html#a98121d38a8cf3daf5246a349f912ca1d">log_level_t</a> level)</td></tr>
+<tr class="memdesc:a0ea553a1ed26d9f40d0c738b8e8bc8cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置SDK的日志信息输出等级  <a href="#a0ea553a1ed26d9f40d0c738b8e8bc8cc">更多...</a><br /></td></tr>
+<tr class="separator:a0ea553a1ed26d9f40d0c738b8e8bc8cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>SDK Core状态码头文件, 所有Core中的api返回值均在此列出 </p>
+<dl class="section date"><dt>日期</dt><dd>2019-12-27</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (C) 2015-2018 Alibaba Group Holding Limited </dd></dl>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="a7b36021d61b367dfd00007b42a7b4ef4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_SUCCESS&#160;&#160;&#160;(0x0000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>API执行成功 </p>
+
+</div>
+</div>
+<a class="anchor" id="a0b8fb1a80adec10cc927d3c346e06ed6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_USER_INPUT_BASE&#160;&#160;&#160;(-0x0100)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>-0x0100~-0x01FF表达SDK检查用户输入参数时反馈的状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab97dda492951148f1ec1401ef37eab3f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_USER_INPUT_NULL_POINTER&#160;&#160;&#160;(-0x0101)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用户输入参数中包含非法的空指针 </p>
+
+</div>
+</div>
+<a class="anchor" id="aa081db74048e904ade84697ba6cdb5c8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_USER_INPUT_OUT_RANGE&#160;&#160;&#160;(-0x0102)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用户输入参数中包含越界的值 </p>
+
+</div>
+</div>
+<a class="anchor" id="a76fff4cb0184c74f8eb3ce1645314b26"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_USER_INPUT_UNKNOWN_OPTION&#160;&#160;&#160;(-0x0103)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用户输入的配置项不能被SDK的模块所理解 </p>
+
+</div>
+</div>
+<a class="anchor" id="a807609e6daaa2c9de3ffee947f493e32"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_USER_INPUT_MISSING_PRODUCT_KEY&#160;&#160;&#160;(-0x0104)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用户输入参数中缺少productKey </p>
+
+</div>
+</div>
+<a class="anchor" id="a4a844416f748f9c465c011a8694b4dc7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_USER_INPUT_MISSING_DEVICE_NAME&#160;&#160;&#160;(-0x0105)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用户输入参数中缺少deviceName </p>
+
+</div>
+</div>
+<a class="anchor" id="ad83086da2f1d07cdd735b6a9e0692a48"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_USER_INPUT_MISSING_DEVICE_SECRET&#160;&#160;&#160;(-0x0106)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用户输入参数中缺少deviceSecret </p>
+
+</div>
+</div>
+<a class="anchor" id="a14145622a0668edcfa61dd4e68040ca5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_USER_INPUT_MISSING_PRODUCT_SECRET&#160;&#160;&#160;(-0x0107)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用户输入参数中缺少productSecret </p>
+
+</div>
+</div>
+<a class="anchor" id="af4ba3af2f486da8e7062b4ac363d3063"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_USER_INPUT_MISSING_HOST&#160;&#160;&#160;(-0x0108)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用户输入参数中缺少域名地址或IP地址 </p>
+
+</div>
+</div>
+<a class="anchor" id="a5b9b1bacae6b65a43f868a62d6df5e86"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_USER_INPUT_EXEC_DISABLED&#160;&#160;&#160;(-0x0109)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用户已调用销毁函数销毁了实例(如aiot_mqtt_deinit), 其余对该实例操作的API不应该再被调用 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad3363e284f345b1189c9278af4b8c619"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_USER_INPUT_JSON_PARSE_FAILED&#160;&#160;&#160;(-0x010A)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用户输入的JSON字符串解析失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a3cb19cb92c9919486ce129eb07ab7d2c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_SYS_DEPEND_BASE&#160;&#160;&#160;(-0x0200)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>-0x0200~-0x02FF表达SDK调用系统依赖函数时反馈的状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="aff76e61ec8fbba012aa83ff9451fa2bf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_SYS_DEPEND_MALLOC_FAILED&#160;&#160;&#160;(-0x0201)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="structaiot__sysdep__portfile__t.html#ac10d085b738fb58f4e5d4a7e8ba00a71">aiot_sysdep_portfile_t::core_sysdep_malloc</a> 申请内存失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="aa7d01542984e12fee7495f83832e805e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_SYS_DEPEND_NWK_INVALID_OPTION&#160;&#160;&#160;(-0x0202)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="structaiot__sysdep__portfile__t.html#a7bffd3e7520469faf57ea0f3b83883fa">aiot_sysdep_portfile_t::core_sysdep_network_setopt</a> 的某个cred之外的入参非法 </p>
+
+</div>
+</div>
+<a class="anchor" id="a88048e674b0b59f7793a08d5befb62a5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_SYS_DEPEND_NWK_EST_FAILED&#160;&#160;&#160;(-0x0203)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="structaiot__sysdep__portfile__t.html#a21ed15cbc00f5c03d5fd6e287e7bffce">aiot_sysdep_portfile_t::core_sysdep_network_establish</a> 建立网络失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a6a6e29ffcd9dab0d5f614451b0a12465"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_SYS_DEPEND_NWK_CLOSED&#160;&#160;&#160;(-0x0204)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SDK检测到网络已断开 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad696eb67c87503cd29b94b62ec7f5b00"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_SYS_DEPEND_NWK_READ_LESSDATA&#160;&#160;&#160;(-0x0205)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SDK从网络上实际读取的数据比期望读取的少 </p>
+
+</div>
+</div>
+<a class="anchor" id="a41e468a0cf129f14a11dbb170c8b6f61"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_SYS_DEPEND_NWK_WRITE_LESSDATA&#160;&#160;&#160;(-0x0206)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SDK向网络上写入的实际数据比期望写入的少 </p>
+
+</div>
+</div>
+<a class="anchor" id="a398e6d75cf82c34a841cab1a64d69098"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_SYS_DEPEND_NWK_READ_OVERTIME&#160;&#160;&#160;(-0x0207)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="structaiot__sysdep__portfile__t.html#a453f23d2579495bb4aba617781858944">aiot_sysdep_portfile_t::core_sysdep_network_recv</a> 超时返回 </p>
+
+</div>
+</div>
+<a class="anchor" id="a5b70668a7e2d19b6d0d995f8b51acb49"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_SYS_DEPEND_NWK_INVALID_CRED&#160;&#160;&#160;(-0x0208)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="structaiot__sysdep__portfile__t.html#a7bffd3e7520469faf57ea0f3b83883fa">aiot_sysdep_portfile_t::core_sysdep_network_setopt</a> 的cred入参非法 </p>
+
+</div>
+</div>
+<a class="anchor" id="a255a8479f0f230cd86511864a6325f8f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_SYS_DEPEND_NWK_SEND_ERR&#160;&#160;&#160;(-0x0209)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="structaiot__sysdep__portfile__t.html#a61e25854c0eb53816b011c0186f33259">aiot_sysdep_portfile_t::core_sysdep_network_send</a> 发送数据遭遇异常 </p>
+
+</div>
+</div>
+<a class="anchor" id="a60a91ad53c62b6ef0b2a722f24218ead"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_SYS_DEPEND_NWK_RECV_ERR&#160;&#160;&#160;(-0x020A)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="structaiot__sysdep__portfile__t.html#a453f23d2579495bb4aba617781858944">aiot_sysdep_portfile_t::core_sysdep_network_recv</a> 接收数据遭遇异常 </p>
+
+</div>
+</div>
+<a class="anchor" id="a83db3d5fd7878a249a69b298b6dbd706"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_BASE&#160;&#160;&#160;(-0x0300)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>-0x0300~-0x03FF表达SDK在MQTT模块内的状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="af406f117a189e1dc62632caaa4f6bee7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_CONNACK_FMT_ERROR&#160;&#160;&#160;(-0x0301)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT尝试建立连接时, 从服务端返回的CONNACK报文格式错误 </p>
+
+</div>
+</div>
+<a class="anchor" id="a3013673762fa179fc6a71ff0aee4bcde"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_CONNACK_RCODE_UNACCEPTABLE_PROTOCOL_VERSION&#160;&#160;&#160;(-0x0302)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT建连时, 服务端报错与当前客户端使用的MQTT协议版本不兼容 </p>
+
+</div>
+</div>
+<a class="anchor" id="a9b91df476086fe57733751b4bd0846b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_CONNACK_RCODE_SERVER_UNAVAILABLE&#160;&#160;&#160;(-0x0303)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT建连时, 服务端报错服务不可用, 可能是clientId取值不正确或心跳间隔不合理 </p>
+
+</div>
+</div>
+<a class="anchor" id="aca297f1342d9e8411a649296a3929d83"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_CONNACK_RCODE_BAD_USERNAME_PASSWORD&#160;&#160;&#160;(-0x0304)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT建连时, 服务端返回用户名密码不合法 </p>
+
+</div>
+</div>
+<a class="anchor" id="a9e8c02ab8e8ed5c91a61bb94d913bc5d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_CONNACK_RCODE_NOT_AUTHORIZED&#160;&#160;&#160;(-0x0305)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT建连时, 服务端返回认证失败, 用户名或者密码错误, 一般为三元组错误导致 </p>
+
+</div>
+</div>
+<a class="anchor" id="a32d65d9b636b2e651f07909648ffd260"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_CONNACK_RCODE_UNKNOWN&#160;&#160;&#160;(-0x0306)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT建连时, 服务端返回未知的CONNACK报文 </p>
+
+</div>
+</div>
+<a class="anchor" id="a5745fd468a727eb47c4602697124d493"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_PUBLIST_PACKET_ID_ROLL&#160;&#160;&#160;(-0x0307)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT缓存QoS1消息时, 检测到packetId发生卷绕 </p>
+
+</div>
+</div>
+<a class="anchor" id="a9b0950b9be7f3ec44709878c3cddb1b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_TOPIC_INVALID&#160;&#160;&#160;(-0x0308)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT发布或订阅时, 检测到Topic格式不符合协议规范 </p>
+
+</div>
+</div>
+<a class="anchor" id="acc2c2bb09d99eb1a884d0fa3f170394f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_LOG_TOPIC&#160;&#160;&#160;(-0x0309)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT发布或订阅或取消订阅时, SDK反馈Topic内容的状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="af1a7c56ef6648bd9398c837ba59c6b36"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_LOG_HEXDUMP&#160;&#160;&#160;(-0x030A)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT收发消息时, SDK反馈MQTT消息内容的状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="afbe3c0c5bc51db67c1eba13d6ad49fea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_CONNECT_SUCCESS&#160;&#160;&#160;(-0x030B)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT连接建立成功 </p>
+
+</div>
+</div>
+<a class="anchor" id="a637e686448c54956997a678a56fb8164"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_MALFORMED_REMAINING_LEN&#160;&#160;&#160;(-0x030C)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SDK读取到的MQTT报文含有不符合协议规范的报文长度字段 </p>
+
+</div>
+</div>
+<a class="anchor" id="a93cb136cd8724f2af9d792c974778ac4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_MALFORMED_REMAINING_BYTES&#160;&#160;&#160;(-0x030D)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SDK读取到的MQTT报文不符合按协议规范所解析的字节数 </p>
+
+</div>
+</div>
+<a class="anchor" id="a8be1d84e57ee702fb7df8c0e6b8953d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_PACKET_TYPE_UNKNOWN&#160;&#160;&#160;(-0x030E)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SDK读取到尚不支持的MQTT报文类型 </p>
+
+</div>
+</div>
+<a class="anchor" id="a801521fea34edd27e413a08b4f731b3b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_SUBACK_RCODE_FAILURE&#160;&#160;&#160;(-0x030F)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT订阅或取消订阅时, 从服务端得到操作失败的回应 </p>
+
+</div>
+</div>
+<a class="anchor" id="a17bbd0dcfa58e6fdee8c04bab645b154"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_SUBACK_RCODE_UNKNOWN&#160;&#160;&#160;(-0x0310)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT订阅或取消订阅时, 从服务端得到无法解析的应答 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab1bd27cab1e3c06062b60982483eff8a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_TOPIC_COMPARE_FAILED&#160;&#160;&#160;(-0x0311)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT接收消息时, 消息中的Topic与可理解的Topic列表匹配失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a7dedb9291b6e09572c4ff78fdc7ab895"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_DEINIT_TIMEOUT&#160;&#160;&#160;(-0x0312)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>执行aiot_mqtt_deinit 时, 为等待其他API执行结束, 超过设定的超时时间, MQTT实例销毁失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a8f6a35767b983cbf67fff0f151aee885"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_LOG_CONNECT&#160;&#160;&#160;(-0x0313)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT主动连接服务器相关的日志状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="a776a809beb1c20da0d5ccbd255414187"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_LOG_RECONNECTING&#160;&#160;&#160;(-0x0314)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT断线后, 自动重连服务器相关的日志状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="a177512e3d88e04a0bbc98c66d1591a3e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_LOG_CONNECT_TIMEOUT&#160;&#160;&#160;(-0x0315)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT连接服务器超时相关的日志状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="aa4d980ea46d853a659b4851a6ef19d53"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_LOG_DISCONNECT&#160;&#160;&#160;(-0x0316)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT主动与服务器断开连接相关的日志状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="a0f7158ffd8cc7dbb4d8a8ae04138d6e5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_LOG_USERNAME&#160;&#160;&#160;(-0x0317)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT连接服务器时, 使用的用户名相关的日志状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab8e0e21ff4603a54ba849d021d630f9f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_LOG_PASSWORD&#160;&#160;&#160;(-0x0318)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT连接服务器时, 使用的密码相关的日志状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="a9a3e1411a82a86d1059d7ef81f6934c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_LOG_CLIENTID&#160;&#160;&#160;(-0x0319)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT连接服务器时, 使用的clientId相关的日志状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="a87a2d99e7b3d0c255541a715ce28f412"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_LOG_TLS_PSK&#160;&#160;&#160;(-0x031A)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT连接服务器时, 使用的PSK-TLS密钥相关的日志状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="a4b2bede730dc355952a2dc3e7e3ec7f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_TOPIC_TOO_LONG&#160;&#160;&#160;(-0x031B)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT发布或订阅或取消订阅时, Topic的长度超出物联网平台的限制, 中止执行 </p>
+
+</div>
+</div>
+<a class="anchor" id="a7b1b51b7cccd7390b3fdf33b8b10c684"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_PUB_PAYLOAD_TOO_LONG&#160;&#160;&#160;(-0x031C)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT发布消息时, Payload的长度超出物联网平台的限制, 中止执行 </p>
+
+</div>
+</div>
+<a class="anchor" id="a362d988648b0a9b8fe52efc4d2741d73"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_LOG_BACKUP_IP&#160;&#160;&#160;(-0x031D)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT连接服务器时, 使用的备用ip地址 </p>
+
+</div>
+</div>
+<a class="anchor" id="a9d66d7b055c4b08d12cb2e047c0651aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_RECV_INVALID_PINRESP_PACKET&#160;&#160;&#160;(-0x031E)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>接收到非法的MQTT PINRESP报文 </p>
+
+</div>
+</div>
+<a class="anchor" id="a5e4be49162d5e1d3d35aef608e766acb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_RECV_INVALID_PUBLISH_PACKET&#160;&#160;&#160;(-0x031F)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>接收到非法的MQTT PUBLISH报文 </p>
+
+</div>
+</div>
+<a class="anchor" id="a0f4e6db30a62f5102c6ca0c95e396389"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_RECV_INVALID_PUBACK_PACKET&#160;&#160;&#160;(-0x0320)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>接收到非法的MQTT PUBACK报文 </p>
+
+</div>
+</div>
+<a class="anchor" id="aa309b228b9d24355393acb6596eec3c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_UNKNOWN_PROPERTY_OPTION&#160;&#160;&#160;(-0x0321)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>mqtt 5.0属性未解析成功 </p>
+
+</div>
+</div>
+<a class="anchor" id="afe3ad8d20175040d0592c830f06cc9ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_INVALID_PROTOCOL_VERSION&#160;&#160;&#160;(-0x0322)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>mqtt协议版本号未设置正确. 在使用5.0协议的接口(_with_prop结尾)时, 如果没有通过AIOT_MQTTOPT_VERSION将版本号设置为AIOT_MQTT_VERSION_5_0就会报这个错误 </p>
+
+</div>
+</div>
+<a class="anchor" id="a7766b6f60c1bbc71444db338b0e2586c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_RECV_INVALID_SERVER_DISCONNECT_PACKET&#160;&#160;&#160;(-0x0323)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>云端下行的server disconnect报文格式不对 </p>
+
+</div>
+</div>
+<a class="anchor" id="a22abf12547abb157cd9edafd5310da56"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_INVALID_USER_PERPERTY_DATA&#160;&#160;&#160;(-0x0324)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在用户输入的用户属性的len值&gt;0的情况下, 用户输入的user property的value为空指针 </p>
+
+</div>
+</div>
+<a class="anchor" id="a0bb7c423bfdcf732b99115169a893184"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_INVALID_USER_PERPERTY_LEN&#160;&#160;&#160;(-0x0325)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用户属性的长度值超出范围(当前是0-128个字节) </p>
+
+</div>
+</div>
+<a class="anchor" id="a7f4802337c41b555cb1ccc7e39b6ff5c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_INVALID_TX_PACK_SIZE&#160;&#160;&#160;(-0x0326)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用户上行报文的大小超过平台限制(默认是256KB) </p>
+
+</div>
+</div>
+<a class="anchor" id="aae6f3150c6a3ebd54cf484ccbd9b40f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_RECEIVE_MAX_EXCEEDED&#160;&#160;&#160;(-0x0327)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设备上行的qos 1报文超过流控限制 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab9361faaeff32a92e3b0b1990da14727"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_INVALID_SUBSCRIPTION_IDENTIFIER&#160;&#160;&#160;(-0x0328)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用户输入的subscription identifier值超过限制(0-0xFFFFFFF) </p>
+
+</div>
+</div>
+<a class="anchor" id="a5a1157c352344c2f3edea11d01df5dc8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_INVALID_PROPERTY_LEN&#160;&#160;&#160;(-0x0329)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>属性的长度为非法值, 比如大于MQTT的remainLen长度值 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad715b1fb65c88fba9b945dcd3e47fbdb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_LOG_HOST&#160;&#160;&#160;(-0x032A)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT连接服务器时, 使用的host的日志状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="a432324f026330aca1a0c0597a4c06b08"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_HTTP_BASE&#160;&#160;&#160;(-0x0400)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>-0x0400~-0x04FF表达SDK在HTTP模块内的状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="adb02f0ac9c88ab811dba65250e250ee7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_HTTP_STATUS_LINE_INVALID&#160;&#160;&#160;(-0x0401)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>解析收到的HTTP报文时, 无法获取有效的状态行, 得不到HTTP StatusCode </p>
+
+</div>
+</div>
+<a class="anchor" id="a56eff6e12e2ddc6159853be8337f5d04"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_HTTP_READ_BODY_FINISHED&#160;&#160;&#160;(-0x0402)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>解析收到的HTTP报文时, 报文的body部分已接收完毕, 没有更多数据 </p>
+
+</div>
+</div>
+<a class="anchor" id="ae5361b763d2b6f8a0e58c7763d58d5d7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_HTTP_DEINIT_TIMEOUT&#160;&#160;&#160;(-0x0403)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>执行aiot_http_deinit 时, 等待其他API执行结束超过设定的超时时间, HTTP实例销毁失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a875b6e77568d6fc3d6a560e3b89913b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_HTTP_AUTH_CODE_FAILED&#160;&#160;&#160;(-0x0404)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>因为HTTP认证应答的StatusCode不是200, 认证失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a4a9de11979fa4d9f598a061a2d89048d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_HTTP_AUTH_NOT_FINISHED&#160;&#160;&#160;(-0x0405)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>因为HTTP认证应答接收未完成, 认证失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a900fb581d2f1ac1c445b1068243eba3b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_HTTP_AUTH_TOKEN_FAILED&#160;&#160;&#160;(-0x0406)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>因为HTTP认证应答中未能解析到Token, 认证失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="aa2c951d34d573653197a07229fa1ca77"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_HTTP_NEED_AUTH&#160;&#160;&#160;(-0x0407)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设备尚未认证, 需要先调用aiot_http_auth 进行设备认证 </p>
+
+</div>
+</div>
+<a class="anchor" id="afbdd0e1d901c4accec1d3e4abef5e110"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_HTTP_RECV_NOT_FINISHED&#160;&#160;&#160;(-0x0408)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP应答数据接收未完成, 需确认网络是否异常 </p>
+
+</div>
+</div>
+<a class="anchor" id="a2996597c6645b2db9411631f38ae3b33"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_HTTP_HEADER_BUFFER_TOO_SHORT&#160;&#160;&#160;(-0x0409)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>内部buffer长度过短, 需调用aiot_http_setopt 配置AIOT_HTTPOPT_HEADER_BUFFER_LEN 选项增大buffer长度 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad34908729a85d636c2f464cf90a4b404"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_HTTP_HEADER_INVALID&#160;&#160;&#160;(-0x040A)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP首部接收异常 </p>
+
+</div>
+</div>
+<a class="anchor" id="ae1fecad06405c0d82f13fe3ba3f2d2c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_HTTP_LOG_SEND_HEADER&#160;&#160;&#160;(-0x040B)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP首部发送相关日志使用的状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="a981a767bd81718abe8fe24b99930e66c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_HTTP_LOG_SEND_CONTENT&#160;&#160;&#160;(-0x040C)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP内容发送相关日志使用的状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="a2fb3b274a22f8911e2cf4d92107d19f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_HTTP_LOG_RECV_HEADER&#160;&#160;&#160;(-0x040D)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP首部接收相关日志使用的状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="a536e133d46ffb8707b2bd908cbe9561f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_HTTP_LOG_RECV_CONTENT&#160;&#160;&#160;(-0x040E)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP内容接收相关日志使用的状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="a361bca763af18ce5ab04197c98edf4e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_HTTP_LOG_DISCONNECT&#160;&#160;&#160;(-0x040F)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP连接断开相关日志使用的状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="aa398af3f0a3fe531f17c1aa631c9b338"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_HTTP_LOG_AUTH&#160;&#160;&#160;(-0x0410)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP认证交互相关日志使用的状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="a095e8a49e42d992fcbb32c8bb55731b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_HTTP_AUTH_NOT_EXPECTED&#160;&#160;&#160;(-0x0411)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>因为HTTP应答报文的内容不符合预期, 认证失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad7a366d13f02ac98d41f14967fb07c8a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_HTTP_READ_BODY_EMPTY&#160;&#160;&#160;(-0x0412)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP报文的负载部分为空, 接收已完成 </p>
+
+</div>
+</div>
+<a class="anchor" id="aabdbc58c82c69f4dd2af16943df2a31e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_BASE&#160;&#160;&#160;(-0x0F00)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>-0x0F00~-0x0FFF表达SDK在系统底层依赖模块内的状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab7a8d2e0d7f8c440a2473fbb460d8d9a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_INPUT_NULL_POINTER&#160;&#160;&#160;(-0x0F01)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数遇到非法的空指针参数, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a8b5caff2281e5366c0784566edd38023"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_INPUT_OUT_RANGE&#160;&#160;&#160;(-0x0F02)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数遇到输入参数超出合理值域, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="adae0857b8832e383525c7d77964761b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_MALLOC_FAILED&#160;&#160;&#160;(-0x0F03)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数遇到申请内存错误, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a5ecef7fc4d82e804de86208279531f03"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_MISSING_HOST&#160;&#160;&#160;(-0x0F04)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数遇到域名地址或IP地址缺失, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="ae98178c414fb319ef20314e51f51b2c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_TCP_CLIENT_NOT_IMPLEMENT&#160;&#160;&#160;(-0x0F05)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数遇到TCP客户端建立过程尚未实现, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a7a009fdbd312ea9b47db3db5642f7848"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_TCP_SERVER_NOT_IMPLEMENT&#160;&#160;&#160;(-0x0F06)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数遇到TCP服务端建立过程尚未实现, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="adaf07b6b2e7763dc2a3158ca619f46e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_UDP_CLIENT_NOT_IMPLEMENT&#160;&#160;&#160;(-0x0F07)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数遇到UDP客户端建立过程尚未实现, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a58f069fe80d3462583aa62a790e13b68"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_UDP_SERVER_NOT_IMPLEMENT&#160;&#160;&#160;(-0x0F08)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数遇到UDP服务端建立过程尚未实现, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="ae632eccefa89b11fd9a199886a3c9564"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_NETWORK_UNKNOWN_OPTION&#160;&#160;&#160;(-0x0F09)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数遇到不能理解的网络层设置选项, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a53f0d77ba22b6ca8ae8d66afd9eae8a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_NETWORK_UNKNOWN_SOCKET_TYPE&#160;&#160;&#160;(-0x0F0A)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数遇到不能理解的socket类型, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a5ca34fdf0da40337984d728bc994704f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_NETWORK_DNS_FAILED&#160;&#160;&#160;(-0x0F0B)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数遇到域名DNS解析错误, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a6cfe87c4479285575c04909a34fc2441"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_NETWORK_SOCKET_CREATE_FAILED&#160;&#160;&#160;(-0x0F0C)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数建立网络连接时遇到socket创建错误, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a311a35ad4f7f1a4c91d911adb0784935"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_NETWORK_SOCKET_CONFIG_FAILED&#160;&#160;&#160;(-0x0F0D)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数建立网络连接时遇到socket配置错误, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a02a78cbf5dbb5c00e662d8640cc3c792"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_NETWORK_SOCKET_BIND_FAILED&#160;&#160;&#160;(-0x0F0E)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数建立网络连接时遇到bind错误, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a04becd32c2915109c764486c6132e71c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_NETWORK_CONNECT_TIMEOUT&#160;&#160;&#160;(-0x0F0F)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数遇到TCP连接超时未成功, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="ae554bd1d170cf2d8f4c79b39d753ba1b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_NETWORK_CONNECT_FAILED&#160;&#160;&#160;(-0x0F10)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数遇到TCP连接建立错误, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a729be949940ebeed228f40aa3f1e2da8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_NETWORK_SELECT_FAILED&#160;&#160;&#160;(-0x0F11)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数遇到套接字select错误, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a64cee05fa9608c1a39ee917c58a6ac4c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_NETWORK_SEND_FAILED&#160;&#160;&#160;(-0x0F12)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数遇到网络层发送数据错误, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a995b0829a06f01728153fb1816bc5519"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_NETWORK_RECV_FAILED&#160;&#160;&#160;(-0x0F13)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数遇到网络层接收数据错误, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a48c2cfc631829acb978bf2c6c0663b3c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_NETWORK_SEND_CONNECTION_CLOSED&#160;&#160;&#160;(-0x0F14)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数发送数据时遇到连接已关闭, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a1882943d92ef17649082f71b4827ed09"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_NETWORK_RECV_CONNECTION_CLOSED&#160;&#160;&#160;(-0x0F15)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数接收数据时遇到连接已关闭, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a0daadbaf6c2c0f29daf7d0c6e3748269"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_TLS_INVALID_CRED_OPTION&#160;&#160;&#160;(-0x0F16)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数遇到不能理解的安全凭据选项, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a85ca16ec9d5eebd8ee737f0ed226be7f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_TLS_INVALID_MAX_FRAGMENT&#160;&#160;&#160;(-0x0F17)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数遇到不合法的最大TLS分片长度配置, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="aa52309160643956c68dd26f000f65f54"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_TLS_INVALID_SERVER_CERT&#160;&#160;&#160;(-0x0F18)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数遇到不合法的服务端证书, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a7985731192281972ae68366debd03e04"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_TLS_INVALID_CLIENT_CERT&#160;&#160;&#160;(-0x0F19)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数遇到不合法的客户端证书, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a78d3dc41dadc98cc1b0eaedee015b39f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_TLS_INVALID_CLIENT_KEY&#160;&#160;&#160;(-0x0F1A)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数遇到不合法的客户端密钥, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a7510a3897dfd4456bf336cedbaed1a2d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_TLS_SOCKET_CREATE_FAILED&#160;&#160;&#160;(-0x0F1B)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数建立TLS连接时遇到socket创建错误, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="aca598d841a74dad550638d57d0b12523"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_TLS_SOCKET_CONNECT_FAILED&#160;&#160;&#160;(-0x0F1C)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数建立TLS连接时遇到socket连接建立错误, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a914601c3e05fefc50a0042821c958c96"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_TLS_INVALID_RECORD&#160;&#160;&#160;(-0x0F1D)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数建立TLS连接时遇到握手失败, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="aaefe195828b85de7a484ce9fabaf3401"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_TLS_RECV_FAILED&#160;&#160;&#160;(-0x0F1E)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数在TLS连接上, 遇到数据接收错误, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad8831528063ebba7674e55d3777be17d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_TLS_SEND_FAILED&#160;&#160;&#160;(-0x0F1F)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数在TLS连接上, 遇到数据发送错误, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a583adc6e5a3970e5ecab84623502eaa0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_TLS_RECV_CONNECTION_CLOSED&#160;&#160;&#160;(-0x0F20)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数在TLS连接上, 接收数据时遇到连接已关闭, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a911dfd525917dd6422838d2b3363e5a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_TLS_SEND_CONNECTION_CLOSED&#160;&#160;&#160;(-0x0F21)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数在TLS连接上, 发送数据时遇到连接已关闭, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="aea1d3774e6d4026fb48e7991181b8a64"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_TLS_CONFIG_PSK_FAILED&#160;&#160;&#160;(-0x0F22)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数建立TLS连接时遇到PSK配置错误, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a20fd2cb0457c93712c3d4a2d107020a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_TLS_INVALID_HANDSHAKE&#160;&#160;&#160;(-0x0F23)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底层依赖函数建立TLS连接时遇到非法记录以外的握手错误, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="ae0ed46f32a2e183357b3fe751b0ec7f9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_DTLS_CONFIG_PSK_FAILED&#160;&#160;&#160;(-0x0F24)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DTLS握手时设置PSK配置错误, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="aad38feaba474c3fbd92e64c36adac2ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_DTLS_HANDSHAKE_FAILED&#160;&#160;&#160;(-0x0F25)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DTLS握手失败, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a7b43d64363041f3d065c6dc9ae86148a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_NETWORK_DTLS_CONNECT_FAILED&#160;&#160;&#160;(-0x0F26)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DTLS建立连接时失败, 执行失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="aaf3eb567fd1619692a43fc847153e048"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_DTLS_HANDSHAKE_IN_PROGRESS&#160;&#160;&#160;(-0x0F27)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>之前的DTLS握手还在进行中 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab0010b7165000e4bf682efa3b10225e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_PORT_PTHREAD_CREATE_FAILED&#160;&#160;&#160;(-0x0F28)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>线程创建失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a5baed8aa59df8f4cd8e7cc654f12d5e1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_ADAPTER_COMMON&#160;&#160;&#160;(-0x1000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>core_adapter适配模块 </p>
+
+</div>
+</div>
+<a class="anchor" id="a9bdbf958ee97cdc651c96a12d0cdadd0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_NONSUPPORT&#160;&#160;&#160;(-0x1001)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>暂不支持使用 </p>
+
+</div>
+</div>
+<a class="anchor" id="a8c40dbfd5f0b7ebfc7d6ff2248fe3652"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DEVICE_REPEATED_CONNECT&#160;&#160;&#160;(-0x1101)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设备重复建连 </p>
+
+</div>
+</div>
+<a class="anchor" id="ac043422b0618c9170c3ea1790372c47c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DEVICE_MISSING_CONNECT_ARGS&#160;&#160;&#160;(-0x1102)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设备建连参数缺失 </p>
+
+</div>
+</div>
+<a class="anchor" id="ade9e00f636a1e3707bb5825b3b2200c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DEVICE_OFFLINE&#160;&#160;&#160;(-0x1103)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设备处于离线状态，不能执行消息发布/订阅操作 </p>
+
+</div>
+</div>
+<a class="anchor" id="a558a95d904aa0d533a359653c5fd6354"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DEVICE_REPEATED_DISCONNECT&#160;&#160;&#160;(-0x1104)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设备重复断连 </p>
+
+</div>
+</div>
+<a class="anchor" id="a7e96c64628a9d59062c0c905bae6adcf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DEVICE_UNKOWN_ERROR&#160;&#160;&#160;(-0x1105)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设备发生未知错误 </p>
+
+</div>
+</div>
+<a class="anchor" id="ae0adaca05b4eae81c3ab56f377756e94"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DEVICE_DYNREG_TIMEOUT&#160;&#160;&#160;(-0x1106)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设备动态注册接收超时 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad73f9ac9dffc0025a0caf692771a6774"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MESSAGE_CREATE_ERROR&#160;&#160;&#160;(-0x1201)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>消息创建错误，请检查参数是否正确 </p>
+
+</div>
+</div>
+<a class="anchor" id="a4868d2bc25df2fd0c699b331fef008fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MESSAGE_PARSE_ERROR&#160;&#160;&#160;(-0x1202)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>解析JSON消息出错 </p>
+
+</div>
+</div>
+<h2 class="groupheader">类型定义说明</h2>
+<a class="anchor" id="a3e9de40a93283786f17ce6ef6f37eab2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int32_t(*  aiot_state_logcb_t) (int32_t code, char *message)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SDK的日志信息输出回调函数原型 </p>
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a class="anchor" id="a98121d38a8cf3daf5246a349f912ca1d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__state__api_8h.html#a98121d38a8cf3daf5246a349f912ca1d">log_level_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a98121d38a8cf3daf5246a349f912ca1da69dacb1837e1e37c6ed34cc2ee1d8848"></a>LOG_LEVEL_NONE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a98121d38a8cf3daf5246a349f912ca1da5b40f003febbc3b535649d63f4b8a44f"></a>LOG_LEVEL_ERROR&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a98121d38a8cf3daf5246a349f912ca1daedee1e3159bfe7d918b6e29873c5aee4"></a>LOG_LEVEL_INFO&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a98121d38a8cf3daf5246a349f912ca1da538b2b6e011479d408ecd2be0f6d6177"></a>LOG_LEVEL_DEBUG&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a2c31a7dc3f5281d0029abcbbcf17f046"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_state_set_logcb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="aiot__state__api_8h.html#a3e9de40a93283786f17ce6ef6f37eab2">aiot_state_logcb_t</a>&#160;</td>
+          <td class="paramname"><em>handler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置SDK的日志信息输出使用的回调函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handler</td><td>日志回调函数</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t 保留 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0ea553a1ed26d9f40d0c738b8e8bc8cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_state_set_log_level </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="aiot__state__api_8h.html#a98121d38a8cf3daf5246a349f912ca1d">log_level_t</a>&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置SDK的日志信息输出等级 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>日志等级</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t 保留 </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

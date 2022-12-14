@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: device-core/aiot_message_api.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">5.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_a5c085e7ac88bd273106c2d9d4685a6c.html">device-core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">aiot_message_api.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="aiot__message__api_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef _AIOT_MESSAGE_API_H_</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define _AIOT_MESSAGE_API_H_</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#if defined(__cplusplus)</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structaiot__msg__t.html">   16</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structaiot__msg__t.html#a132be72936e0e128ed18574fc449cf35">   17</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="structaiot__msg__t.html#a132be72936e0e128ed18574fc449cf35">topic</a>;                 <span class="comment">/* 消息的话题，类似于命令字 */</span></div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structaiot__msg__t.html#afdc4eaa1cc7a92f973ed332adcf8165c">   18</a></span>&#160;    uint8_t *<a class="code" href="structaiot__msg__t.html#afdc4eaa1cc7a92f973ed332adcf8165c">payload</a>;            <span class="comment">/* 消息的载体 */</span></div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="structaiot__msg__t.html#aae1dfe4beb2231b3b3d250c15be83e9f">   19</a></span>&#160;    uint32_t <a class="code" href="structaiot__msg__t.html#aae1dfe4beb2231b3b3d250c15be83e9f">payload_lenth</a>;      <span class="comment">/* 消息的载体长度 */</span></div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structaiot__msg__t.html#a063430d19598cc1fb54d94bd8a8fba1a">   20</a></span>&#160;    <span class="keywordtype">char</span> <a class="code" href="structaiot__msg__t.html#a063430d19598cc1fb54d94bd8a8fba1a">qos</a>;                    <span class="comment">/* 消息的质量等级，0：至多一次到达 1:至少一次到达 */</span></div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structaiot__msg__t.html#ac5286ff9e60b09589a190b0ce14b03e0">   21</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="structaiot__msg__t.html#ac5286ff9e60b09589a190b0ce14b03e0">product_key</a>;           <span class="comment">/* 该消息归属的设备信息,解析时后才会使用 */</span></div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structaiot__msg__t.html#a8cb3758542dbf5bfec6cfbbb4f406210">   22</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="structaiot__msg__t.html#a8cb3758542dbf5bfec6cfbbb4f406210">device_name</a>;           <span class="comment">/* 该消息归属的设备信息,解析时后才会使用 */</span></div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="structaiot__msg__t.html#aca0199c7027321645dc155e4dcc6b85d">   23</a></span>&#160;    uint32_t <a class="code" href="structaiot__msg__t.html#aca0199c7027321645dc155e4dcc6b85d">id</a>;                 <span class="comment">/* Alink协议的消息id */</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">/* 接收消息：rrpc报文:云端对设备的同步调用，需要保存上下文信息以便消息返回 */</span></div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structaiot__msg__t.html#a8806eb0b04b9786c3c2f67d726e3254d">   26</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="structaiot__msg__t.html#a8806eb0b04b9786c3c2f67d726e3254d">rrpc_id</a>;               <span class="comment">/* rrpc的消息id */</span></div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="structaiot__msg__t.html#a209dd201a4c172d5d117fd2f35ea8d23">   27</a></span>&#160;    int32_t <a class="code" href="structaiot__msg__t.html#a209dd201a4c172d5d117fd2f35ea8d23">rrpc_cid</a>;            <span class="comment">/* rrpc是从哪个连接来的 */</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;} <a class="code" href="structaiot__msg__t.html">aiot_msg_t</a>;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<a class="code" href="structaiot__msg__t.html">aiot_msg_t</a>* <a class="code" href="aiot__message__api_8h.html#a45152707c592dc19f9a3737f25fdee1a">aiot_msg_create_raw</a>(<span class="keywordtype">char</span> *topic, uint8_t *payload, uint32_t payload_lenth);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<a class="code" href="structaiot__msg__t.html">aiot_msg_t</a>* <a class="code" href="aiot__message__api_8h.html#aa8e50d3ee7df8c26fceac9b3c311f9c3">aiot_msg_create_user_define</a>(<span class="keywordtype">char</span> *productKey, <span class="keywordtype">char</span> *deviceName, <span class="keywordtype">char</span> *sub_topic, uint8_t *payload, uint32_t payload_lenth);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<a class="code" href="structaiot__msg__t.html">aiot_msg_t</a>* <a class="code" href="aiot__message__api_8h.html#ab353860374842066c4f048cbc778235e">aiot_msg_create_rrpc_reply</a>(<span class="keyword">const</span> <a class="code" href="structaiot__msg__t.html">aiot_msg_t</a> *message, uint8_t *payload, uint32_t payload_lenth);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<a class="code" href="structaiot__msg__t.html">aiot_msg_t</a>* <a class="code" href="aiot__message__api_8h.html#a852bce4584ba0f9fb02c5f1e20a5ad94">aiot_msg_clone</a>(<a class="code" href="structaiot__msg__t.html">aiot_msg_t</a>* message);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;int32_t <a class="code" href="aiot__message__api_8h.html#ad78c30b2011b07ff6e29597928ef57fb">aiot_msg_delete</a>(<a class="code" href="structaiot__msg__t.html">aiot_msg_t</a>* message);</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;int32_t <a class="code" href="aiot__message__api_8h.html#a7969d9cd5acd0dd1847444ad0a7ea746">aiot_msg_set_qos</a>(<a class="code" href="structaiot__msg__t.html">aiot_msg_t</a>* message, uint8_t qos);</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#if defined(__cplusplus)</span></div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="structaiot__msg__t_html_a8cb3758542dbf5bfec6cfbbb4f406210"><div class="ttname"><a href="structaiot__msg__t.html#a8cb3758542dbf5bfec6cfbbb4f406210">aiot_msg_t::device_name</a></div><div class="ttdeci">char * device_name</div><div class="ttdef"><b>Definition:</b> aiot_message_api.h:22</div></div>
+<div class="ttc" id="aiot__message__api_8h_html_a45152707c592dc19f9a3737f25fdee1a"><div class="ttname"><a href="aiot__message__api_8h.html#a45152707c592dc19f9a3737f25fdee1a">aiot_msg_create_raw</a></div><div class="ttdeci">aiot_msg_t * aiot_msg_create_raw(char *topic, uint8_t *payload, uint32_t payload_lenth)</div><div class="ttdoc">初始化透传的消息，topic和payload都使用参数内的 </div><div class="ttdef"><b>Definition:</b> aiot_message_api.c:53</div></div>
+<div class="ttc" id="structaiot__msg__t_html_aca0199c7027321645dc155e4dcc6b85d"><div class="ttname"><a href="structaiot__msg__t.html#aca0199c7027321645dc155e4dcc6b85d">aiot_msg_t::id</a></div><div class="ttdeci">uint32_t id</div><div class="ttdef"><b>Definition:</b> aiot_message_api.h:23</div></div>
+<div class="ttc" id="structaiot__msg__t_html_ac5286ff9e60b09589a190b0ce14b03e0"><div class="ttname"><a href="structaiot__msg__t.html#ac5286ff9e60b09589a190b0ce14b03e0">aiot_msg_t::product_key</a></div><div class="ttdeci">char * product_key</div><div class="ttdef"><b>Definition:</b> aiot_message_api.h:21</div></div>
+<div class="ttc" id="aiot__message__api_8h_html_aa8e50d3ee7df8c26fceac9b3c311f9c3"><div class="ttname"><a href="aiot__message__api_8h.html#aa8e50d3ee7df8c26fceac9b3c311f9c3">aiot_msg_create_user_define</a></div><div class="ttdeci">aiot_msg_t * aiot_msg_create_user_define(char *productKey, char *deviceName, char *sub_topic, uint8_t *payload, uint32_t payload_lenth)</div><div class="ttdoc">生成自定义topic的消息 </div><div class="ttdef"><b>Definition:</b> aiot_message_api.c:85</div></div>
+<div class="ttc" id="aiot__message__api_8h_html_a7969d9cd5acd0dd1847444ad0a7ea746"><div class="ttname"><a href="aiot__message__api_8h.html#a7969d9cd5acd0dd1847444ad0a7ea746">aiot_msg_set_qos</a></div><div class="ttdeci">int32_t aiot_msg_set_qos(aiot_msg_t *message, uint8_t qos)</div><div class="ttdoc">设置消息发送的qos </div><div class="ttdef"><b>Definition:</b> aiot_message_api.c:212</div></div>
+<div class="ttc" id="structaiot__msg__t_html_afdc4eaa1cc7a92f973ed332adcf8165c"><div class="ttname"><a href="structaiot__msg__t.html#afdc4eaa1cc7a92f973ed332adcf8165c">aiot_msg_t::payload</a></div><div class="ttdeci">uint8_t * payload</div><div class="ttdef"><b>Definition:</b> aiot_message_api.h:18</div></div>
+<div class="ttc" id="structaiot__msg__t_html_a209dd201a4c172d5d117fd2f35ea8d23"><div class="ttname"><a href="structaiot__msg__t.html#a209dd201a4c172d5d117fd2f35ea8d23">aiot_msg_t::rrpc_cid</a></div><div class="ttdeci">int32_t rrpc_cid</div><div class="ttdef"><b>Definition:</b> aiot_message_api.h:27</div></div>
+<div class="ttc" id="aiot__message__api_8h_html_ad78c30b2011b07ff6e29597928ef57fb"><div class="ttname"><a href="aiot__message__api_8h.html#ad78c30b2011b07ff6e29597928ef57fb">aiot_msg_delete</a></div><div class="ttdeci">int32_t aiot_msg_delete(aiot_msg_t *message)</div><div class="ttdoc">回收消息对象的资源 </div><div class="ttdef"><b>Definition:</b> aiot_message_api.c:202</div></div>
+<div class="ttc" id="structaiot__msg__t_html_a063430d19598cc1fb54d94bd8a8fba1a"><div class="ttname"><a href="structaiot__msg__t.html#a063430d19598cc1fb54d94bd8a8fba1a">aiot_msg_t::qos</a></div><div class="ttdeci">char qos</div><div class="ttdef"><b>Definition:</b> aiot_message_api.h:20</div></div>
+<div class="ttc" id="structaiot__msg__t_html_a8806eb0b04b9786c3c2f67d726e3254d"><div class="ttname"><a href="structaiot__msg__t.html#a8806eb0b04b9786c3c2f67d726e3254d">aiot_msg_t::rrpc_id</a></div><div class="ttdeci">char * rrpc_id</div><div class="ttdef"><b>Definition:</b> aiot_message_api.h:26</div></div>
+<div class="ttc" id="structaiot__msg__t_html_aae1dfe4beb2231b3b3d250c15be83e9f"><div class="ttname"><a href="structaiot__msg__t.html#aae1dfe4beb2231b3b3d250c15be83e9f">aiot_msg_t::payload_lenth</a></div><div class="ttdeci">uint32_t payload_lenth</div><div class="ttdef"><b>Definition:</b> aiot_message_api.h:19</div></div>
+<div class="ttc" id="structaiot__msg__t_html_a132be72936e0e128ed18574fc449cf35"><div class="ttname"><a href="structaiot__msg__t.html#a132be72936e0e128ed18574fc449cf35">aiot_msg_t::topic</a></div><div class="ttdeci">char * topic</div><div class="ttdef"><b>Definition:</b> aiot_message_api.h:17</div></div>
+<div class="ttc" id="aiot__message__api_8h_html_a852bce4584ba0f9fb02c5f1e20a5ad94"><div class="ttname"><a href="aiot__message__api_8h.html#a852bce4584ba0f9fb02c5f1e20a5ad94">aiot_msg_clone</a></div><div class="ttdeci">aiot_msg_t * aiot_msg_clone(aiot_msg_t *message)</div><div class="ttdoc">克隆一条消息，深拷贝 </div><div class="ttdef"><b>Definition:</b> aiot_message_api.c:153</div></div>
+<div class="ttc" id="aiot__message__api_8h_html_ab353860374842066c4f048cbc778235e"><div class="ttname"><a href="aiot__message__api_8h.html#ab353860374842066c4f048cbc778235e">aiot_msg_create_rrpc_reply</a></div><div class="ttdeci">aiot_msg_t * aiot_msg_create_rrpc_reply(const aiot_msg_t *message, uint8_t *payload, uint32_t payload_lenth)</div><div class="ttdoc">生成rrpc回复的消息 </div><div class="ttdef"><b>Definition:</b> aiot_message_api.c:117</div></div>
+<div class="ttc" id="structaiot__msg__t_html"><div class="ttname"><a href="structaiot__msg__t.html">aiot_msg_t</a></div><div class="ttdoc">描述消息的数据结构 </div><div class="ttdef"><b>Definition:</b> aiot_message_api.h:16</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

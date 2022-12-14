@@ -1,0 +1,5 @@
+<map id="ota_handle_t" name="ota_handle_t">
+<area shape="rect" id="node2" href="$structota__config__t.html" title="ota_config_t" alt="" coords="14,184,107,211"/>
+<area shape="rect" id="node3" href="$structaiot__ota__msg__t.html" title="aiot_ota_msg_t" alt="" coords="5,95,116,121"/>
+<area shape="rect" id="node4" href="$structmqtt__url__t.html" title="mqtt_url_t" alt="" coords="21,5,101,32"/>
+</map>

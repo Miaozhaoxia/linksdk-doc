@@ -1,0 +1,5 @@
+<map id="aiot_gateway_msg_t" name="aiot_gateway_msg_t">
+<area shape="rect" id="node2" href="$structaiot__gateway__msg__topo__change__t.html" title="topo变更的状态 " alt="" coords="5,5,168,47"/>
+<area shape="rect" id="node3" href="$structaiot__gateway__msg__reply__t.html" title="回复消息的关键字段 " alt="" coords="193,13,370,39"/>
+<area shape="rect" id="node4" href="$structsubdev__recv__t.html" title="接收消息中表示设备信息的数据结构 " alt="" coords="395,13,501,39"/>
+</map>

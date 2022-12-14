@@ -1,0 +1,862 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: device-core/aiot_linkconfig_api.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">5.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_a5c085e7ac88bd273106c2d9d4685a6c.html">device-core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">aiot_linkconfig_api.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>连接配置头文件，提供配置连接的基础能力  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="aiot__protocol__api_8h_source.html">aiot_protocol_api.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+aiot_linkconfig_api.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__linkconfig__api_8h__incl.png" border="0" usemap="#device-core_2aiot__linkconfig__api_8h" alt=""/></div>
+<map name="device-core_2aiot__linkconfig__api_8h" id="device-core_2aiot__linkconfig__api_8h">
+<area shape="rect" id="node3" href="aiot__protocol__api_8h.html" title="aiot_protocol_api.h" alt="" coords="92,95,223,121"/>
+<area shape="rect" id="node4" href="aiot__sysdep__api_8h.html" title="SDK Core系统依赖头文件, 所有Core中的系统依赖均在此文件中列出 " alt="" coords="119,169,246,196"/>
+<area shape="rect" id="node5" href="aiot__message__api_8h.html" title="aiot_message_api.h" alt="" coords="271,169,409,196"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__linkconfig__api_8h__dep__incl.png" border="0" usemap="#device-core_2aiot__linkconfig__api_8hdep" alt=""/></div>
+<map name="device-core_2aiot__linkconfig__api_8hdep" id="device-core_2aiot__linkconfig__api_8hdep">
+<area shape="rect" id="node2" href="aiot__device__api_8h.html" title="设备模块头文件, 提供设备的基础能力 " alt="" coords="5,95,164,136"/>
+<area shape="rect" id="node4" href="aiot__linkconfig__api_8c.html" title="连接物联网平台的配置管理，包含tls/mqtt/http连接等参数配置 " alt="" coords="189,95,365,136"/>
+<area shape="rect" id="node3" href="aiot__device__api_8c.html" title="设备管理模块，管理设备的配置、行为、及运行时参数 " alt="" coords="5,184,164,225"/>
+</map>
+</div>
+</div>
+<p><a href="aiot__linkconfig__api_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a3db5e0b740e837c8256c7c4ef4f82c8a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__linkconfig__api_8h.html#a3db5e0b740e837c8256c7c4ef4f82c8a">aiot_linkconfig_init</a> (<a class="el" href="structaiot__protocol__t.html">aiot_protocol_t</a> *protocol)</td></tr>
+<tr class="memdesc:a3db5e0b740e837c8256c7c4ef4f82c8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化默认的连接配置参数,生成配置参数句柄  <a href="#a3db5e0b740e837c8256c7c4ef4f82c8a">更多...</a><br /></td></tr>
+<tr class="separator:a3db5e0b740e837c8256c7c4ef4f82c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6474186efa6dc20146939a4af9243f40"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__linkconfig__api_8h.html#a6474186efa6dc20146939a4af9243f40">aiot_linkconfig_deinit</a> (<a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> **config)</td></tr>
+<tr class="memdesc:a6474186efa6dc20146939a4af9243f40"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除连接配置句柄，回收资源  <a href="#a6474186efa6dc20146939a4af9243f40">更多...</a><br /></td></tr>
+<tr class="separator:a6474186efa6dc20146939a4af9243f40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9300e39ada08a8d2551aea3ce072999b"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__linkconfig__api_8h.html#a9300e39ada08a8d2551aea3ce072999b">aiot_linkconfig_host</a> (<a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> *config, char *host, uint16_t port)</td></tr>
+<tr class="memdesc:a9300e39ada08a8d2551aea3ce072999b"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置连接的host, port  <a href="#a9300e39ada08a8d2551aea3ce072999b">更多...</a><br /></td></tr>
+<tr class="separator:a9300e39ada08a8d2551aea3ce072999b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20dad72f2348a026dfaa0855ef76bb26"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__linkconfig__api_8h.html#a20dad72f2348a026dfaa0855ef76bb26">aiot_linkconfig_cred_option</a> (<a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> *config, <a class="el" href="aiot__sysdep__api_8h.html#a6b105f01df5250c09a3296c9b869f610">aiot_sysdep_network_cred_option_t</a> option)</td></tr>
+<tr class="memdesc:a20dad72f2348a026dfaa0855ef76bb26"><td class="mdescLeft">&#160;</td><td class="mdescRight">设备网络连接的类型  <a href="#a20dad72f2348a026dfaa0855ef76bb26">更多...</a><br /></td></tr>
+<tr class="separator:a20dad72f2348a026dfaa0855ef76bb26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01011d36eb57c9a385b6a36604fd0d47"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__linkconfig__api_8h.html#a01011d36eb57c9a385b6a36604fd0d47">aiot_linkconfig_root_cert</a> (<a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> *config, const char *cert, uint32_t len)</td></tr>
+<tr class="memdesc:a01011d36eb57c9a385b6a36604fd0d47"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置服务器的根证书  <a href="#a01011d36eb57c9a385b6a36604fd0d47">更多...</a><br /></td></tr>
+<tr class="separator:a01011d36eb57c9a385b6a36604fd0d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8894240e45a618225c4adf13d916dcb"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__linkconfig__api_8h.html#ae8894240e45a618225c4adf13d916dcb">aiot_linkconfig_client_cert_privkey</a> (<a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> *config, char *client_cert, uint32_t cert_len, char *client_privkey, uint32_t key_len)</td></tr>
+<tr class="memdesc:ae8894240e45a618225c4adf13d916dcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">X509认证，设置客户端证书和私钥  <a href="#ae8894240e45a618225c4adf13d916dcb">更多...</a><br /></td></tr>
+<tr class="separator:ae8894240e45a618225c4adf13d916dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9cadfc41042e860509258fd20ef0f46"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__linkconfig__api_8h.html#ab9cadfc41042e860509258fd20ef0f46">aiot_linkconfig_connect_timeout</a> (<a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> *config, uint32_t timeout_ms)</td></tr>
+<tr class="memdesc:ab9cadfc41042e860509258fd20ef0f46"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置建连超时的时间  <a href="#ab9cadfc41042e860509258fd20ef0f46">更多...</a><br /></td></tr>
+<tr class="separator:ab9cadfc41042e860509258fd20ef0f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56b0188e0a4ff91587cd8296084030f6"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__linkconfig__api_8h.html#a56b0188e0a4ff91587cd8296084030f6">aiot_linkconfig_recv_timeout</a> (<a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> *config, uint32_t timeout_ms)</td></tr>
+<tr class="memdesc:a56b0188e0a4ff91587cd8296084030f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置接收超时的时间  <a href="#a56b0188e0a4ff91587cd8296084030f6">更多...</a><br /></td></tr>
+<tr class="separator:a56b0188e0a4ff91587cd8296084030f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71f73b933521e698c594f9b0a96b9ef9"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__linkconfig__api_8h.html#a71f73b933521e698c594f9b0a96b9ef9">aiot_linkconfig_send_timeout</a> (<a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> *config, uint32_t timeout_ms)</td></tr>
+<tr class="memdesc:a71f73b933521e698c594f9b0a96b9ef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置发送超时的时间  <a href="#a71f73b933521e698c594f9b0a96b9ef9">更多...</a><br /></td></tr>
+<tr class="separator:a71f73b933521e698c594f9b0a96b9ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42dd37f470d87b5ad628044bdc443a0c"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__linkconfig__api_8h.html#a42dd37f470d87b5ad628044bdc443a0c">aiot_linkconfig_reconnect_enable</a> (<a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> *config, uint8_t enable)</td></tr>
+<tr class="memdesc:a42dd37f470d87b5ad628044bdc443a0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是否自动重连  <a href="#a42dd37f470d87b5ad628044bdc443a0c">更多...</a><br /></td></tr>
+<tr class="separator:a42dd37f470d87b5ad628044bdc443a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee78341cefa01db32561072e27d8e21a"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__linkconfig__api_8h.html#aee78341cefa01db32561072e27d8e21a">aiot_linkconfig_multi_channel</a> (<a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> *config, uint32_t start_cid, uint32_t num)</td></tr>
+<tr class="memdesc:aee78341cefa01db32561072e27d8e21a"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置多连接：允许建连多个与云平台的连接  <a href="#aee78341cefa01db32561072e27d8e21a">更多...</a><br /></td></tr>
+<tr class="separator:aee78341cefa01db32561072e27d8e21a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e86c33d714514ca03cdfa922f99c0d5"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__linkconfig__api_8h.html#a9e86c33d714514ca03cdfa922f99c0d5">aiot_linkconfig_mqtt_extclientid</a> (<a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> *config, char *extern_clientid)</td></tr>
+<tr class="memdesc:a9e86c33d714514ca03cdfa922f99c0d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">设备连接阿里云物联网平台时的扩展clientid  <a href="#a9e86c33d714514ca03cdfa922f99c0d5">更多...</a><br /></td></tr>
+<tr class="separator:a9e86c33d714514ca03cdfa922f99c0d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10808f32822c7f08c4e83b729f132824"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__linkconfig__api_8h.html#a10808f32822c7f08c4e83b729f132824">aiot_linkconfig_mqtt_keepalive</a> (<a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> *config, uint16_t keep_alive_s)</td></tr>
+<tr class="memdesc:a10808f32822c7f08c4e83b729f132824"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT建联时, CONNECT报文中的最长心跳间隔， 取值范围为30 ~ 1200s.  <a href="#a10808f32822c7f08c4e83b729f132824">更多...</a><br /></td></tr>
+<tr class="separator:a10808f32822c7f08c4e83b729f132824"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01522b70c924f6a29a35037af27e89df"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__linkconfig__api_8h.html#a01522b70c924f6a29a35037af27e89df">aiot_linkconfig_mqtt_cleansession</a> (<a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> *config, uint8_t clean_session)</td></tr>
+<tr class="memdesc:a01522b70c924f6a29a35037af27e89df"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT建联时, CONNECT报文中的clean session参数  <a href="#a01522b70c924f6a29a35037af27e89df">更多...</a><br /></td></tr>
+<tr class="separator:a01522b70c924f6a29a35037af27e89df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accc1cf0760824ca845b2a44e9f78dd7d"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__linkconfig__api_8h.html#accc1cf0760824ca845b2a44e9f78dd7d">aiot_linkconfig_mqtt_heartbeat_interval</a> (<a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> *config, uint32_t interval_ms)</td></tr>
+<tr class="memdesc:accc1cf0760824ca845b2a44e9f78dd7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置设备主动发送PINGREQ报文发送时间间隔. (心跳发送间隔)  <a href="#accc1cf0760824ca845b2a44e9f78dd7d">更多...</a><br /></td></tr>
+<tr class="separator:accc1cf0760824ca845b2a44e9f78dd7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb42dfa19a481571f9a4e96e0398cc5b"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__linkconfig__api_8h.html#afb42dfa19a481571f9a4e96e0398cc5b">aiot_linkconfig_dynamic_register</a> (<a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> *config, char *product_secret, char *instance_id)</td></tr>
+<tr class="memdesc:afb42dfa19a481571f9a4e96e0398cc5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">动态注册参数配置  <a href="#afb42dfa19a481571f9a4e96e0398cc5b">更多...</a><br /></td></tr>
+<tr class="separator:afb42dfa19a481571f9a4e96e0398cc5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a559b5358274bebf7d0c3a78924e61269"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__linkconfig__api_8h.html#a559b5358274bebf7d0c3a78924e61269">aiot_linkconfig_mqtt_auth</a> (<a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> *config, char *username, char *password, char *clientid)</td></tr>
+<tr class="memdesc:a559b5358274bebf7d0c3a78924e61269"><td class="mdescLeft">&#160;</td><td class="mdescRight">透传给mqtt的建连认证信息, 免白动态注册后需要使用  <a href="#a559b5358274bebf7d0c3a78924e61269">更多...</a><br /></td></tr>
+<tr class="separator:a559b5358274bebf7d0c3a78924e61269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>连接配置头文件，提供配置连接的基础能力 </p>
+<dl class="section date"><dt>日期</dt><dd>2021-12-16</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (C) 2015-2025 Alibaba Group Holding Limited </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a3db5e0b740e837c8256c7c4ef4f82c8a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a>* aiot_linkconfig_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structaiot__protocol__t.html">aiot_protocol_t</a> *&#160;</td>
+          <td class="paramname"><em>protocol</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化默认的连接配置参数,生成配置参数句柄 </p>
+<dl class="section return"><dt>返回</dt><dd>void* </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">非NULL</td><td>设备句柄 </td></tr>
+    <tr><td class="paramname">NULL</td><td>初始化失败, 一般是内存分配失败导致 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__linkconfig__api_8h_a3db5e0b740e837c8256c7c4ef4f82c8a_cgraph.png" border="0" usemap="#aiot__linkconfig__api_8h_a3db5e0b740e837c8256c7c4ef4f82c8a_cgraph" alt=""/></div>
+<map name="aiot__linkconfig__api_8h_a3db5e0b740e837c8256c7c4ef4f82c8a_cgraph" id="aiot__linkconfig__api_8h_a3db5e0b740e837c8256c7c4ef4f82c8a_cgraph">
+<area shape="rect" id="node2" href="aiot__protocol__api_8h.html#a9a0b8e8940014886b39ac41218fd27c4" title="protocol_config_init" alt="" coords="183,5,317,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6474186efa6dc20146939a4af9243f40"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_linkconfig_deinit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> **&#160;</td>
+          <td class="paramname"><em>config</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>删除连接配置句柄，回收资源 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>配置句柄 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败, 更多信息请参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__linkconfig__api_8h_a6474186efa6dc20146939a4af9243f40_cgraph.png" border="0" usemap="#aiot__linkconfig__api_8h_a6474186efa6dc20146939a4af9243f40_cgraph" alt=""/></div>
+<map name="aiot__linkconfig__api_8h_a6474186efa6dc20146939a4af9243f40_cgraph" id="aiot__linkconfig__api_8h_a6474186efa6dc20146939a4af9243f40_cgraph">
+<area shape="rect" id="node2" href="aiot__protocol__api_8h.html#a0a486dc234cac2000aa112773a338805" title="protocol_config_deinit" alt="" coords="196,5,344,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9300e39ada08a8d2551aea3ce072999b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_linkconfig_host </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>host</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置连接的host, port </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>配置句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">host</td><td>服务器地址 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>服务端口号 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败, 更多信息请参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a20dad72f2348a026dfaa0855ef76bb26"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_linkconfig_cred_option </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="aiot__sysdep__api_8h.html#a6b105f01df5250c09a3296c9b869f610">aiot_sysdep_network_cred_option_t</a>&#160;</td>
+          <td class="paramname"><em>option</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设备网络连接的类型 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>配置句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">option</td><td>网络安全类型 AIOT_SYSDEP_NETWORK_CRED_NONE 不实用加密 AIOT_SYSDEP_NETWORK_CRED_SVRCERT_CA, 使用CA证书加密 AIOT_SYSDEP_NETWORK_CRED_SVRCERT_PSK,使用PSK方式加密 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败, 更多信息请参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a01011d36eb57c9a385b6a36604fd0d47"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_linkconfig_root_cert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>cert</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置服务器的根证书 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>配置句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cert</td><td>证书内容 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>证书长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败, 更多信息请参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae8894240e45a618225c4adf13d916dcb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_linkconfig_client_cert_privkey </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>client_cert</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>cert_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>client_privkey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>key_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>X509认证，设置客户端证书和私钥 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>配置句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">client_cert</td><td>端证书 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cert_len</td><td>端证书长度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">client_privkey</td><td>端私钥证书 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td>端私钥长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败, 更多信息请参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab9cadfc41042e860509258fd20ef0f46"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_linkconfig_connect_timeout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeout_ms</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置建连超时的时间 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>配置句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout_ms</td><td>超时时间 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败, 更多信息请参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a56b0188e0a4ff91587cd8296084030f6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_linkconfig_recv_timeout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeout_ms</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置接收超时的时间 </p>
+
+</div>
+</div>
+<a class="anchor" id="a71f73b933521e698c594f9b0a96b9ef9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_linkconfig_send_timeout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeout_ms</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置发送超时的时间 </p>
+
+</div>
+</div>
+<a class="anchor" id="a42dd37f470d87b5ad628044bdc443a0c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_linkconfig_reconnect_enable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置是否自动重连 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>配置句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>【0，关闭自动重连】,关闭自动重连后需要手动触发重连 【1，打开自动重连】,SDK重连会有逼退算法，重连的间隔时间为2～120s </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败, 更多信息请参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aee78341cefa01db32561072e27d8e21a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_linkconfig_multi_channel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>start_cid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置多连接：允许建连多个与云平台的连接 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>配置句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">start_cid</td><td>start connect id，连接的唯一标识符，一般从填0. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>设置多个连接的数量，消息量大的时候避免限流可以多建连几个，取值范围【1～100】 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败, 更多信息请参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9e86c33d714514ca03cdfa922f99c0d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_linkconfig_mqtt_extclientid </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>extern_clientid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设备连接阿里云物联网平台时的扩展clientid </p>
+
+</div>
+</div>
+<a class="anchor" id="a10808f32822c7f08c4e83b729f132824"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_linkconfig_mqtt_keepalive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>keep_alive_s</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT建联时, CONNECT报文中的最长心跳间隔， 取值范围为30 ~ 1200s. </p>
+
+</div>
+</div>
+<a class="anchor" id="a01522b70c924f6a29a35037af27e89df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_linkconfig_mqtt_cleansession </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>clean_session</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT建联时, CONNECT报文中的clean session参数 </p>
+<ol type="1">
+<li>设备上线时如果clean session为0, 那么上线前服务器推送QoS1的消息会在此时推送给设备</li>
+<li>设备上线时如果clean session为1, 那么上线前服务器推送的QoS1的消息会被丢弃 </li>
+</ol>
+
+</div>
+</div>
+<a class="anchor" id="accc1cf0760824ca845b2a44e9f78dd7d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_linkconfig_mqtt_heartbeat_interval </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>interval_ms</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置设备主动发送PINGREQ报文发送时间间隔. (心跳发送间隔) </p>
+
+</div>
+</div>
+<a class="anchor" id="afb42dfa19a481571f9a4e96e0398cc5b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_linkconfig_dynamic_register </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>product_secret</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>instance_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>动态注册参数配置 </p>
+
+</div>
+</div>
+<a class="anchor" id="a559b5358274bebf7d0c3a78924e61269"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_linkconfig_mqtt_auth </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>username</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>password</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>clientid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>透传给mqtt的建连认证信息, 免白动态注册后需要使用 </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

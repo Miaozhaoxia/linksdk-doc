@@ -1,0 +1,5 @@
+<map id="aiot_shadow_recv_t" name="aiot_shadow_recv_t">
+<area shape="rect" id="node2" href="$structaiot__shadow__recv__generic__reply__t.html" title="设备发送 AIOT_SHADOWMSG_UPDATE, AIOT_SHADOWMSG_CLEAN_DESIRED 或 AIOT_SHADOWMSG_DELETE_REPORTED 类型消..." alt="" coords="9,5,185,47"/>
+<area shape="rect" id="node3" href="$structaiot__shadow__recv__get__reply__t.html" title="设备发送 AIOT_SHADOWMSG_GET 类型消息后, 云端返回的设备影子数据 " alt="" coords="21,71,173,112"/>
+<area shape="rect" id="node4" href="$structaiot__shadow__recv__control__t.html" title="如果设备在线, 用户应用调用云端APIUpdateDeviceShadow后云端下推的消息 " alt="" coords="5,137,189,163"/>
+</map>

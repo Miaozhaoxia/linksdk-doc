@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['sec',['sec',['../structaiot__ntp__time__t.html#a24a2c85621de828e2ab55269ab47f609',1,'aiot_ntp_time_t']]],
+  ['security_5fmode',['security_mode',['../structaiot__protocol__config__t.html#ab020ced58e3fe1a83b9e93540096be9b',1,'aiot_protocol_config_t']]],
+  ['send_5fmessage',['send_message',['../structaiot__protocol__t.html#a80652fc111b6e6c8192123c54aa47fc3',1,'aiot_protocol_t']]],
+  ['send_5ftimeout_5fms',['send_timeout_ms',['../structaiot__protocol__config__t.html#a855d21a86fb39e364e8db7f7afd2a866',1,'aiot_protocol_config_t']]],
+  ['service_5fcount',['service_count',['../structservice__list__t.html#a10e81c403996e9a38e25a125cf905cb1',1,'service_list_t']]],
+  ['service_5fid',['service_id',['../structaiot__dm__msg__service__invoke__t.html#a7ba26f69f11717d48429766e82c7056a',1,'aiot_dm_msg_service_invoke_t']]],
+  ['service_5finvoke',['service_invoke',['../structaiot__dm__msg__t.html#a5380071d0bce3eb0372cea3efa689063',1,'aiot_dm_msg_t']]],
+  ['service_5flist',['service_list',['../structservice__list__t.html#aa1ef3358a9eb0c8ffed2beb4743d41cc',1,'service_list_t']]],
+  ['session_5farray',['session_array',['../structactive__fd__callback__params__t.html#ae93405b67ae78b541ee1a0b637912d77',1,'active_fd_callback_params_t']]],
+  ['session_5flist',['session_list',['../structtunnel__handle__t.html#afd4dedfb24919a6b71bc0754676d7fad',1,'tunnel_handle_t']]],
+  ['shadow_5fops',['shadow_ops',['../aiot__shadow__api_8c.html#a356fbe9f1d7658043f9c9b327d1e8fb4',1,'aiot_shadow_api.c']]],
+  ['sign',['sign',['../structaiot__rc__msg__t.html#aea0ce044ec7c3a589a1d312c865fb8ad',1,'aiot_rc_msg_t']]],
+  ['sign_5fmethod',['sign_method',['../structaiot__rc__msg__t.html#a1904a68ac4e69f5a59a58bf8276ba4f3',1,'aiot_rc_msg_t']]],
+  ['size_5ftotal',['size_total',['../structaiot__ota__msg__t.html#aeb587b3528fd1d12140502702bfcf846',1,'aiot_ota_msg_t']]],
+  ['sni_5fenabled',['sni_enabled',['../structaiot__sysdep__network__cred__t.html#a4b5c1e50d6505feee7283a72c46705b0',1,'aiot_sysdep_network_cred_t']]],
+  ['start_5fcid',['start_cid',['../structaiot__linkconfig__t.html#a80be74ee2f4ce505f36243af818300f6',1,'aiot_linkconfig_t']]],
+  ['status',['status',['../structaiot__gateway__msg__topo__change__t.html#ae77dc4c4ad3759b71d024e204f2b736c',1,'aiot_gateway_msg_topo_change_t::status()'],['../structaiot__shadow__recv__generic__reply__t.html#a1ccae95a7dc735f1c5702a4ada98d73c',1,'aiot_shadow_recv_generic_reply_t::status()']]],
+  ['stream_5ffile_5fid',['stream_file_id',['../structmqtt__url__t.html#acaad00e0710db1732c5bfa008f2b05e4',1,'mqtt_url_t']]],
+  ['stream_5fid',['stream_id',['../structmqtt__url__t.html#a8f6b7c4f45f0eea752fccc4a989bdebf',1,'mqtt_url_t']]],
+  ['sub_5ftopic',['sub_topic',['../structaiot__protocol__t.html#a576aa34ddaf6dc2ada4724612ff8ee63',1,'aiot_protocol_t']]],
+  ['subdev_5fnum',['subdev_num',['../structaiot__gateway__msg__t.html#a8d6b8c70b7014cce5871d733d486a67e',1,'aiot_gateway_msg_t']]],
+  ['subdev_5ftable',['subdev_table',['../structaiot__gateway__msg__t.html#a3d6ef8e387efc4894b8d02c70080d3d2',1,'aiot_gateway_msg_t']]]
+];

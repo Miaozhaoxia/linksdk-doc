@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: device-modules/remote-config/aiot_rc_api.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">5.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97807256e5481b5817f198b161bc0824.html">device-modules</a></li><li class="navelem"><a class="el" href="dir_80372ac386ace9ecd5f6bc1c129c877b.html">remote-config</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">aiot_rc_api.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="aiot__rc__api_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _AIOT_RC_API_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _AIOT_RC_API_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#if defined(__cplusplus)</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="structaiot__rc__msg__t.html">   10</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structaiot__rc__msg__t.html#a7fc9b60845522b380e0c3285457a9096">   14</a></span>&#160;    uint32_t <a class="code" href="structaiot__rc__msg__t.html#a7fc9b60845522b380e0c3285457a9096">msg_id</a>;</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structaiot__rc__msg__t.html#ae8d4286e2227c8a3a07e154a846580d9">   18</a></span>&#160;    <span class="keywordtype">char</span>     *<a class="code" href="structaiot__rc__msg__t.html#ae8d4286e2227c8a3a07e154a846580d9">config_id</a>;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structaiot__rc__msg__t.html#ab3b4df2e2795b99ffac6752c84c6b519">   22</a></span>&#160;    uint32_t <a class="code" href="structaiot__rc__msg__t.html#ab3b4df2e2795b99ffac6752c84c6b519">config_size</a>;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structaiot__rc__msg__t.html#aedd40c967f98f619193c8c9f6720a259">   26</a></span>&#160;    <span class="keywordtype">char</span>     *<a class="code" href="structaiot__rc__msg__t.html#aedd40c967f98f619193c8c9f6720a259">url</a>;</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structaiot__rc__msg__t.html#aea0ce044ec7c3a589a1d312c865fb8ad">   30</a></span>&#160;    <span class="keywordtype">char</span>     *<a class="code" href="structaiot__rc__msg__t.html#aea0ce044ec7c3a589a1d312c865fb8ad">sign</a>;</div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="structaiot__rc__msg__t.html#a1904a68ac4e69f5a59a58bf8276ba4f3">   34</a></span>&#160;    <span class="keywordtype">char</span>     *<a class="code" href="structaiot__rc__msg__t.html#a1904a68ac4e69f5a59a58bf8276ba4f3">sign_method</a>;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;} <a class="code" href="structaiot__rc__msg__t.html">aiot_rc_msg_t</a>;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="aiot__rc__api_8h.html#a41672306c0574657583ff258b7e9de44">   38</a></span>&#160;<span class="keyword">typedef</span> void (*<a class="code" href="aiot__rc__api_8h.html#a41672306c0574657583ff258b7e9de44">rc_callback_t</a>)(<span class="keywordtype">void</span> *device, <span class="keyword">const</span> <a class="code" href="structaiot__rc__msg__t.html">aiot_rc_msg_t</a> *recv, <span class="keywordtype">void</span> *userdata);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;int32_t <a class="code" href="aiot__rc__api_8h.html#a8ae68761522e36cee38f641dc60635aa">aiot_device_rc_set_callback</a>(<span class="keywordtype">void</span> *device, <a class="code" href="aiot__rc__api_8h.html#a41672306c0574657583ff258b7e9de44">rc_callback_t</a> callback, <span class="keywordtype">void</span> *userdata);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;int32_t <a class="code" href="aiot__rc__api_8h.html#a975578c3bda814429388043319c7ab50">aiot_device_rc_request</a>(<span class="keywordtype">void</span> *device);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;int32_t <a class="code" href="aiot__rc__api_8h.html#a59139fe0f6a71b8319b428d0d1602cb1">aiot_device_rc_push_reply</a>(<span class="keywordtype">void</span> *device, int32_t code);</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#if defined(__cplusplus)</span></div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="structaiot__rc__msg__t_html_aedd40c967f98f619193c8c9f6720a259"><div class="ttname"><a href="structaiot__rc__msg__t.html#aedd40c967f98f619193c8c9f6720a259">aiot_rc_msg_t::url</a></div><div class="ttdeci">char * url</div><div class="ttdoc">配置文件的url </div><div class="ttdef"><b>Definition:</b> aiot_rc_api.h:26</div></div>
+<div class="ttc" id="aiot__rc__api_8h_html_a8ae68761522e36cee38f641dc60635aa"><div class="ttname"><a href="aiot__rc__api_8h.html#a8ae68761522e36cee38f641dc60635aa">aiot_device_rc_set_callback</a></div><div class="ttdeci">int32_t aiot_device_rc_set_callback(void *device, rc_callback_t callback, void *userdata)</div><div class="ttdoc">设置远程配置 </div><div class="ttdef"><b>Definition:</b> aiot_rc_api.c:70</div></div>
+<div class="ttc" id="aiot__rc__api_8h_html_a59139fe0f6a71b8319b428d0d1602cb1"><div class="ttname"><a href="aiot__rc__api_8h.html#a59139fe0f6a71b8319b428d0d1602cb1">aiot_device_rc_push_reply</a></div><div class="ttdeci">int32_t aiot_device_rc_push_reply(void *device, int32_t code)</div><div class="ttdoc">云端下推的远程配置后，回复云端 </div><div class="ttdef"><b>Definition:</b> aiot_rc_api.c:110</div></div>
+<div class="ttc" id="structaiot__rc__msg__t_html_a7fc9b60845522b380e0c3285457a9096"><div class="ttname"><a href="structaiot__rc__msg__t.html#a7fc9b60845522b380e0c3285457a9096">aiot_rc_msg_t::msg_id</a></div><div class="ttdeci">uint32_t msg_id</div><div class="ttdoc">Alink协议的消息id. </div><div class="ttdef"><b>Definition:</b> aiot_rc_api.h:14</div></div>
+<div class="ttc" id="structaiot__rc__msg__t_html_a1904a68ac4e69f5a59a58bf8276ba4f3"><div class="ttname"><a href="structaiot__rc__msg__t.html#a1904a68ac4e69f5a59a58bf8276ba4f3">aiot_rc_msg_t::sign_method</a></div><div class="ttdeci">char * sign_method</div><div class="ttdoc">配置文件的签名算法类型 </div><div class="ttdef"><b>Definition:</b> aiot_rc_api.h:34</div></div>
+<div class="ttc" id="structaiot__rc__msg__t_html_ae8d4286e2227c8a3a07e154a846580d9"><div class="ttname"><a href="structaiot__rc__msg__t.html#ae8d4286e2227c8a3a07e154a846580d9">aiot_rc_msg_t::config_id</a></div><div class="ttdeci">char * config_id</div><div class="ttdoc">配置id，用于表示哪一次配置 </div><div class="ttdef"><b>Definition:</b> aiot_rc_api.h:18</div></div>
+<div class="ttc" id="aiot__rc__api_8h_html_a975578c3bda814429388043319c7ab50"><div class="ttname"><a href="aiot__rc__api_8h.html#a975578c3bda814429388043319c7ab50">aiot_device_rc_request</a></div><div class="ttdeci">int32_t aiot_device_rc_request(void *device)</div><div class="ttdoc">请求远程配置文件信息 </div><div class="ttdef"><b>Definition:</b> aiot_rc_api.c:87</div></div>
+<div class="ttc" id="structaiot__rc__msg__t_html"><div class="ttname"><a href="structaiot__rc__msg__t.html">aiot_rc_msg_t</a></div><div class="ttdef"><b>Definition:</b> aiot_rc_api.h:10</div></div>
+<div class="ttc" id="structaiot__rc__msg__t_html_ab3b4df2e2795b99ffac6752c84c6b519"><div class="ttname"><a href="structaiot__rc__msg__t.html#ab3b4df2e2795b99ffac6752c84c6b519">aiot_rc_msg_t::config_size</a></div><div class="ttdeci">uint32_t config_size</div><div class="ttdoc">配置文件的长度 </div><div class="ttdef"><b>Definition:</b> aiot_rc_api.h:22</div></div>
+<div class="ttc" id="structaiot__rc__msg__t_html_aea0ce044ec7c3a589a1d312c865fb8ad"><div class="ttname"><a href="structaiot__rc__msg__t.html#aea0ce044ec7c3a589a1d312c865fb8ad">aiot_rc_msg_t::sign</a></div><div class="ttdeci">char * sign</div><div class="ttdoc">配置文件的签名 </div><div class="ttdef"><b>Definition:</b> aiot_rc_api.h:30</div></div>
+<div class="ttc" id="aiot__rc__api_8h_html_a41672306c0574657583ff258b7e9de44"><div class="ttname"><a href="aiot__rc__api_8h.html#a41672306c0574657583ff258b7e9de44">rc_callback_t</a></div><div class="ttdeci">void(* rc_callback_t)(void *device, const aiot_rc_msg_t *recv, void *userdata)</div><div class="ttdef"><b>Definition:</b> aiot_rc_api.h:38</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

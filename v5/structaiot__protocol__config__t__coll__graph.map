@@ -1,0 +1,6 @@
+<map id="aiot_protocol_config_t" name="aiot_protocol_config_t">
+<area shape="rect" id="node2" href="$structaiot__sysdep__network__cred__t.html" title="aiot_sysdep_network\l_cred_t" alt="" coords="5,5,151,47"/>
+<area shape="rect" id="node3" href="$structaiot__msg__t.html" title="描述消息的数据结构 " alt="" coords="175,13,261,39"/>
+<area shape="rect" id="node4" href="$structaiot__protocol__event__t.html" title="内部事件 " alt="" coords="286,13,433,39"/>
+<area shape="rect" id="node5" href="$structaiot__protocol__result__t.html" title="aiot_protocol_result_t" alt="" coords="457,13,603,39"/>
+</map>

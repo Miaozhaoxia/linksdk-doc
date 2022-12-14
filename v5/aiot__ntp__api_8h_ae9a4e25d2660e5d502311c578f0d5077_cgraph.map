@@ -1,0 +1,7 @@
+<map id="aiot_device_ntp_set_callback" name="aiot_device_ntp_set_callback">
+<area shape="rect" id="node2" href="$aiot__ntp__api_8c.html#a32b9154f7d6e578fc4e39da39b1f27cb" title="_ntp_get_handle" alt="" coords="416,5,533,32"/>
+<area shape="rect" id="node3" href="$aiot__device__api_8c.html#aac2943ebe50e80a431f46a6452403cb6" title="设备注册感兴趣的topic，接收到该topic的消息，执行对应回调 " alt="" coords="204,82,343,123"/>
+<area shape="rect" id="node6" href="$aiot__ntp__api_8c.html#a2ac2c7c3840b2acaad5fc9f51db8252e" title="_ntp_response_callback" alt="" coords="192,31,355,57"/>
+<area shape="rect" id="node4" href="$aiot__device__api_8c.html#ae3b5c1fa33797955fab227411311939d" title="_core_device_topic\l_takeoff_pkdn" alt="" coords="407,69,542,110"/>
+<area shape="rect" id="node5" href="$aiot__device__api_8c.html#a17429491661f0c6c8773c1bf51ceedf7" title="_core_device_sublist\l_insert" alt="" coords="403,134,547,175"/>
+</map>

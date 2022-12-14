@@ -1,0 +1,421 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: aiot_sysdep_portfile_t结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">5.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="structaiot__sysdep__portfile__t-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">aiot_sysdep_portfile_t结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>用以向SDK描述其运行硬件平台的资源如何使用的方法结构体  
+ <a href="structaiot__sysdep__portfile__t.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="aiot__sysdep__api_8h_source.html">aiot_sysdep_api.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:ac10d085b738fb58f4e5d4a7e8ba00a71"><td class="memItemLeft" align="right" valign="top">void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__sysdep__portfile__t.html#ac10d085b738fb58f4e5d4a7e8ba00a71">core_sysdep_malloc</a> )(uint32_t size, char *name)</td></tr>
+<tr class="memdesc:ac10d085b738fb58f4e5d4a7e8ba00a71"><td class="mdescLeft">&#160;</td><td class="mdescRight">申请内存  <a href="#ac10d085b738fb58f4e5d4a7e8ba00a71">更多...</a><br /></td></tr>
+<tr class="separator:ac10d085b738fb58f4e5d4a7e8ba00a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a170e51e2f6bb87eb4d11d54ceeeebd85"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__sysdep__portfile__t.html#a170e51e2f6bb87eb4d11d54ceeeebd85">core_sysdep_free</a> )(void *ptr)</td></tr>
+<tr class="memdesc:a170e51e2f6bb87eb4d11d54ceeeebd85"><td class="mdescLeft">&#160;</td><td class="mdescRight">释放内存  <a href="#a170e51e2f6bb87eb4d11d54ceeeebd85">更多...</a><br /></td></tr>
+<tr class="separator:a170e51e2f6bb87eb4d11d54ceeeebd85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a301aa3a1d6cb521886cd9cbd32329ca2"><td class="memItemLeft" align="right" valign="top">uint64_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__sysdep__portfile__t.html#a301aa3a1d6cb521886cd9cbd32329ca2">core_sysdep_time</a> )(void)</td></tr>
+<tr class="memdesc:a301aa3a1d6cb521886cd9cbd32329ca2"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前的时间戳，SDK用于差值计算  <a href="#a301aa3a1d6cb521886cd9cbd32329ca2">更多...</a><br /></td></tr>
+<tr class="separator:a301aa3a1d6cb521886cd9cbd32329ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1280541debf6a8763dc772cfa9881d14"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__sysdep__portfile__t.html#a1280541debf6a8763dc772cfa9881d14">core_sysdep_sleep</a> )(uint64_t time_ms)</td></tr>
+<tr class="memdesc:a1280541debf6a8763dc772cfa9881d14"><td class="mdescLeft">&#160;</td><td class="mdescRight">睡眠指定的毫秒数  <a href="#a1280541debf6a8763dc772cfa9881d14">更多...</a><br /></td></tr>
+<tr class="separator:a1280541debf6a8763dc772cfa9881d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab995bb3003273c04115f327af0315a1c"><td class="memItemLeft" align="right" valign="top">void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__sysdep__portfile__t.html#ab995bb3003273c04115f327af0315a1c">core_sysdep_network_init</a> )(void)</td></tr>
+<tr class="memdesc:ab995bb3003273c04115f327af0315a1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建1个网络会话(L3层)  <a href="#ab995bb3003273c04115f327af0315a1c">更多...</a><br /></td></tr>
+<tr class="separator:ab995bb3003273c04115f327af0315a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bffd3e7520469faf57ea0f3b83883fa"><td class="memItemLeft" align="right" valign="top">int32_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__sysdep__portfile__t.html#a7bffd3e7520469faf57ea0f3b83883fa">core_sysdep_network_setopt</a> )(void *handle, <a class="el" href="aiot__sysdep__api_8h.html#adf7615b7b1ac8fa8e7f46639fddb09a0">core_sysdep_network_option_t</a> option, void *data)</td></tr>
+<tr class="memdesc:a7bffd3e7520469faf57ea0f3b83883fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置1个网络会话的连接参数  <a href="#a7bffd3e7520469faf57ea0f3b83883fa">更多...</a><br /></td></tr>
+<tr class="separator:a7bffd3e7520469faf57ea0f3b83883fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21ed15cbc00f5c03d5fd6e287e7bffce"><td class="memItemLeft" align="right" valign="top">int32_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__sysdep__portfile__t.html#a21ed15cbc00f5c03d5fd6e287e7bffce">core_sysdep_network_establish</a> )(void *handle)</td></tr>
+<tr class="memdesc:a21ed15cbc00f5c03d5fd6e287e7bffce"><td class="mdescLeft">&#160;</td><td class="mdescRight">建立1个网络会话, 作为MQTT/HTTP等协议的底层承载  <a href="#a21ed15cbc00f5c03d5fd6e287e7bffce">更多...</a><br /></td></tr>
+<tr class="separator:a21ed15cbc00f5c03d5fd6e287e7bffce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a453f23d2579495bb4aba617781858944"><td class="memItemLeft" align="right" valign="top">int32_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__sysdep__portfile__t.html#a453f23d2579495bb4aba617781858944">core_sysdep_network_recv</a> )(void *handle, uint8_t *buffer, uint32_t len, uint32_t timeout_ms, <a class="el" href="structcore__sysdep__addr__t.html">core_sysdep_addr_t</a> *addr)</td></tr>
+<tr class="memdesc:a453f23d2579495bb4aba617781858944"><td class="mdescLeft">&#160;</td><td class="mdescRight">从指定的网络会话上读取  <a href="#a453f23d2579495bb4aba617781858944">更多...</a><br /></td></tr>
+<tr class="separator:a453f23d2579495bb4aba617781858944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61e25854c0eb53816b011c0186f33259"><td class="memItemLeft" align="right" valign="top">int32_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__sysdep__portfile__t.html#a61e25854c0eb53816b011c0186f33259">core_sysdep_network_send</a> )(void *handle, uint8_t *buffer, uint32_t len, uint32_t timeout_ms, <a class="el" href="structcore__sysdep__addr__t.html">core_sysdep_addr_t</a> *addr)</td></tr>
+<tr class="memdesc:a61e25854c0eb53816b011c0186f33259"><td class="mdescLeft">&#160;</td><td class="mdescRight">在指定的网络会话上发送  <a href="#a61e25854c0eb53816b011c0186f33259">更多...</a><br /></td></tr>
+<tr class="separator:a61e25854c0eb53816b011c0186f33259"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c9a8274d58c2a5751ae84019d088fa8"><td class="memItemLeft" align="right" valign="top">int32_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__sysdep__portfile__t.html#a7c9a8274d58c2a5751ae84019d088fa8">core_sysdep_network_deinit</a> )(void **handle)</td></tr>
+<tr class="memdesc:a7c9a8274d58c2a5751ae84019d088fa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">销毁1个网络会话  <a href="#a7c9a8274d58c2a5751ae84019d088fa8">更多...</a><br /></td></tr>
+<tr class="separator:a7c9a8274d58c2a5751ae84019d088fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb596073894811d8e5ec6f9aeedbc534"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__sysdep__portfile__t.html#adb596073894811d8e5ec6f9aeedbc534">core_sysdep_rand</a> )(uint8_t *output, uint32_t output_len)</td></tr>
+<tr class="memdesc:adb596073894811d8e5ec6f9aeedbc534"><td class="mdescLeft">&#160;</td><td class="mdescRight">随机数生成方法  <a href="#adb596073894811d8e5ec6f9aeedbc534">更多...</a><br /></td></tr>
+<tr class="separator:adb596073894811d8e5ec6f9aeedbc534"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32296e501413b34709a09330fbeb1eba"><td class="memItemLeft" align="right" valign="top">void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__sysdep__portfile__t.html#a32296e501413b34709a09330fbeb1eba">core_sysdep_mutex_init</a> )(void)</td></tr>
+<tr class="memdesc:a32296e501413b34709a09330fbeb1eba"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建互斥锁  <a href="#a32296e501413b34709a09330fbeb1eba">更多...</a><br /></td></tr>
+<tr class="separator:a32296e501413b34709a09330fbeb1eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98c35af70b01abb5ff8b068c09ee72d2"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__sysdep__portfile__t.html#a98c35af70b01abb5ff8b068c09ee72d2">core_sysdep_mutex_lock</a> )(void *mutex)</td></tr>
+<tr class="memdesc:a98c35af70b01abb5ff8b068c09ee72d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">申请互斥锁  <a href="#a98c35af70b01abb5ff8b068c09ee72d2">更多...</a><br /></td></tr>
+<tr class="separator:a98c35af70b01abb5ff8b068c09ee72d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13a4f0104ce52aa436cf4bdecb2f384d"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__sysdep__portfile__t.html#a13a4f0104ce52aa436cf4bdecb2f384d">core_sysdep_mutex_unlock</a> )(void *mutex)</td></tr>
+<tr class="memdesc:a13a4f0104ce52aa436cf4bdecb2f384d"><td class="mdescLeft">&#160;</td><td class="mdescRight">释放互斥锁  <a href="#a13a4f0104ce52aa436cf4bdecb2f384d">更多...</a><br /></td></tr>
+<tr class="separator:a13a4f0104ce52aa436cf4bdecb2f384d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0ee7955db3d9fbc3aad810ec7d7b2c4"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__sysdep__portfile__t.html#af0ee7955db3d9fbc3aad810ec7d7b2c4">core_sysdep_mutex_deinit</a> )(void **mutex)</td></tr>
+<tr class="memdesc:af0ee7955db3d9fbc3aad810ec7d7b2c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">销毁互斥锁  <a href="#af0ee7955db3d9fbc3aad810ec7d7b2c4">更多...</a><br /></td></tr>
+<tr class="separator:af0ee7955db3d9fbc3aad810ec7d7b2c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a905883c0742a89b0ed1a321fa7d957d3"><td class="memItemLeft" align="right" valign="top">void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__sysdep__portfile__t.html#a905883c0742a89b0ed1a321fa7d957d3">core_sysdep_thread_init</a> )(char *task_name, void *(*work)(void *), void *argv)</td></tr>
+<tr class="memdesc:a905883c0742a89b0ed1a321fa7d957d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建线程  <a href="#a905883c0742a89b0ed1a321fa7d957d3">更多...</a><br /></td></tr>
+<tr class="separator:a905883c0742a89b0ed1a321fa7d957d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9459bc3e757fba154982f46cb3689a62"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__sysdep__portfile__t.html#a9459bc3e757fba154982f46cb3689a62">core_sysdep_thread_join</a> )(void **thread_ptr)</td></tr>
+<tr class="memdesc:a9459bc3e757fba154982f46cb3689a62"><td class="mdescLeft">&#160;</td><td class="mdescRight">等待线程退出  <a href="#a9459bc3e757fba154982f46cb3689a62">更多...</a><br /></td></tr>
+<tr class="separator:a9459bc3e757fba154982f46cb3689a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d79bd45963ed24124ea35e0d7db3844"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__sysdep__portfile__t.html#a2d79bd45963ed24124ea35e0d7db3844">core_sysdep_thread_deinit</a> )(void **thread_ptr)</td></tr>
+<tr class="memdesc:a2d79bd45963ed24124ea35e0d7db3844"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除线程，回收资源，如果线程未退出会强制退出  <a href="#a2d79bd45963ed24124ea35e0d7db3844">更多...</a><br /></td></tr>
+<tr class="separator:a2d79bd45963ed24124ea35e0d7db3844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>用以向SDK描述其运行硬件平台的资源如何使用的方法结构体 </p>
+</div><h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="ac10d085b738fb58f4e5d4a7e8ba00a71"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void*(* aiot_sysdep_portfile_t::core_sysdep_malloc) (uint32_t size, char *name)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>申请内存 </p>
+
+</div>
+</div>
+<a class="anchor" id="a170e51e2f6bb87eb4d11d54ceeeebd85"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* aiot_sysdep_portfile_t::core_sysdep_free) (void *ptr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>释放内存 </p>
+
+</div>
+</div>
+<a class="anchor" id="a301aa3a1d6cb521886cd9cbd32329ca2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t(* aiot_sysdep_portfile_t::core_sysdep_time) (void)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取当前的时间戳，SDK用于差值计算 </p>
+
+</div>
+</div>
+<a class="anchor" id="a1280541debf6a8763dc772cfa9881d14"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* aiot_sysdep_portfile_t::core_sysdep_sleep) (uint64_t time_ms)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>睡眠指定的毫秒数 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab995bb3003273c04115f327af0315a1c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void*(* aiot_sysdep_portfile_t::core_sysdep_network_init) (void)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建1个网络会话(L3层) </p>
+
+</div>
+</div>
+<a class="anchor" id="a7bffd3e7520469faf57ea0f3b83883fa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t(* aiot_sysdep_portfile_t::core_sysdep_network_setopt) (void *handle, <a class="el" href="aiot__sysdep__api_8h.html#adf7615b7b1ac8fa8e7f46639fddb09a0">core_sysdep_network_option_t</a> option, void *data)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置1个网络会话的连接参数 </p>
+
+</div>
+</div>
+<a class="anchor" id="a21ed15cbc00f5c03d5fd6e287e7bffce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t(* aiot_sysdep_portfile_t::core_sysdep_network_establish) (void *handle)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>建立1个网络会话, 作为MQTT/HTTP等协议的底层承载 </p>
+
+</div>
+</div>
+<a class="anchor" id="a453f23d2579495bb4aba617781858944"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t(* aiot_sysdep_portfile_t::core_sysdep_network_recv) (void *handle, uint8_t *buffer, uint32_t len, uint32_t timeout_ms, <a class="el" href="structcore__sysdep__addr__t.html">core_sysdep_addr_t</a> *addr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>从指定的网络会话上读取 </p>
+
+</div>
+</div>
+<a class="anchor" id="a61e25854c0eb53816b011c0186f33259"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t(* aiot_sysdep_portfile_t::core_sysdep_network_send) (void *handle, uint8_t *buffer, uint32_t len, uint32_t timeout_ms, <a class="el" href="structcore__sysdep__addr__t.html">core_sysdep_addr_t</a> *addr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在指定的网络会话上发送 </p>
+
+</div>
+</div>
+<a class="anchor" id="a7c9a8274d58c2a5751ae84019d088fa8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t(* aiot_sysdep_portfile_t::core_sysdep_network_deinit) (void **handle)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>销毁1个网络会话 </p>
+
+</div>
+</div>
+<a class="anchor" id="adb596073894811d8e5ec6f9aeedbc534"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* aiot_sysdep_portfile_t::core_sysdep_rand) (uint8_t *output, uint32_t output_len)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>随机数生成方法 </p>
+
+</div>
+</div>
+<a class="anchor" id="a32296e501413b34709a09330fbeb1eba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void*(* aiot_sysdep_portfile_t::core_sysdep_mutex_init) (void)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建互斥锁 </p>
+
+</div>
+</div>
+<a class="anchor" id="a98c35af70b01abb5ff8b068c09ee72d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* aiot_sysdep_portfile_t::core_sysdep_mutex_lock) (void *mutex)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>申请互斥锁 </p>
+
+</div>
+</div>
+<a class="anchor" id="a13a4f0104ce52aa436cf4bdecb2f384d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* aiot_sysdep_portfile_t::core_sysdep_mutex_unlock) (void *mutex)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>释放互斥锁 </p>
+
+</div>
+</div>
+<a class="anchor" id="af0ee7955db3d9fbc3aad810ec7d7b2c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* aiot_sysdep_portfile_t::core_sysdep_mutex_deinit) (void **mutex)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>销毁互斥锁 </p>
+
+</div>
+</div>
+<a class="anchor" id="a905883c0742a89b0ed1a321fa7d957d3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void*(* aiot_sysdep_portfile_t::core_sysdep_thread_init) (char *task_name, void *(*work)(void *), void *argv)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建线程 </p>
+
+</div>
+</div>
+<a class="anchor" id="a9459bc3e757fba154982f46cb3689a62"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* aiot_sysdep_portfile_t::core_sysdep_thread_join) (void **thread_ptr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>等待线程退出 </p>
+
+</div>
+</div>
+<a class="anchor" id="a2d79bd45963ed24124ea35e0d7db3844"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* aiot_sysdep_portfile_t::core_sysdep_thread_deinit) (void **thread_ptr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>删除线程，回收资源，如果线程未退出会强制退出 </p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>device-core/<a class="el" href="aiot__sysdep__api_8h_source.html">aiot_sysdep_api.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

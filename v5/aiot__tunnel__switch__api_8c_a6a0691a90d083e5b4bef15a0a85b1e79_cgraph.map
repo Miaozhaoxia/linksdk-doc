@@ -1,0 +1,6 @@
+<map id="aiot_device_ts_request" name="aiot_device_ts_request">
+<area shape="rect" id="node2" href="$aiot__tunnel__switch__api_8c.html#ab062a7625ee4f736bcb6cf7b9be1b072" title="_ts_get_handle" alt="" coords="245,5,356,32"/>
+<area shape="rect" id="node3" href="$aiot__device__api_8c.html#ad1eaf497ad46c2aa07a90dec084997e3" title="设备向云平台发送消息 " alt="" coords="209,56,392,83"/>
+<area shape="rect" id="node4" href="$aiot__message__api_8c.html#ad78c30b2011b07ff6e29597928ef57fb" title="回收消息对象的资源 " alt="" coords="242,107,359,133"/>
+<area shape="rect" id="node5" href="$aiot__message__api_8c.html#acf562841e53b0ab0550af8f17dd14aae" title="core_origin_msg_deinit" alt="" coords="440,107,595,133"/>
+</map>

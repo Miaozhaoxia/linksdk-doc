@@ -1,0 +1,7 @@
+<map id="device&#45;core/aiot_sysdep_api.h" name="device&#45;core/aiot_sysdep_api.h">
+<area shape="rect" id="node2" href="$aiot__device__api_8c.html" title="设备管理模块，管理设备的配置、行为、及运行时参数 " alt="" coords="9,363,167,404"/>
+<area shape="rect" id="node3" href="$aiot__protocol__api_8h.html" title="device&#45;core/protocol\l/aiot_protocol_api.h" alt="" coords="76,95,215,136"/>
+<area shape="rect" id="node4" href="$aiot__linkconfig__api_8h.html" title="连接配置头文件，提供配置连接的基础能力 " alt="" coords="67,184,243,225"/>
+<area shape="rect" id="node5" href="$aiot__device__api_8h.html" title="设备模块头文件, 提供设备的基础能力 " alt="" coords="67,273,226,315"/>
+<area shape="rect" id="node6" href="$aiot__linkconfig__api_8c.html" title="连接物联网平台的配置管理，包含tls/mqtt/http连接等参数配置 " alt="" coords="251,273,427,315"/>
+</map>

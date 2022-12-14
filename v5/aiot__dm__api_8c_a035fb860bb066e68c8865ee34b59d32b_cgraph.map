@@ -1,0 +1,10 @@
+<map id="_sub_batch_post_topic" name="_sub_batch_post_topic">
+<area shape="rect" id="node2" href="$aiot__device__api_8c.html#a1e58b077a51ef375e26e8c8927a08855" title="查询设备的product_key " alt="" coords="209,5,376,32"/>
+<area shape="rect" id="node3" href="$aiot__device__api_8c.html#a1add2b0c42c073722cfa72b53a872e96" title="查询设备的device_name " alt="" coords="229,56,356,83"/>
+<area shape="rect" id="node4" href="$aiot__device__api_8c.html#aac2943ebe50e80a431f46a6452403cb6" title="设备注册感兴趣的topic，接收到该topic的消息，执行对应回调 " alt="" coords="223,107,362,149"/>
+<area shape="rect" id="node7" href="$aiot__dm__api_8c.html#afc752f2aa725f574554731b6628fcf45" title="_dm_msg_batch_post\l_reply_callback" alt="" coords="217,173,368,214"/>
+<area shape="rect" id="node5" href="$aiot__device__api_8c.html#ae3b5c1fa33797955fab227411311939d" title="_core_device_topic\l_takeoff_pkdn" alt="" coords="429,78,563,119"/>
+<area shape="rect" id="node6" href="$aiot__device__api_8c.html#a17429491661f0c6c8773c1bf51ceedf7" title="_core_device_sublist\l_insert" alt="" coords="424,143,568,185"/>
+<area shape="rect" id="node8" href="$aiot__dm__api_8c.html#a38671c3d1b7ee578678e2a84865def43" title="_dm_get_handle" alt="" coords="437,224,555,251"/>
+<area shape="rect" id="node9" href="$aiot__device__api_8c.html#a53ade36ca27a6aa7b1001a3fc1c50935" title="查询设备的状态 " alt="" coords="616,224,745,251"/>
+</map>

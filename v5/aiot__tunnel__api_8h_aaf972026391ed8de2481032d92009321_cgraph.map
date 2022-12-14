@@ -1,0 +1,18 @@
+<map id="aiot_tunnel_connect" name="aiot_tunnel_connect">
+<area shape="rect" id="node2" href="$aiot__tunnel__api_8c.html#a835772f36aeb23502d74048adc4ec6fa" title="_tunnel_connect" alt="" coords="587,5,705,32"/>
+<area shape="rect" id="node3" href="$aiot__tunnel__api_8c.html#aa31b712769eef0d29abe695d83d12871" title="process_thread" alt="" coords="192,63,303,89"/>
+<area shape="rect" id="node4" href="$aiot__tunnel__api_8c.html#a919e28514c8cd1bcb34e00a70af25689" title="tunnel_closed_state\l_process" alt="" coords="361,55,500,97"/>
+<area shape="rect" id="node7" href="$aiot__tunnel__api_8c.html#aab097a08c9b7a1d4f12334ec2b3bc802" title="tunnel_connected_state\l_process" alt="" coords="351,146,511,187"/>
+<area shape="rect" id="node5" href="$aiot__tunnel__api_8c.html#acd4d1f87bf7e1be39e60be7c1d82833e" title="whether_connect_time_up" alt="" coords="559,60,733,87"/>
+<area shape="rect" id="node6" href="$aiot__tunnel__api_8c.html#a66a17e62888e76a95be846a4282abf3e" title="get_wait_time_period" alt="" coords="790,60,935,87"/>
+<area shape="rect" id="node8" href="$aiot__tunnel__api_8c.html#acc1d2212831ad156b58d013b3512e797" title="record_active_local\l_service_sockets" alt="" coords="579,111,713,153"/>
+<area shape="rect" id="node9" href="$aiot__tunnel__api_8c.html#a34b7652dadfe5ea2b2f5357e12902b31" title="local_service_data_proc" alt="" coords="781,115,944,141"/>
+<area shape="rect" id="node11" href="$aiot__tunnel__api_8c.html#a713cbf68d788ee2048adefa78762170a" title="cloud_data_proc" alt="" coords="587,229,705,256"/>
+<area shape="rect" id="node10" href="$aiot__tunnel__api_8c.html#a8de02cd8b7a8da6899d74a4320fb2905" title="tunnel_msg_id" alt="" coords="1016,113,1123,140"/>
+<area shape="rect" id="node12" href="$aiot__tunnel__api_8c.html#a7540b0f341ef95ffd61f6d2d74514c29" title="new_session" alt="" coords="813,231,912,257"/>
+<area shape="rect" id="node15" href="$aiot__tunnel__api_8c.html#a616b1a0001ead9d5d72de34d24b97a02" title="release_session" alt="" coords="805,281,921,308"/>
+<area shape="rect" id="node16" href="$aiot__tunnel__api_8c.html#aa968f4b7db912e983edab5499463ceb8" title="raw_data" alt="" coords="825,172,900,199"/>
+<area shape="rect" id="node13" href="$aiot__tunnel__api_8c.html#af22198eb3dfeb9895f69e2253ec483d5" title="get_service_node" alt="" coords="1007,231,1131,257"/>
+<area shape="rect" id="node14" href="$aiot__tunnel__api_8c.html#aea9a6308628d25a365a17d6ddec0e58c" title="connect2Local_service" alt="" coords="992,281,1147,308"/>
+<area shape="rect" id="node17" href="$aiot__tunnel__api_8c.html#a1f685faee2e77c2dd9c938f081a6999b" title="send_raw_data2Local\l_service" alt="" coords="995,165,1143,206"/>
+</map>

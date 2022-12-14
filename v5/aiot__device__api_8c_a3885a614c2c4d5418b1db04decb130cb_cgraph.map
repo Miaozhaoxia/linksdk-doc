@@ -1,0 +1,4 @@
+<map id="aiot_device_delete" name="aiot_device_delete">
+<area shape="rect" id="node2" href="$aiot__device__api_8c.html#ada99eddcc634f61f0e796c01d3b8bb02" title="_core_device_sublist\l_destroy" alt="" coords="186,5,330,47"/>
+<area shape="rect" id="node3" href="$aiot__protocol__api_8h.html#a0a486dc234cac2000aa112773a338805" title="protocol_config_deinit" alt="" coords="184,71,332,98"/>
+</map>

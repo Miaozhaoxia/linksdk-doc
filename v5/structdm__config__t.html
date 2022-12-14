@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: dm_config_t结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">5.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="structdm__config__t-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">dm_config_t结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+dm_config_t 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structdm__config__t__coll__graph.png" border="0" usemap="#dm__config__t_coll__map" alt="Collaboration graph"/></div>
+<map name="dm__config__t_coll__map" id="dm__config__t_coll__map">
+<area shape="rect" id="node2" href="structaiot__dm__msg__t.html" title="data&#45;model模块接收消息的结构体 " alt="" coords="316,101,427,127"/>
+<area shape="rect" id="node3" href="structaiot__dm__msg__property__set__t.html" title="属性设置消息结构体 " alt="" coords="13,5,168,47"/>
+<area shape="rect" id="node4" href="structaiot__dm__msg__raw__data__t.html" title="物模型二进制数据消息结构体, 服务器的JSON格式物模型数据将通过物联网平台的JavaScript脚本转化为二进制数�..." alt="" coords="5,71,176,98"/>
+<area shape="rect" id="node5" href="structaiot__dm__msg__generic__reply__t.html" title="云端通用应答消息结构体, 设备端上报AIOT_DMMSG_PROPERTY_POST, AIOT_DMMSG_EVENT_POST 或者AIOT_DMMSG_GET_..." alt="" coords="16,123,165,164"/>
+<area shape="rect" id="node6" href="structaiot__dm__msg__service__invoke__t.html" title="同步服务调用消息结构体, 用户收到同步服务后, 必须在超时时间(默认7s)内进行应答 " alt="" coords="16,188,165,229"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a592d9e49df6ca9b5aea3369640fa1615"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdm__config__t.html#a592d9e49df6ca9b5aea3369640fa1615">ack</a></td></tr>
+<tr class="separator:a592d9e49df6ca9b5aea3369640fa1615"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22f17fce411f439225220643b72a9ede"><td class="memItemLeft" align="right" valign="top"><a class="el" href="aiot__dm__api_8h.html#a1486fda74106a40a48dec667e8614175">dm_msg_callback_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdm__config__t.html#a22f17fce411f439225220643b72a9ede">msg_callback</a></td></tr>
+<tr class="separator:a22f17fce411f439225220643b72a9ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78b26ed0992c5470d42cec86b521096f"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdm__config__t.html#a78b26ed0992c5470d42cec86b521096f">userdata</a></td></tr>
+<tr class="separator:a78b26ed0992c5470d42cec86b521096f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a592d9e49df6ca9b5aea3369640fa1615"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t dm_config_t::ack</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a22f17fce411f439225220643b72a9ede"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="aiot__dm__api_8h.html#a1486fda74106a40a48dec667e8614175">dm_msg_callback_t</a> dm_config_t::msg_callback</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a78b26ed0992c5470d42cec86b521096f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* dm_config_t::userdata</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>device-modules/data-model/<a class="el" href="aiot__dm__api_8c.html">aiot_dm_api.c</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

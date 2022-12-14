@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: device-modules/tunnel/aiot_tunnel_api.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">5.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97807256e5481b5817f198b161bc0824.html">device-modules</a></li><li class="navelem"><a class="el" href="dir_f2708ebd992d4e60d8b3e87e4c5e579f.html">tunnel</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">aiot_tunnel_api.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="aiot__tunnel__api_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef AIOT_TUNNEL_API_H_</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define AIOT_TUNNEL_API_H_</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#if defined(__cplusplus)</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="aiot__tunnel__api_8h.html#a21222ec8b8e5edcd51df3a69719d5e9b">   22</a></span>&#160;<span class="preprocessor">#define  STATE_TUNNEL_BASE                                              (-0x1C80)</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="aiot__tunnel__api_8h.html#a7b90f5c41b95e209b6ed05f38f02b08f">   26</a></span>&#160;<span class="preprocessor">#define  STATE_TUNNEL_INNER_ERROR                                       (-0x1C81)</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="aiot__tunnel__api_8h.html#a736c909b86d0e4713edf90a9abb1f75a">   30</a></span>&#160;<span class="preprocessor">#define  STATE_TUNNEL_CONNECT_FAILED                                    (-0x1C82)</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="aiot__tunnel__api_8h.html#a4f11f002390c222689aef061e2bb22e6">   34</a></span>&#160;<span class="preprocessor">#define  STATE_TUNNEL_CONNECT_REPEATED                                  (-0x1C83)</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="aiot__tunnel__api_8h.html#aac0622677b1d89cd237260d7ed004009">   39</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div><div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="aiot__tunnel__api_8h.html#aac0622677b1d89cd237260d7ed004009aae199358739bcf077240bdb7051ac319">   43</a></span>&#160;    <a class="code" href="aiot__tunnel__api_8h.html#aac0622677b1d89cd237260d7ed004009aae199358739bcf077240bdb7051ac319">AIOT_TUNNEL_EVT_CONNECT</a>,</div><div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="aiot__tunnel__api_8h.html#aac0622677b1d89cd237260d7ed004009a006f75d8c071aacb0e4a1b051dfc372a">   47</a></span>&#160;    <a class="code" href="aiot__tunnel__api_8h.html#aac0622677b1d89cd237260d7ed004009a006f75d8c071aacb0e4a1b051dfc372a">AIOT_TUNNEL_EVT_DISCONNECT</a>,</div><div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="aiot__tunnel__api_8h.html#aac0622677b1d89cd237260d7ed004009a4c1d31a468ab88a64968fda1861dd7bb">   51</a></span>&#160;    <a class="code" href="aiot__tunnel__api_8h.html#aac0622677b1d89cd237260d7ed004009a4c1d31a468ab88a64968fda1861dd7bb">AIOT_TUNNEL_EVT_EXPIRED</a>,</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;} <a class="code" href="aiot__tunnel__api_8h.html#aac0622677b1d89cd237260d7ed004009">aiot_tunnel_event_type</a>;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="structaiot__tunnel__proxy__params__t.html">   57</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div><div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="structaiot__tunnel__proxy__params__t.html#a295038eb8691d019a3c49fe72d5a4837">   61</a></span>&#160;    <span class="keywordtype">char</span>                        ip[128];</div><div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="structaiot__tunnel__proxy__params__t.html#a131a0082a8d1a1937c9d0f086642c061">   65</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>                <a class="code" href="structaiot__tunnel__proxy__params__t.html#a131a0082a8d1a1937c9d0f086642c061">port</a>;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;} <a class="code" href="structaiot__tunnel__proxy__params__t.html">aiot_tunnel_proxy_params_t</a>;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="structaiot__tunnel__connect__param__t.html">   71</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div><div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="structaiot__tunnel__connect__param__t.html#a4bf8800a14a1b3285d4b53d1090b4ddb">   72</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="structaiot__tunnel__connect__param__t.html#a4bf8800a14a1b3285d4b53d1090b4ddb">host</a>;</div><div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="structaiot__tunnel__connect__param__t.html#afd663b8675da5810aa862d67f79c3d88">   73</a></span>&#160;    uint16_t <a class="code" href="structaiot__tunnel__connect__param__t.html#afd663b8675da5810aa862d67f79c3d88">port</a>;</div><div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="structaiot__tunnel__connect__param__t.html#af39ee12b73dd397877f4d4793600ba72">   74</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="structaiot__tunnel__connect__param__t.html#af39ee12b73dd397877f4d4793600ba72">path</a>;</div><div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="structaiot__tunnel__connect__param__t.html#a169b5d2710ce052153e0a71ec6f7279b">   75</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="structaiot__tunnel__connect__param__t.html#a169b5d2710ce052153e0a71ec6f7279b">token</a>;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;} <a class="code" href="structaiot__tunnel__connect__param__t.html">aiot_tunnel_connect_param_t</a>;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div><div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="aiot__tunnel__api_8h.html#a7a7ef6e8f3577ae5488ba5c8979fc284">   78</a></span>&#160;<span class="keyword">typedef</span> void (*<a class="code" href="aiot__tunnel__api_8h.html#a7a7ef6e8f3577ae5488ba5c8979fc284">aiot_tunnel_event_callback_t</a>)(<span class="keywordtype">void</span> *handle, <span class="keyword">const</span> aiot_tunnel_event_type event, <span class="keywordtype">void</span> *userdata);</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keywordtype">void</span> *<a class="code" href="aiot__tunnel__api_8h.html#ac13d3759c481f69f815b3f96aab3af55">aiot_tunnel_init</a>(<span class="keywordtype">char</span> *tunnel_id);</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;int32_t <a class="code" href="aiot__tunnel__api_8h.html#a9ddfd4d91d9fc4402a92d6f41d7d4b2f">aiot_tunnel_set_connect_params</a>(<span class="keywordtype">void</span> *tunnel,<span class="keyword">const</span> <a class="code" href="structaiot__tunnel__connect__param__t.html">aiot_tunnel_connect_param_t</a> *params);</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;int32_t <a class="code" href="aiot__tunnel__api_8h.html#ab47cdd2ff0b39e687aed7cf99bc4d733">aiot_tunnel_add_proxy_service</a>(<span class="keywordtype">void</span> *tunnel, <span class="keywordtype">char</span> *proxy_type, <span class="keyword">const</span> <a class="code" href="structaiot__tunnel__proxy__params__t.html">aiot_tunnel_proxy_params_t</a> *params);</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;int32_t <a class="code" href="aiot__tunnel__api_8h.html#adf673a4ff84678ce113192a111538d3a">aiot_tunnel_set_event_callback</a>(<span class="keywordtype">void</span> *tunnel, <a class="code" href="aiot__tunnel__api_8h.html#a7a7ef6e8f3577ae5488ba5c8979fc284">aiot_tunnel_event_callback_t</a> callback, <span class="keywordtype">void</span> *userdata);</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;int32_t <a class="code" href="aiot__tunnel__api_8h.html#aaf972026391ed8de2481032d92009321">aiot_tunnel_connect</a>(<span class="keywordtype">void</span> *tunnel);</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;int32_t <a class="code" href="aiot__tunnel__api_8h.html#aa5f6d2708ef2ddc126c9af71861900e1">aiot_tunnel_disconnect</a>(<span class="keywordtype">void</span> *tunnel);</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="keywordtype">void</span> <a class="code" href="aiot__tunnel__api_8h.html#a32d8d0d09200fdc4b86d0aaf5b5f9bca">aiot_tunnel_deinit</a>(<span class="keywordtype">void</span> **tunnel);</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __AIOT_tunnel_API_H_ */</span><span class="preprocessor"></span></div><div class="ttc" id="structaiot__tunnel__connect__param__t_html_a4bf8800a14a1b3285d4b53d1090b4ddb"><div class="ttname"><a href="structaiot__tunnel__connect__param__t.html#a4bf8800a14a1b3285d4b53d1090b4ddb">aiot_tunnel_connect_param_t::host</a></div><div class="ttdeci">char * host</div><div class="ttdef"><b>Definition:</b> aiot_tunnel_api.h:72</div></div>
+<div class="ttc" id="aiot__tunnel__api_8h_html_aac0622677b1d89cd237260d7ed004009aae199358739bcf077240bdb7051ac319"><div class="ttname"><a href="aiot__tunnel__api_8h.html#aac0622677b1d89cd237260d7ed004009aae199358739bcf077240bdb7051ac319">AIOT_TUNNEL_EVT_CONNECT</a></div><div class="ttdoc">当tunnel实例连接代理通道成功, 触发此事件 </div><div class="ttdef"><b>Definition:</b> aiot_tunnel_api.h:43</div></div>
+<div class="ttc" id="aiot__tunnel__api_8h_html_a32d8d0d09200fdc4b86d0aaf5b5f9bca"><div class="ttname"><a href="aiot__tunnel__api_8h.html#a32d8d0d09200fdc4b86d0aaf5b5f9bca">aiot_tunnel_deinit</a></div><div class="ttdeci">void aiot_tunnel_deinit(void **tunnel)</div><div class="ttdoc">删除隧道，回收内存资源 </div><div class="ttdef"><b>Definition:</b> aiot_tunnel_api.c:671</div></div>
+<div class="ttc" id="structaiot__tunnel__connect__param__t_html_af39ee12b73dd397877f4d4793600ba72"><div class="ttname"><a href="structaiot__tunnel__connect__param__t.html#af39ee12b73dd397877f4d4793600ba72">aiot_tunnel_connect_param_t::path</a></div><div class="ttdeci">char * path</div><div class="ttdef"><b>Definition:</b> aiot_tunnel_api.h:74</div></div>
+<div class="ttc" id="aiot__tunnel__api_8h_html_ac13d3759c481f69f815b3f96aab3af55"><div class="ttname"><a href="aiot__tunnel__api_8h.html#ac13d3759c481f69f815b3f96aab3af55">aiot_tunnel_init</a></div><div class="ttdeci">void * aiot_tunnel_init(char *tunnel_id)</div><div class="ttdoc">初始化隧道并设置默认参数 </div><div class="ttdef"><b>Definition:</b> aiot_tunnel_api.c:87</div></div>
+<div class="ttc" id="structaiot__tunnel__connect__param__t_html_a169b5d2710ce052153e0a71ec6f7279b"><div class="ttname"><a href="structaiot__tunnel__connect__param__t.html#a169b5d2710ce052153e0a71ec6f7279b">aiot_tunnel_connect_param_t::token</a></div><div class="ttdeci">char * token</div><div class="ttdef"><b>Definition:</b> aiot_tunnel_api.h:75</div></div>
+<div class="ttc" id="structaiot__tunnel__proxy__params__t_html"><div class="ttname"><a href="structaiot__tunnel__proxy__params__t.html">aiot_tunnel_proxy_params_t</a></div><div class="ttdoc">本地代理服务信息 </div><div class="ttdef"><b>Definition:</b> aiot_tunnel_api.h:57</div></div>
+<div class="ttc" id="aiot__tunnel__api_8h_html_adf673a4ff84678ce113192a111538d3a"><div class="ttname"><a href="aiot__tunnel__api_8h.html#adf673a4ff84678ce113192a111538d3a">aiot_tunnel_set_event_callback</a></div><div class="ttdeci">int32_t aiot_tunnel_set_event_callback(void *tunnel, aiot_tunnel_event_callback_t callback, void *userdata)</div><div class="ttdoc">设置隧道的的事件回调，一般为隧道状态变更时调用 </div><div class="ttdef"><b>Definition:</b> aiot_tunnel_api.c:177</div></div>
+<div class="ttc" id="aiot__tunnel__api_8h_html_aaf972026391ed8de2481032d92009321"><div class="ttname"><a href="aiot__tunnel__api_8h.html#aaf972026391ed8de2481032d92009321">aiot_tunnel_connect</a></div><div class="ttdeci">int32_t aiot_tunnel_connect(void *tunnel)</div><div class="ttdoc">隧道建连 </div><div class="ttdef"><b>Definition:</b> aiot_tunnel_api.c:603</div></div>
+<div class="ttc" id="aiot__tunnel__api_8h_html_a9ddfd4d91d9fc4402a92d6f41d7d4b2f"><div class="ttname"><a href="aiot__tunnel__api_8h.html#a9ddfd4d91d9fc4402a92d6f41d7d4b2f">aiot_tunnel_set_connect_params</a></div><div class="ttdeci">int32_t aiot_tunnel_set_connect_params(void *tunnel, const aiot_tunnel_connect_param_t *params)</div><div class="ttdoc">设置隧道的建连参数 </div><div class="ttdef"><b>Definition:</b> aiot_tunnel_api.c:122</div></div>
+<div class="ttc" id="structaiot__tunnel__connect__param__t_html"><div class="ttname"><a href="structaiot__tunnel__connect__param__t.html">aiot_tunnel_connect_param_t</a></div><div class="ttdoc">隧道建连需要的参数 </div><div class="ttdef"><b>Definition:</b> aiot_tunnel_api.h:71</div></div>
+<div class="ttc" id="aiot__tunnel__api_8h_html_aa5f6d2708ef2ddc126c9af71861900e1"><div class="ttname"><a href="aiot__tunnel__api_8h.html#aa5f6d2708ef2ddc126c9af71861900e1">aiot_tunnel_disconnect</a></div><div class="ttdeci">int32_t aiot_tunnel_disconnect(void *tunnel)</div><div class="ttdoc">隧道断连 </div><div class="ttdef"><b>Definition:</b> aiot_tunnel_api.c:641</div></div>
+<div class="ttc" id="structaiot__tunnel__proxy__params__t_html_a131a0082a8d1a1937c9d0f086642c061"><div class="ttname"><a href="structaiot__tunnel__proxy__params__t.html#a131a0082a8d1a1937c9d0f086642c061">aiot_tunnel_proxy_params_t::port</a></div><div class="ttdeci">unsigned int port</div><div class="ttdoc">服务端口号 </div><div class="ttdef"><b>Definition:</b> aiot_tunnel_api.h:65</div></div>
+<div class="ttc" id="structaiot__tunnel__connect__param__t_html_afd663b8675da5810aa862d67f79c3d88"><div class="ttname"><a href="structaiot__tunnel__connect__param__t.html#afd663b8675da5810aa862d67f79c3d88">aiot_tunnel_connect_param_t::port</a></div><div class="ttdeci">uint16_t port</div><div class="ttdef"><b>Definition:</b> aiot_tunnel_api.h:73</div></div>
+<div class="ttc" id="aiot__tunnel__api_8h_html_aac0622677b1d89cd237260d7ed004009"><div class="ttname"><a href="aiot__tunnel__api_8h.html#aac0622677b1d89cd237260d7ed004009">aiot_tunnel_event_type</a></div><div class="ttdeci">aiot_tunnel_event_type</div><div class="ttdoc">tunnel内部事件类型 </div><div class="ttdef"><b>Definition:</b> aiot_tunnel_api.h:39</div></div>
+<div class="ttc" id="aiot__tunnel__api_8h_html_ab47cdd2ff0b39e687aed7cf99bc4d733"><div class="ttname"><a href="aiot__tunnel__api_8h.html#ab47cdd2ff0b39e687aed7cf99bc4d733">aiot_tunnel_add_proxy_service</a></div><div class="ttdeci">int32_t aiot_tunnel_add_proxy_service(void *tunnel, char *proxy_type, const aiot_tunnel_proxy_params_t *params)</div><div class="ttdoc">添加本地代理服务的session类型，如ssh、ftp等tcp服务 </div><div class="ttdef"><b>Definition:</b> aiot_tunnel_api.c:153</div></div>
+<div class="ttc" id="aiot__tunnel__api_8h_html_aac0622677b1d89cd237260d7ed004009a006f75d8c071aacb0e4a1b051dfc372a"><div class="ttname"><a href="aiot__tunnel__api_8h.html#aac0622677b1d89cd237260d7ed004009a006f75d8c071aacb0e4a1b051dfc372a">AIOT_TUNNEL_EVT_DISCONNECT</a></div><div class="ttdoc">当tunnel实例从代理通道断开, 触发此事件 </div><div class="ttdef"><b>Definition:</b> aiot_tunnel_api.h:47</div></div>
+<div class="ttc" id="aiot__tunnel__api_8h_html_a7a7ef6e8f3577ae5488ba5c8979fc284"><div class="ttname"><a href="aiot__tunnel__api_8h.html#a7a7ef6e8f3577ae5488ba5c8979fc284">aiot_tunnel_event_callback_t</a></div><div class="ttdeci">void(* aiot_tunnel_event_callback_t)(void *handle, const aiot_tunnel_event_type event, void *userdata)</div><div class="ttdef"><b>Definition:</b> aiot_tunnel_api.h:78</div></div>
+<div class="ttc" id="aiot__tunnel__api_8h_html_aac0622677b1d89cd237260d7ed004009a4c1d31a468ab88a64968fda1861dd7bb"><div class="ttname"><a href="aiot__tunnel__api_8h.html#aac0622677b1d89cd237260d7ed004009a4c1d31a468ab88a64968fda1861dd7bb">AIOT_TUNNEL_EVT_EXPIRED</a></div><div class="ttdoc">隧道认证信息已经过期，需要重新连接 </div><div class="ttdef"><b>Definition:</b> aiot_tunnel_api.h:51</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

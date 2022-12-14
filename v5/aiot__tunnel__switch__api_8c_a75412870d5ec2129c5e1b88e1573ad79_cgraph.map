@@ -1,0 +1,12 @@
+<map id="_ts_on_status" name="_ts_on_status">
+<area shape="rect" id="node2" href="$aiot__tunnel__switch__api_8c.html#ab90552f308771935a821432f131b9071" title="_ts_sub_topic" alt="" coords="157,144,260,171"/>
+<area shape="rect" id="node3" href="$aiot__tunnel__switch__api_8c.html#ab062a7625ee4f736bcb6cf7b9be1b072" title="_ts_get_handle" alt="" coords="539,203,650,230"/>
+<area shape="rect" id="node4" href="$aiot__device__api_8c.html#a53ade36ca27a6aa7b1001a3fc1c50935" title="查询设备的状态 " alt="" coords="327,43,456,70"/>
+<area shape="rect" id="node5" href="$aiot__device__api_8c.html#a1e58b077a51ef375e26e8c8927a08855" title="查询设备的product_key " alt="" coords="308,94,475,120"/>
+<area shape="rect" id="node6" href="$aiot__device__api_8c.html#a1add2b0c42c073722cfa72b53a872e96" title="查询设备的device_name " alt="" coords="328,144,455,171"/>
+<area shape="rect" id="node7" href="$aiot__device__api_8c.html#aac2943ebe50e80a431f46a6452403cb6" title="设备注册感兴趣的topic，接收到该topic的消息，执行对应回调 " alt="" coords="322,313,461,354"/>
+<area shape="rect" id="node10" href="$aiot__tunnel__switch__api_8c.html#adab9202247e1e79d7bf8a4ccf3141bff" title="_ts_msg_request_reply\l_callback" alt="" coords="313,196,470,237"/>
+<area shape="rect" id="node11" href="$aiot__tunnel__switch__api_8c.html#a4749c10fb02effde9bd892275e829201" title="_ts_msg_push_callback" alt="" coords="310,262,473,288"/>
+<area shape="rect" id="node8" href="$aiot__device__api_8c.html#ae3b5c1fa33797955fab227411311939d" title="_core_device_topic\l_takeoff_pkdn" alt="" coords="527,284,662,325"/>
+<area shape="rect" id="node9" href="$aiot__device__api_8c.html#a17429491661f0c6c8773c1bf51ceedf7" title="_core_device_sublist\l_insert" alt="" coords="523,349,667,390"/>
+</map>

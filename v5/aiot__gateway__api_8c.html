@@ -1,0 +1,965 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: device-modules/gateway/aiot_gateway_api.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">5.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97807256e5481b5817f198b161bc0824.html">device-modules</a></li><li class="navelem"><a class="el" href="dir_15304969387d1584f2ce401df325dd61.html">gateway</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">aiot_gateway_api.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;gateway_message.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="aiot__state__api_8h_source.html">aiot_state_api.h</a>&quot;</code><br />
+<code>#include &quot;device_private.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="aiot__message__api_8h_source.html">aiot_message_api.h</a>&quot;</code><br />
+<code>#include &quot;core_string.h&quot;</code><br />
+<code>#include &quot;core_os.h&quot;</code><br />
+<code>#include &quot;core_auth.h&quot;</code><br />
+<code>#include &quot;gateway_private.h&quot;</code><br />
+<code>#include &quot;core_log.h&quot;</code><br />
+<code>#include &quot;subdev_manager.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+aiot_gateway_api.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__gateway__api_8c__incl.png" border="0" usemap="#device-modules_2gateway_2aiot__gateway__api_8c" alt=""/></div>
+<map name="device-modules_2gateway_2aiot__gateway__api_8c" id="device-modules_2gateway_2aiot__gateway__api_8c">
+<area shape="rect" id="node6" href="aiot__state__api_8h.html" title="SDK Core状态码头文件, 所有Core中的api返回值均在此列出 " alt="" coords="581,117,695,143"/>
+<area shape="rect" id="node8" href="aiot__message__api_8h.html" title="aiot_message_api.h" alt="" coords="861,117,999,143"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:afc3d101f633a076cc1ca84b85b6224b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__gateway__api_8c.html#afc3d101f633a076cc1ca84b85b6224b2">TAG</a>&#160;&#160;&#160;&quot;GATEWAY&quot;</td></tr>
+<tr class="separator:afc3d101f633a076cc1ca84b85b6224b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ae4a48af53cab07f5728b792fa64fd381"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__gateway__api_8c.html#ae4a48af53cab07f5728b792fa64fd381">aiot_gateway_set_msg_callback</a> (void *gateway_device, <a class="el" href="aiot__gateway__api_8h.html#a7021fe6ff445436694f8469f13afda9e">gateway_msg_callback_t</a> msg_callback, void *userdata)</td></tr>
+<tr class="memdesc:ae4a48af53cab07f5728b792fa64fd381"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置网关消息的回调  <a href="#ae4a48af53cab07f5728b792fa64fd381">更多...</a><br /></td></tr>
+<tr class="separator:ae4a48af53cab07f5728b792fa64fd381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4af63936e632a0ee7cb0311f7922438"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__gateway__api_8c.html#ad4af63936e632a0ee7cb0311f7922438">aiot_gateway_set_auto_topo</a> (void *gateway_device, int32_t auto_topo)</td></tr>
+<tr class="memdesc:ad4af63936e632a0ee7cb0311f7922438"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是否在建连的时候自动添加topo  <a href="#ad4af63936e632a0ee7cb0311f7922438">更多...</a><br /></td></tr>
+<tr class="separator:ad4af63936e632a0ee7cb0311f7922438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaec739e0e12f085a463ffb7a9886cc3d"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__gateway__api_8c.html#aaec739e0e12f085a463ffb7a9886cc3d">aiot_gateway_set_sync_msg_timeout</a> (void *gateway_device, uint32_t timeout_ms)</td></tr>
+<tr class="memdesc:aaec739e0e12f085a463ffb7a9886cc3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置批量同步接口调用的超时时间  <a href="#aaec739e0e12f085a463ffb7a9886cc3d">更多...</a><br /></td></tr>
+<tr class="separator:aaec739e0e12f085a463ffb7a9886cc3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa04d9f6ec8e7aa9c7e4d88d471e43f83"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__gateway__api_8c.html#aa04d9f6ec8e7aa9c7e4d88d471e43f83">aiot_gateway_set_batch_pub_policy</a> (void *gateway_device, <a class="el" href="structaiot__batch__pub__policy__t.html">aiot_batch_pub_policy_t</a> *policy)</td></tr>
+<tr class="memdesc:aa04d9f6ec8e7aa9c7e4d88d471e43f83"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置网关批量发布消息规则  <a href="#aa04d9f6ec8e7aa9c7e4d88d471e43f83">更多...</a><br /></td></tr>
+<tr class="separator:aa04d9f6ec8e7aa9c7e4d88d471e43f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4279a3b6e69a722345ca24a3e80b684c"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__gateway__api_8c.html#a4279a3b6e69a722345ca24a3e80b684c">aiot_gateway_flush_msg</a> (void *gateway_device)</td></tr>
+<tr class="memdesc:a4279a3b6e69a722345ca24a3e80b684c"><td class="mdescLeft">&#160;</td><td class="mdescRight">强制刷新网关缓存消息，将缓存消息发送  <a href="#a4279a3b6e69a722345ca24a3e80b684c">更多...</a><br /></td></tr>
+<tr class="separator:a4279a3b6e69a722345ca24a3e80b684c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add3c10caac89d0ee5f998fc5afba2a39"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__gateway__api_8c.html#add3c10caac89d0ee5f998fc5afba2a39">aiot_gateway_batch_connect_subdev</a> (void *gateway_device, void *subdev_table[], int32_t subdev_num)</td></tr>
+<tr class="memdesc:add3c10caac89d0ee5f998fc5afba2a39"><td class="mdescLeft">&#160;</td><td class="mdescRight">网关批量代理子设备建连，同步接口会阻塞, 超时时间设置 aiot_gateway_set_sync_msg_timeout。  <a href="#add3c10caac89d0ee5f998fc5afba2a39">更多...</a><br /></td></tr>
+<tr class="separator:add3c10caac89d0ee5f998fc5afba2a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a756db9a110fd392e7f0eb5c69b9b8c6d"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__gateway__api_8c.html#a756db9a110fd392e7f0eb5c69b9b8c6d">aiot_gateway_batch_disconnect_subdev</a> (void *gateway_device, void *subdev_table[], int32_t subdev_num)</td></tr>
+<tr class="memdesc:a756db9a110fd392e7f0eb5c69b9b8c6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">网关批量代理子设备断连，同步接口会阻塞, 超时时间设置 aiot_gateway_set_sync_msg_timeout。  <a href="#a756db9a110fd392e7f0eb5c69b9b8c6d">更多...</a><br /></td></tr>
+<tr class="separator:a756db9a110fd392e7f0eb5c69b9b8c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13ffde0f430043fad48b0dc29ebe7c9e"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__gateway__api_8c.html#a13ffde0f430043fad48b0dc29ebe7c9e">aiot_gateway_batch_add_topo</a> (void *gateway_device, <a class="el" href="structaiot__subdev__meta__info__t.html">aiot_subdev_meta_info_t</a> subdev_table[], int32_t subdev_num)</td></tr>
+<tr class="memdesc:a13ffde0f430043fad48b0dc29ebe7c9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">网关批量增加子设备topo，同步接口会阻塞, 超时时间设置 aiot_gateway_set_sync_msg_timeout。  <a href="#a13ffde0f430043fad48b0dc29ebe7c9e">更多...</a><br /></td></tr>
+<tr class="separator:a13ffde0f430043fad48b0dc29ebe7c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba5cf6b26d1b23161615a71ef03fd37d"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__gateway__api_8c.html#aba5cf6b26d1b23161615a71ef03fd37d">aiot_gateway_batch_delete_topo</a> (void *gateway_device, <a class="el" href="structaiot__subdev__meta__info__t.html">aiot_subdev_meta_info_t</a> subdev_table[], int32_t subdev_num)</td></tr>
+<tr class="memdesc:aba5cf6b26d1b23161615a71ef03fd37d"><td class="mdescLeft">&#160;</td><td class="mdescRight">网关批量删除子设备topo，同步接口会阻塞, 超时时间设置 aiot_gateway_set_sync_msg_timeout。  <a href="#aba5cf6b26d1b23161615a71ef03fd37d">更多...</a><br /></td></tr>
+<tr class="separator:aba5cf6b26d1b23161615a71ef03fd37d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94458db81eb541d5fec6bee9ea95be66"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__gateway__api_8c.html#a94458db81eb541d5fec6bee9ea95be66">aiot_gateway_dynamic_secret</a> (void *gateway_device, <a class="el" href="structaiot__subdev__meta__info__t.html">aiot_subdev_meta_info_t</a> subdev_table[], int32_t subdev_num)</td></tr>
+<tr class="memdesc:a94458db81eb541d5fec6bee9ea95be66"><td class="mdescLeft">&#160;</td><td class="mdescRight">网关批量代理子设备动态注册，同步接口会阻塞, 超时时间设置 aiot_gateway_set_sync_msg_timeout。  <a href="#a94458db81eb541d5fec6bee9ea95be66">更多...</a><br /></td></tr>
+<tr class="separator:a94458db81eb541d5fec6bee9ea95be66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb198d19b370150544a1b6a48f14177c"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__gateway__api_8c.html#abb198d19b370150544a1b6a48f14177c">aiot_gateway_dynamic_register</a> (void *gateway_device, <a class="el" href="structaiot__subdev__meta__info__t.html">aiot_subdev_meta_info_t</a> subdev_table[], int32_t subdev_num)</td></tr>
+<tr class="memdesc:abb198d19b370150544a1b6a48f14177c"><td class="mdescLeft">&#160;</td><td class="mdescRight">网关批量代理子设备抢注，同步接口会阻塞, 超时时间设置 aiot_gateway_set_sync_msg_timeout。  <a href="#abb198d19b370150544a1b6a48f14177c">更多...</a><br /></td></tr>
+<tr class="separator:abb198d19b370150544a1b6a48f14177c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abac6fa4824729b59955b4037b2eecf52"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__gateway__api_8c.html#abac6fa4824729b59955b4037b2eecf52">aiot_gateway_batch_connect_subdev_async</a> (void *gateway_device, void *subdev_table[], int32_t subdev_num)</td></tr>
+<tr class="memdesc:abac6fa4824729b59955b4037b2eecf52"><td class="mdescLeft">&#160;</td><td class="mdescRight">网关批量代理子设备建连，异步接口不阻塞  <a href="#abac6fa4824729b59955b4037b2eecf52">更多...</a><br /></td></tr>
+<tr class="separator:abac6fa4824729b59955b4037b2eecf52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a289c2aeb4f580b4304bdb0f5ea04a0ef"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__gateway__api_8c.html#a289c2aeb4f580b4304bdb0f5ea04a0ef">aiot_gateway_batch_disconnect_subdev_async</a> (void *gateway_device, void *subdev_table[], int32_t subdev_num)</td></tr>
+<tr class="memdesc:a289c2aeb4f580b4304bdb0f5ea04a0ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">网关批量代理子设备断连，异步接口不阻塞  <a href="#a289c2aeb4f580b4304bdb0f5ea04a0ef">更多...</a><br /></td></tr>
+<tr class="separator:a289c2aeb4f580b4304bdb0f5ea04a0ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afefef608bba5a373efcc018fa1fac69b"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__gateway__api_8c.html#afefef608bba5a373efcc018fa1fac69b">aiot_gateway_batch_add_topo_async</a> (void *gateway_device, <a class="el" href="structaiot__subdev__meta__info__t.html">aiot_subdev_meta_info_t</a> subdev_table[], int32_t subdev_num)</td></tr>
+<tr class="memdesc:afefef608bba5a373efcc018fa1fac69b"><td class="mdescLeft">&#160;</td><td class="mdescRight">网关批量增加子设备topo，异步接口不阻塞  <a href="#afefef608bba5a373efcc018fa1fac69b">更多...</a><br /></td></tr>
+<tr class="separator:afefef608bba5a373efcc018fa1fac69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90ba121bf23e10817ebd0576d07dd81a"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__gateway__api_8c.html#a90ba121bf23e10817ebd0576d07dd81a">aiot_gateway_batch_delete_topo_async</a> (void *gateway_device, <a class="el" href="structaiot__subdev__meta__info__t.html">aiot_subdev_meta_info_t</a> subdev_table[], int32_t subdev_num)</td></tr>
+<tr class="memdesc:a90ba121bf23e10817ebd0576d07dd81a"><td class="mdescLeft">&#160;</td><td class="mdescRight">网关批量删除子设备topo，异步接口不阻塞  <a href="#a90ba121bf23e10817ebd0576d07dd81a">更多...</a><br /></td></tr>
+<tr class="separator:a90ba121bf23e10817ebd0576d07dd81a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="afc3d101f633a076cc1ca84b85b6224b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TAG&#160;&#160;&#160;&quot;GATEWAY&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="ae4a48af53cab07f5728b792fa64fd381"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_gateway_set_msg_callback </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>gateway_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="aiot__gateway__api_8h.html#a7021fe6ff445436694f8469f13afda9e">gateway_msg_callback_t</a>&#160;</td>
+          <td class="paramname"><em>msg_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userdata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置网关消息的回调 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>设备句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">msg_callback</td><td>回调函数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userdata</td><td>执行回调函数后的上下文指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>参数配置成功 </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>入参为空 </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad4af63936e632a0ee7cb0311f7922438"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_gateway_set_auto_topo </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>gateway_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>auto_topo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置是否在建连的时候自动添加topo </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">gateway_device</td><td>设备句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">auto_topo</td><td>1: 自动添加topo 0.不自动添加</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>参数配置成功 </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>入参为空 </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aaec739e0e12f085a463ffb7a9886cc3d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_gateway_set_sync_msg_timeout </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>gateway_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeout_ms</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置批量同步接口调用的超时时间 </p>
+<p>批量操作接口列表： aiot_gateway_batch_connect_subdev aiot_gateway_batch_disconnect_subdev aiot_gateway_batch_add_topo aiot_gateway_batch_delete_topo aiot_gateway_dynamic_secret aiot_gateway_dynamic_register</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">gateway_device</td><td>设备句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout_ms</td><td>从调用到失败的超时时间，单位ms</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>参数配置成功 </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>入参为空 </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa04d9f6ec8e7aa9c7e4d88d471e43f83"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_gateway_set_batch_pub_policy </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>gateway_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structaiot__batch__pub__policy__t.html">aiot_batch_pub_policy_t</a> *&#160;</td>
+          <td class="paramname"><em>policy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置网关批量发布消息规则 </p>
+<p>网关支持批量发送消息，设置完批量发布规则（定时发送、定量发送）后， 网关设备/子设备只需要正常发布消息，到网关后会缓存，会按照设置的规则进行发送。 也可手动触发批量发送，手动操作接口 <a class="el" href="aiot__gateway__api_8h.html#a4279a3b6e69a722345ca24a3e80b684c">aiot_gateway_flush_msg</a></p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">gateway_device</td><td>设备句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">policy</td><td>批量发布规则 参考<a class="el" href="structaiot__batch__pub__policy__t.html">aiot_batch_pub_policy_t</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>参数配置成功 </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>入参为空 </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4279a3b6e69a722345ca24a3e80b684c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_gateway_flush_msg </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>gateway_device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>强制刷新网关缓存消息，将缓存消息发送 </p>
+<p>网关模块具有批量发送消息的功能，消息缓存在模块中，调用该接口可以立即将消息批量发布</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">gateway_device</td><td>设备句柄</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>成功 </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>入参为空 </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="add3c10caac89d0ee5f998fc5afba2a39"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_gateway_batch_connect_subdev </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>gateway_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>subdev_table</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>subdev_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>网关批量代理子设备建连，同步接口会阻塞, 超时时间设置 aiot_gateway_set_sync_msg_timeout。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">gateway_device</td><td>网关设备句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">subdev_table</td><td>子设备句柄表 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">subdev_num</td><td>子设备个数</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>代理子设备建连成功 </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>入参为空 </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__gateway__api_8c_add3c10caac89d0ee5f998fc5afba2a39_cgraph.png" border="0" usemap="#aiot__gateway__api_8c_add3c10caac89d0ee5f998fc5afba2a39_cgraph" alt=""/></div>
+<map name="aiot__gateway__api_8c_add3c10caac89d0ee5f998fc5afba2a39_cgraph" id="aiot__gateway__api_8c_add3c10caac89d0ee5f998fc5afba2a39_cgraph">
+<area shape="rect" id="node2" href="aiot__device__api_8c.html#a1e58b077a51ef375e26e8c8927a08855" title="查询设备的product_key " alt="" coords="192,5,359,32"/>
+<area shape="rect" id="node3" href="aiot__device__api_8c.html#a1add2b0c42c073722cfa72b53a872e96" title="查询设备的device_name " alt="" coords="212,56,339,83"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a756db9a110fd392e7f0eb5c69b9b8c6d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_gateway_batch_disconnect_subdev </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>gateway_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>subdev_table</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>subdev_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>网关批量代理子设备断连，同步接口会阻塞, 超时时间设置 aiot_gateway_set_sync_msg_timeout。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">gateway_device</td><td>网关设备句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">subdev_table</td><td>子设备句柄表 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">subdev_num</td><td>子设备个数</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>代理子设备断连成功 </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>入参为空 </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__gateway__api_8c_a756db9a110fd392e7f0eb5c69b9b8c6d_cgraph.png" border="0" usemap="#aiot__gateway__api_8c_a756db9a110fd392e7f0eb5c69b9b8c6d_cgraph" alt=""/></div>
+<map name="aiot__gateway__api_8c_a756db9a110fd392e7f0eb5c69b9b8c6d_cgraph" id="aiot__gateway__api_8c_a756db9a110fd392e7f0eb5c69b9b8c6d_cgraph">
+<area shape="rect" id="node2" href="aiot__device__api_8c.html#a1e58b077a51ef375e26e8c8927a08855" title="查询设备的product_key " alt="" coords="195,5,361,32"/>
+<area shape="rect" id="node3" href="aiot__device__api_8c.html#a1add2b0c42c073722cfa72b53a872e96" title="查询设备的device_name " alt="" coords="215,56,341,83"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a13ffde0f430043fad48b0dc29ebe7c9e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_gateway_batch_add_topo </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>gateway_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structaiot__subdev__meta__info__t.html">aiot_subdev_meta_info_t</a>&#160;</td>
+          <td class="paramname"><em>subdev_table</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>subdev_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>网关批量增加子设备topo，同步接口会阻塞, 超时时间设置 aiot_gateway_set_sync_msg_timeout。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">gateway_device</td><td>网关设备句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">subdev_table</td><td>子设备元数据表 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">subdev_num</td><td>子设备个数</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>添加topo成功 </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>入参为空 </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aba5cf6b26d1b23161615a71ef03fd37d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_gateway_batch_delete_topo </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>gateway_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structaiot__subdev__meta__info__t.html">aiot_subdev_meta_info_t</a>&#160;</td>
+          <td class="paramname"><em>subdev_table</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>subdev_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>网关批量删除子设备topo，同步接口会阻塞, 超时时间设置 aiot_gateway_set_sync_msg_timeout。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">gateway_device</td><td>网关设备句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">subdev_table</td><td>子设备元数据表 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">subdev_num</td><td>子设备个数</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>删除子设备topo关系成功 </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>入参为空 </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a94458db81eb541d5fec6bee9ea95be66"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_gateway_dynamic_secret </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>gateway_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structaiot__subdev__meta__info__t.html">aiot_subdev_meta_info_t</a>&#160;</td>
+          <td class="paramname"><em>subdev_table</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>subdev_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>网关批量代理子设备动态注册，同步接口会阻塞, 超时时间设置 aiot_gateway_set_sync_msg_timeout。 </p>
+<p>通过该接口获取子设备的密钥，需要先添加子设备与网关的topo关系</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">gateway_device</td><td>网关设备句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">subdev_table</td><td>子设备元数据表(product_key, device_name不能为空) 作为输入也作为输出，成功后密钥会保存在subdev_table.device_secret中 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">subdev_num</td><td>子设备个数</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>获取密钥成功，密钥存储在subdev_table.device_secret </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>入参为空 </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="abb198d19b370150544a1b6a48f14177c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_gateway_dynamic_register </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>gateway_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structaiot__subdev__meta__info__t.html">aiot_subdev_meta_info_t</a>&#160;</td>
+          <td class="paramname"><em>subdev_table</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>subdev_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>网关批量代理子设备抢注，同步接口会阻塞, 超时时间设置 aiot_gateway_set_sync_msg_timeout。 </p>
+<p>当子设备使用多个网关时，更换网关后可通过该接口强制绑定该网关</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">gateway_device</td><td>网关设备句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">subdev_table</td><td>子设备元数据表(product_key, device_name, product_secret不能为空) 作为输入也作为输出，成功后密钥会保存在subdev_table.device_secret中 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">subdev_num</td><td>子设备个数</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>获取密钥成功，密钥存储在subdev_table.device_secret </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>入参为空 </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="abac6fa4824729b59955b4037b2eecf52"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_gateway_batch_connect_subdev_async </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>gateway_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>subdev_table</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>subdev_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>网关批量代理子设备建连，异步接口不阻塞 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">gateway_device</td><td>网关设备句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">subdev_table</td><td>子设备句柄表 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">subdev_num</td><td>子设备个数</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;=</td><td>STATE_SUCCESS 大于0时，表示消息发送成功，返回值为消息ID，回复消息类型 <a class="el" href="aiot__gateway__api_8h.html#a4f18b6aeea2b990397a8db0342d8a060a014277ec9c244b2ce592383a411aa912">AIOT_GWRECV_CONNECT_REPLY</a> </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>入参为空 </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__gateway__api_8c_abac6fa4824729b59955b4037b2eecf52_cgraph.png" border="0" usemap="#aiot__gateway__api_8c_abac6fa4824729b59955b4037b2eecf52_cgraph" alt=""/></div>
+<map name="aiot__gateway__api_8c_abac6fa4824729b59955b4037b2eecf52_cgraph" id="aiot__gateway__api_8c_abac6fa4824729b59955b4037b2eecf52_cgraph">
+<area shape="rect" id="node2" href="aiot__device__api_8c.html#a1e58b077a51ef375e26e8c8927a08855" title="查询设备的product_key " alt="" coords="220,5,387,32"/>
+<area shape="rect" id="node3" href="aiot__device__api_8c.html#a1add2b0c42c073722cfa72b53a872e96" title="查询设备的device_name " alt="" coords="240,56,367,83"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a289c2aeb4f580b4304bdb0f5ea04a0ef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_gateway_batch_disconnect_subdev_async </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>gateway_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>subdev_table</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>subdev_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>网关批量代理子设备断连，异步接口不阻塞 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">gateway_device</td><td>网关设备句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">subdev_table</td><td>子设备句柄表 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">subdev_num</td><td>子设备个数</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;=</td><td>STATE_SUCCESS 大于0时，表示消息发送成功，返回值为消息ID，回复消息类型 <a class="el" href="aiot__gateway__api_8h.html#a4f18b6aeea2b990397a8db0342d8a060a8c5d0dd2e32ce0e65e4f35bdb53232f9">AIOT_GWRECV_DISCONNECT_REPLY</a> </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>入参为空 </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__gateway__api_8c_a289c2aeb4f580b4304bdb0f5ea04a0ef_cgraph.png" border="0" usemap="#aiot__gateway__api_8c_a289c2aeb4f580b4304bdb0f5ea04a0ef_cgraph" alt=""/></div>
+<map name="aiot__gateway__api_8c_a289c2aeb4f580b4304bdb0f5ea04a0ef_cgraph" id="aiot__gateway__api_8c_a289c2aeb4f580b4304bdb0f5ea04a0ef_cgraph">
+<area shape="rect" id="node2" href="aiot__device__api_8c.html#a1e58b077a51ef375e26e8c8927a08855" title="查询设备的product_key " alt="" coords="236,5,403,32"/>
+<area shape="rect" id="node3" href="aiot__device__api_8c.html#a1add2b0c42c073722cfa72b53a872e96" title="查询设备的device_name " alt="" coords="256,56,383,83"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="afefef608bba5a373efcc018fa1fac69b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_gateway_batch_add_topo_async </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>gateway_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structaiot__subdev__meta__info__t.html">aiot_subdev_meta_info_t</a>&#160;</td>
+          <td class="paramname"><em>subdev_table</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>subdev_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>网关批量增加子设备topo，异步接口不阻塞 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">gateway_device</td><td>网关设备句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">subdev_table</td><td>子设备句柄表 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">subdev_num</td><td>子设备个数</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;=</td><td>STATE_SUCCESS 大于0时，表示消息发送成功，返回值为消息ID，回复消息类型 <a class="el" href="aiot__gateway__api_8h.html#a4f18b6aeea2b990397a8db0342d8a060ad95e61fd749048202a761d25fb262982">AIOT_GWRECV_ADD_TOPO_REPLY</a> </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>入参为空 </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a90ba121bf23e10817ebd0576d07dd81a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_gateway_batch_delete_topo_async </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>gateway_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structaiot__subdev__meta__info__t.html">aiot_subdev_meta_info_t</a>&#160;</td>
+          <td class="paramname"><em>subdev_table</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>subdev_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>网关批量删除子设备topo，异步接口不阻塞 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">gateway_device</td><td>网关设备句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">subdev_table</td><td>子设备句柄表 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">subdev_num</td><td>子设备个数</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;=</td><td>STATE_SUCCESS 大于0时，表示消息发送成功，返回值为消息ID，回复消息类型 <a class="el" href="aiot__gateway__api_8h.html#a4f18b6aeea2b990397a8db0342d8a060aec237852109d91d314df3c45b19519dc">AIOT_GWRECV_DELETE_TOPO_REPLY</a> </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>入参为空 </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

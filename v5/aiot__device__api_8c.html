@@ -1,0 +1,965 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: device-core/aiot_device_api.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">5.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_a5c085e7ac88bd273106c2d9d4685a6c.html">device-core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">aiot_device_api.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>设备管理模块，管理设备的配置、行为、及运行时参数  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="aiot__state__api_8h_source.html">aiot_state_api.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="aiot__device__api_8h_source.html">aiot_device_api.h</a>&quot;</code><br />
+<code>#include &quot;device_private.h&quot;</code><br />
+<code>#include &quot;core_string.h&quot;</code><br />
+<code>#include &quot;message_service.h&quot;</code><br />
+<code>#include &quot;device_module.h&quot;</code><br />
+<code>#include &quot;core_log.h&quot;</code><br />
+<code>#include &quot;core_os.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+aiot_device_api.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__device__api_8c__incl.png" border="0" usemap="#device-core_2aiot__device__api_8c" alt=""/></div>
+<map name="device-core_2aiot__device__api_8c" id="device-core_2aiot__device__api_8c">
+<area shape="rect" id="node3" href="aiot__state__api_8h.html" title="SDK Core状态码头文件, 所有Core中的api返回值均在此列出 " alt="" coords="141,199,256,225"/>
+<area shape="rect" id="node5" href="aiot__device__api_8h.html" title="设备模块头文件, 提供设备的基础能力 " alt="" coords="235,109,357,136"/>
+<area shape="rect" id="node6" href="aiot__message__api_8h.html" title="aiot_message_api.h" alt="" coords="331,348,469,375"/>
+<area shape="rect" id="node7" href="aiot__linkconfig__api_8h.html" title="连接配置头文件，提供配置连接的基础能力 " alt="" coords="433,199,573,225"/>
+<area shape="rect" id="node9" href="aiot__sysdep__api_8h.html" title="SDK Core系统依赖头文件, 所有Core中的系统依赖均在此文件中列出 " alt="" coords="617,348,743,375"/>
+<area shape="rect" id="node8" href="aiot__protocol__api_8h.html" title="aiot_protocol_api.h" alt="" coords="432,273,563,300"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:afc3d101f633a076cc1ca84b85b6224b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__device__api_8c.html#afc3d101f633a076cc1ca84b85b6224b2">TAG</a>&#160;&#160;&#160;&quot;DEVICE&quot;</td></tr>
+<tr class="separator:afc3d101f633a076cc1ca84b85b6224b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ae3b5c1fa33797955fab227411311939d"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__device__api_8c.html#ae3b5c1fa33797955fab227411311939d">_core_device_topic_takeoff_pkdn</a> (device_handle_t *device, const char *topic)</td></tr>
+<tr class="separator:ae3b5c1fa33797955fab227411311939d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07df4f08f8e10f2daf4c815db0590e77"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__device__api_8c.html#a07df4f08f8e10f2daf4c815db0590e77">_core_device_sublist_remove</a> (device_handle_t *device, const char *topic)</td></tr>
+<tr class="separator:a07df4f08f8e10f2daf4c815db0590e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17429491661f0c6c8773c1bf51ceedf7"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__device__api_8c.html#a17429491661f0c6c8773c1bf51ceedf7">_core_device_sublist_insert</a> (device_handle_t *device, const char *topic, <a class="el" href="aiot__device__api_8h.html#a9acb42cd541f0f61bc20f742247d2fdc">aiot_device_msg_callback_t</a> callback, void *userdata)</td></tr>
+<tr class="separator:a17429491661f0c6c8773c1bf51ceedf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a800c4109c1ea56ff6df26ce4661cfddc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__device__api_8c.html#a800c4109c1ea56ff6df26ce4661cfddc">_core_device_sublist_init</a> (device_handle_t *device)</td></tr>
+<tr class="separator:a800c4109c1ea56ff6df26ce4661cfddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada99eddcc634f61f0e796c01d3b8bb02"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__device__api_8c.html#ada99eddcc634f61f0e796c01d3b8bb02">_core_device_sublist_destroy</a> (device_handle_t *device)</td></tr>
+<tr class="separator:ada99eddcc634f61f0e796c01d3b8bb02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8c2990d39c2f1ee00458c6168da5176"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__device__api_8c.html#af8c2990d39c2f1ee00458c6168da5176">aiot_device_create</a> (char *product_key, char *device_name)</td></tr>
+<tr class="memdesc:af8c2990d39c2f1ee00458c6168da5176"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化设备并设置默认参数  <a href="#af8c2990d39c2f1ee00458c6168da5176">更多...</a><br /></td></tr>
+<tr class="separator:af8c2990d39c2f1ee00458c6168da5176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addd8fd8bf19831bd5917340ddaa7023d"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__device__api_8c.html#addd8fd8bf19831bd5917340ddaa7023d">aiot_device_set_device_secret</a> (void *device, char *device_secret)</td></tr>
+<tr class="memdesc:addd8fd8bf19831bd5917340ddaa7023d"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置设备建连使用的设备密钥  <a href="#addd8fd8bf19831bd5917340ddaa7023d">更多...</a><br /></td></tr>
+<tr class="separator:addd8fd8bf19831bd5917340ddaa7023d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc2b6a05429b0fc7206214374ba94a9f"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__device__api_8c.html#afc2b6a05429b0fc7206214374ba94a9f">aiot_device_set_linkconfig</a> (void *device, <a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> *config)</td></tr>
+<tr class="memdesc:afc2b6a05429b0fc7206214374ba94a9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置设备连接的参数  <a href="#afc2b6a05429b0fc7206214374ba94a9f">更多...</a><br /></td></tr>
+<tr class="separator:afc2b6a05429b0fc7206214374ba94a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfc03c8b38a9c0768b250912609fef0f"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__device__api_8c.html#adfc03c8b38a9c0768b250912609fef0f">aiot_device_connect_async</a> (void *device)</td></tr>
+<tr class="memdesc:adfc03c8b38a9c0768b250912609fef0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">设备与云平台进行连接，异步式的  <a href="#adfc03c8b38a9c0768b250912609fef0f">更多...</a><br /></td></tr>
+<tr class="separator:adfc03c8b38a9c0768b250912609fef0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a659f1e52d731109f4f8d427ef0b40407"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__device__api_8c.html#a659f1e52d731109f4f8d427ef0b40407">aiot_device_connect</a> (void *device)</td></tr>
+<tr class="memdesc:a659f1e52d731109f4f8d427ef0b40407"><td class="mdescLeft">&#160;</td><td class="mdescRight">设备与云平台进行连接，阻塞式的  <a href="#a659f1e52d731109f4f8d427ef0b40407">更多...</a><br /></td></tr>
+<tr class="separator:a659f1e52d731109f4f8d427ef0b40407"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1eaf497ad46c2aa07a90dec084997e3"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__device__api_8c.html#ad1eaf497ad46c2aa07a90dec084997e3">aiot_device_send_message</a> (void *device, const <a class="el" href="structaiot__msg__t.html">aiot_msg_t</a> *message)</td></tr>
+<tr class="memdesc:ad1eaf497ad46c2aa07a90dec084997e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">设备向云平台发送消息  <a href="#ad1eaf497ad46c2aa07a90dec084997e3">更多...</a><br /></td></tr>
+<tr class="separator:ad1eaf497ad46c2aa07a90dec084997e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad877b7b96b0c504a295a141313199dac"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__device__api_8c.html#ad877b7b96b0c504a295a141313199dac">aiot_device_set_event_callback</a> (void *device, <a class="el" href="aiot__device__api_8h.html#a9acb42cd541f0f61bc20f742247d2fdc">aiot_device_msg_callback_t</a> msg_recv_callback, <a class="el" href="aiot__device__api_8h.html#ad8b021565a9bd54f4cc79fcfcbd54c3d">aiot_device_status_callback_t</a> status_callback, <a class="el" href="aiot__device__api_8h.html#a03fb92536a99c4ee8acfe56b812ab550">aiot_device_msg_result_callback_t</a> msg_result_callback, void *userdata)</td></tr>
+<tr class="memdesc:ad877b7b96b0c504a295a141313199dac"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置设备事件：包含消息回调，状态回调  <a href="#ad877b7b96b0c504a295a141313199dac">更多...</a><br /></td></tr>
+<tr class="separator:ad877b7b96b0c504a295a141313199dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac2943ebe50e80a431f46a6452403cb6"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__device__api_8c.html#aac2943ebe50e80a431f46a6452403cb6">aiot_device_register_topic_filter</a> (void *device, char *topic, <a class="el" href="aiot__device__api_8h.html#a9acb42cd541f0f61bc20f742247d2fdc">aiot_device_msg_callback_t</a> callback, uint8_t sub, void *userdata)</td></tr>
+<tr class="memdesc:aac2943ebe50e80a431f46a6452403cb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">设备注册感兴趣的topic，接收到该topic的消息，执行对应回调  <a href="#aac2943ebe50e80a431f46a6452403cb6">更多...</a><br /></td></tr>
+<tr class="separator:aac2943ebe50e80a431f46a6452403cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12983a88c5f9f66f1c2635213c5015bb"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__device__api_8c.html#a12983a88c5f9f66f1c2635213c5015bb">aiot_device_deregister_topic_filter</a> (void *device, char *topic, uint8_t unsub)</td></tr>
+<tr class="memdesc:a12983a88c5f9f66f1c2635213c5015bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">设备注销topic，接收到该topic的消息，将不再执行回调  <a href="#a12983a88c5f9f66f1c2635213c5015bb">更多...</a><br /></td></tr>
+<tr class="separator:a12983a88c5f9f66f1c2635213c5015bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a609b7e305c94446e136ca016cbf70098"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__device__api_8c.html#a609b7e305c94446e136ca016cbf70098">aiot_device_disconnect</a> (void *device)</td></tr>
+<tr class="memdesc:a609b7e305c94446e136ca016cbf70098"><td class="mdescLeft">&#160;</td><td class="mdescRight">设备与平台断开连接  <a href="#a609b7e305c94446e136ca016cbf70098">更多...</a><br /></td></tr>
+<tr class="separator:a609b7e305c94446e136ca016cbf70098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3885a614c2c4d5418b1db04decb130cb"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__device__api_8c.html#a3885a614c2c4d5418b1db04decb130cb">aiot_device_delete</a> (void **device)</td></tr>
+<tr class="memdesc:a3885a614c2c4d5418b1db04decb130cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">释放设备实例的资源  <a href="#a3885a614c2c4d5418b1db04decb130cb">更多...</a><br /></td></tr>
+<tr class="separator:a3885a614c2c4d5418b1db04decb130cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1add2b0c42c073722cfa72b53a872e96"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__device__api_8c.html#a1add2b0c42c073722cfa72b53a872e96">aiot_device_name</a> (void *device)</td></tr>
+<tr class="memdesc:a1add2b0c42c073722cfa72b53a872e96"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询设备的device_name  <a href="#a1add2b0c42c073722cfa72b53a872e96">更多...</a><br /></td></tr>
+<tr class="separator:a1add2b0c42c073722cfa72b53a872e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e58b077a51ef375e26e8c8927a08855"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__device__api_8c.html#a1e58b077a51ef375e26e8c8927a08855">aiot_device_product_key</a> (void *device)</td></tr>
+<tr class="memdesc:a1e58b077a51ef375e26e8c8927a08855"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询设备的product_key  <a href="#a1e58b077a51ef375e26e8c8927a08855">更多...</a><br /></td></tr>
+<tr class="separator:a1e58b077a51ef375e26e8c8927a08855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53ade36ca27a6aa7b1001a3fc1c50935"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__device__api_8c.html#a53ade36ca27a6aa7b1001a3fc1c50935">aiot_device_online</a> (void *device)</td></tr>
+<tr class="memdesc:a53ade36ca27a6aa7b1001a3fc1c50935"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询设备的状态  <a href="#a53ade36ca27a6aa7b1001a3fc1c50935">更多...</a><br /></td></tr>
+<tr class="separator:a53ade36ca27a6aa7b1001a3fc1c50935"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>设备管理模块，管理设备的配置、行为、及运行时参数 </p>
+<dl class="section date"><dt>日期</dt><dd>2021-12-27</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (C) 2015-2025 Alibaba Group Holding Limited </dd></dl>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="afc3d101f633a076cc1ca84b85b6224b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TAG&#160;&#160;&#160;&quot;DEVICE&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="ae3b5c1fa33797955fab227411311939d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static char* _core_device_topic_takeoff_pkdn </td>
+          <td>(</td>
+          <td class="paramtype">device_handle_t *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>topic</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a07df4f08f8e10f2daf4c815db0590e77"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t _core_device_sublist_remove </td>
+          <td>(</td>
+          <td class="paramtype">device_handle_t *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>topic</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a17429491661f0c6c8773c1bf51ceedf7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t _core_device_sublist_insert </td>
+          <td>(</td>
+          <td class="paramtype">device_handle_t *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>topic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="aiot__device__api_8h.html#a9acb42cd541f0f61bc20f742247d2fdc">aiot_device_msg_callback_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userdata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a800c4109c1ea56ff6df26ce4661cfddc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void _core_device_sublist_init </td>
+          <td>(</td>
+          <td class="paramtype">device_handle_t *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ada99eddcc634f61f0e796c01d3b8bb02"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void _core_device_sublist_destroy </td>
+          <td>(</td>
+          <td class="paramtype">device_handle_t *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af8c2990d39c2f1ee00458c6168da5176"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* aiot_device_create </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>product_key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>device_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化设备并设置默认参数 </p>
+<dl class="section return"><dt>返回</dt><dd>void* </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">非NULL</td><td>设备句柄 </td></tr>
+    <tr><td class="paramname">NULL</td><td>初始化失败, 一般是内存分配失败导致 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__device__api_8c_af8c2990d39c2f1ee00458c6168da5176_cgraph.png" border="0" usemap="#aiot__device__api_8c_af8c2990d39c2f1ee00458c6168da5176_cgraph" alt=""/></div>
+<map name="aiot__device__api_8c_af8c2990d39c2f1ee00458c6168da5176_cgraph" id="aiot__device__api_8c_af8c2990d39c2f1ee00458c6168da5176_cgraph">
+<area shape="rect" id="node2" href="aiot__device__api_8c.html#a800c4109c1ea56ff6df26ce4661cfddc" title="_core_device_sublist_init" alt="" coords="184,5,352,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="addd8fd8bf19831bd5917340ddaa7023d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_device_set_device_secret </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>device_secret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置设备建连使用的设备密钥 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device_secret</td><td>设备的密钥 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败, 更多信息请参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="afc2b6a05429b0fc7206214374ba94a9f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_device_set_linkconfig </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structaiot__linkconfig__t.html">aiot_linkconfig_t</a> *&#160;</td>
+          <td class="paramname"><em>config</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置设备连接的参数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>设备句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>建连的参数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败, 更多信息请参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__device__api_8c_afc2b6a05429b0fc7206214374ba94a9f_cgraph.png" border="0" usemap="#aiot__device__api_8c_afc2b6a05429b0fc7206214374ba94a9f_cgraph" alt=""/></div>
+<map name="aiot__device__api_8c_afc2b6a05429b0fc7206214374ba94a9f_cgraph" id="aiot__device__api_8c_afc2b6a05429b0fc7206214374ba94a9f_cgraph">
+<area shape="rect" id="node2" href="aiot__protocol__api_8h.html#a0a486dc234cac2000aa112773a338805" title="protocol_config_deinit" alt="" coords="228,5,376,32"/>
+<area shape="rect" id="node3" href="aiot__protocol__api_8h.html#a97d33c0ca6fbcabf1ad2a2698b8532d9" title="protocol_config_copy" alt="" coords="229,56,375,83"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="adfc03c8b38a9c0768b250912609fef0f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_device_connect_async </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设备与云平台进行连接，异步式的 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>设备句柄 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败, 更多信息请参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a659f1e52d731109f4f8d427ef0b40407"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_device_connect </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设备与云平台进行连接，阻塞式的 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>设备句柄 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败, 更多信息请参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad1eaf497ad46c2aa07a90dec084997e3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_device_send_message </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structaiot__msg__t.html">aiot_msg_t</a> *&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设备向云平台发送消息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>设备句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">message</td><td>需要发送的消息 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败, 更多信息请参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad877b7b96b0c504a295a141313199dac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_device_set_event_callback </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="aiot__device__api_8h.html#a9acb42cd541f0f61bc20f742247d2fdc">aiot_device_msg_callback_t</a>&#160;</td>
+          <td class="paramname"><em>msg_recv_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="aiot__device__api_8h.html#ad8b021565a9bd54f4cc79fcfcbd54c3d">aiot_device_status_callback_t</a>&#160;</td>
+          <td class="paramname"><em>status_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="aiot__device__api_8h.html#a03fb92536a99c4ee8acfe56b812ab550">aiot_device_msg_result_callback_t</a>&#160;</td>
+          <td class="paramname"><em>msg_result_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userdata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置设备事件：包含消息回调，状态回调 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>设备句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">msg_recv_callback</td><td>消息回调函数(所有消息都会有这个回调执行，如果只需要部分，可以使用aiot_device_register_topic_filter) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">status_callback</td><td>状态变化回调函数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">msg_confirm_callback</td><td>状态变化回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败, 更多信息请参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aac2943ebe50e80a431f46a6452403cb6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_device_register_topic_filter </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>topic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="aiot__device__api_8h.html#a9acb42cd541f0f61bc20f742247d2fdc">aiot_device_msg_callback_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>sub</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userdata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设备注册感兴趣的topic，接收到该topic的消息，执行对应回调 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>设备句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">topic</td><td>需要注册的topic </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>回调函数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sub</td><td>是否需要向云端发送订阅消息，设备只需要订阅一次即可，重启后一样有效 [1, 向云端发送订阅消息] [0, 不向云端发送订阅消息] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userdata</td><td>执行回调时返回给用户 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败, 更多信息请参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__device__api_8c_aac2943ebe50e80a431f46a6452403cb6_cgraph.png" border="0" usemap="#aiot__device__api_8c_aac2943ebe50e80a431f46a6452403cb6_cgraph" alt=""/></div>
+<map name="aiot__device__api_8c_aac2943ebe50e80a431f46a6452403cb6_cgraph" id="aiot__device__api_8c_aac2943ebe50e80a431f46a6452403cb6_cgraph">
+<area shape="rect" id="node2" href="aiot__device__api_8c.html#ae3b5c1fa33797955fab227411311939d" title="_core_device_topic\l_takeoff_pkdn" alt="" coords="197,5,331,47"/>
+<area shape="rect" id="node3" href="aiot__device__api_8c.html#a17429491661f0c6c8773c1bf51ceedf7" title="_core_device_sublist\l_insert" alt="" coords="192,71,336,112"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a12983a88c5f9f66f1c2635213c5015bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_device_deregister_topic_filter </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>topic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>unsub</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设备注销topic，接收到该topic的消息，将不再执行回调 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>设备句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">topic</td><td>需要注销的topic </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unsub</td><td>是否需要向云端发送订阅消息，设备只需要订阅一次即可，重启后一样有效 [1, 向云端发送取消订阅消息] [0, 不向云端发送取消订阅消息] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败, 更多信息请参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__device__api_8c_a12983a88c5f9f66f1c2635213c5015bb_cgraph.png" border="0" usemap="#aiot__device__api_8c_a12983a88c5f9f66f1c2635213c5015bb_cgraph" alt=""/></div>
+<map name="aiot__device__api_8c_a12983a88c5f9f66f1c2635213c5015bb_cgraph" id="aiot__device__api_8c_a12983a88c5f9f66f1c2635213c5015bb_cgraph">
+<area shape="rect" id="node2" href="aiot__device__api_8c.html#ae3b5c1fa33797955fab227411311939d" title="_core_device_topic\l_takeoff_pkdn" alt="" coords="210,5,345,47"/>
+<area shape="rect" id="node3" href="aiot__device__api_8c.html#a07df4f08f8e10f2daf4c815db0590e77" title="_core_device_sublist\l_remove" alt="" coords="205,71,349,112"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a609b7e305c94446e136ca016cbf70098"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_device_disconnect </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设备与平台断开连接 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>设备实例句柄</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败, 更多信息请参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a3885a614c2c4d5418b1db04decb130cb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_device_delete </td>
+          <td>(</td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>释放设备实例的资源 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>指向device实例句柄的指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败, 更多信息请参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__device__api_8c_a3885a614c2c4d5418b1db04decb130cb_cgraph.png" border="0" usemap="#aiot__device__api_8c_a3885a614c2c4d5418b1db04decb130cb_cgraph" alt=""/></div>
+<map name="aiot__device__api_8c_a3885a614c2c4d5418b1db04decb130cb_cgraph" id="aiot__device__api_8c_a3885a614c2c4d5418b1db04decb130cb_cgraph">
+<area shape="rect" id="node2" href="aiot__device__api_8c.html#ada99eddcc634f61f0e796c01d3b8bb02" title="_core_device_sublist\l_destroy" alt="" coords="186,5,330,47"/>
+<area shape="rect" id="node3" href="aiot__protocol__api_8h.html#a0a486dc234cac2000aa112773a338805" title="protocol_config_deinit" alt="" coords="184,71,332,98"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1add2b0c42c073722cfa72b53a872e96"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* aiot_device_name </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>查询设备的device_name </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>指向device实例句柄的指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a1e58b077a51ef375e26e8c8927a08855"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* aiot_device_product_key </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>查询设备的product_key </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>指向device实例句柄的指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a53ade36ca27a6aa7b1001a3fc1c50935"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_device_online </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>查询设备的状态 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>指向device实例句柄的指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t 1:在线 0:离线 </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

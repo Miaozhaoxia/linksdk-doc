@@ -1,0 +1,488 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: device-modules/ota/aiot_ota_api.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">5.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97807256e5481b5817f198b161bc0824.html">device-modules</a></li><li class="navelem"><a class="el" href="dir_3ec7d7efdb78fcab5bbdaddd3d4c5e51.html">ota</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">aiot_ota_api.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+aiot_ota_api.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__ota__api_8h__incl.png" border="0" usemap="#device-modules_2ota_2aiot__ota__api_8h" alt=""/></div>
+<map name="device-modules_2ota_2aiot__ota__api_8h" id="device-modules_2ota_2aiot__ota__api_8h">
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__ota__api_8h__dep__incl.png" border="0" usemap="#device-modules_2ota_2aiot__ota__api_8hdep" alt=""/></div>
+<map name="device-modules_2ota_2aiot__ota__api_8hdep" id="device-modules_2ota_2aiot__ota__api_8hdep">
+<area shape="rect" id="node2" href="aiot__ota__api_8c.html" title="device&#45;modules/ota\l/aiot_ota_api.c" alt="" coords="5,95,140,136"/>
+</map>
+</div>
+</div>
+<p><a href="aiot__ota__api_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmqtt__url__t.html">mqtt_url_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__ota__msg__t.html">aiot_ota_msg_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:ade34e00d4ffead8f0256068148ba869b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#ade34e00d4ffead8f0256068148ba869b">ota_msg_callback_t</a>) (void *device, const <a class="el" href="structaiot__ota__msg__t.html">aiot_ota_msg_t</a> *msg, void *userdata)</td></tr>
+<tr class="separator:ade34e00d4ffead8f0256068148ba869b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:abcd098df34968ff006dce374a951453b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#abcd098df34968ff006dce374a951453b">aiot_ota_digest_type_t</a> { <a class="el" href="aiot__ota__api_8h.html#abcd098df34968ff006dce374a951453ba205fc161508b59a0d6d08add64eae637">AIOT_OTA_DIGEST_MD5</a>, 
+<a class="el" href="aiot__ota__api_8h.html#abcd098df34968ff006dce374a951453ba51cf14aa662aa9c41705d3fbb0155852">AIOT_OTA_DIGEST_SHA256</a>, 
+<a class="el" href="aiot__ota__api_8h.html#abcd098df34968ff006dce374a951453ba8c14991bbc7a60b1afdd23893e44b4f4">AIOT_OTA_DIGEST_MAX</a>
+ }<tr class="memdesc:abcd098df34968ff006dce374a951453b"><td class="mdescLeft">&#160;</td><td class="mdescRight">OTA过程中使用的digest方法类型, 分为MD5和SHA256两种  <a href="aiot__ota__api_8h.html#abcd098df34968ff006dce374a951453b">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:abcd098df34968ff006dce374a951453b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a29ee126a7b0f18879fef4e6865298536"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a29ee126a7b0f18879fef4e6865298536">aiot_device_ota_set_callback</a> (void *device, <a class="el" href="aiot__ota__api_8h.html#ade34e00d4ffead8f0256068148ba869b">ota_msg_callback_t</a> callback, void *userdata)</td></tr>
+<tr class="memdesc:a29ee126a7b0f18879fef4e6865298536"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置OTA消息回调  <a href="#a29ee126a7b0f18879fef4e6865298536">更多...</a><br /></td></tr>
+<tr class="separator:a29ee126a7b0f18879fef4e6865298536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeed39cb581245cba2d77b9571463e29b"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#aeed39cb581245cba2d77b9571463e29b">aiot_device_ota_report_version</a> (void *device, char *module, char *version)</td></tr>
+<tr class="memdesc:aeed39cb581245cba2d77b9571463e29b"><td class="mdescLeft">&#160;</td><td class="mdescRight">设备版本信息上报  <a href="#aeed39cb581245cba2d77b9571463e29b">更多...</a><br /></td></tr>
+<tr class="separator:aeed39cb581245cba2d77b9571463e29b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94ad7633cbbdbc7868ec0e1ba52f3c7e"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a94ad7633cbbdbc7868ec0e1ba52f3c7e">aiot_device_ota_report_state</a> (void *device, char *module, int32_t state)</td></tr>
+<tr class="memdesc:a94ad7633cbbdbc7868ec0e1ba52f3c7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">设备升级状态上报  <a href="#a94ad7633cbbdbc7868ec0e1ba52f3c7e">更多...</a><br /></td></tr>
+<tr class="separator:a94ad7633cbbdbc7868ec0e1ba52f3c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f17550412a36216845241a38af2d63a"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a9f17550412a36216845241a38af2d63a">aiot_device_ota_request_firmware</a> (void *device, char *module)</td></tr>
+<tr class="memdesc:a9f17550412a36216845241a38af2d63a"><td class="mdescLeft">&#160;</td><td class="mdescRight">设备端主动向云端查询升级任务  <a href="#a9f17550412a36216845241a38af2d63a">更多...</a><br /></td></tr>
+<tr class="separator:a9f17550412a36216845241a38af2d63a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e45d8862148a49448c1b4bd6a742fae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structaiot__ota__msg__t.html">aiot_ota_msg_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a9e45d8862148a49448c1b4bd6a742fae">aiot_ota_msg_clone</a> (const <a class="el" href="structaiot__ota__msg__t.html">aiot_ota_msg_t</a> *msg)</td></tr>
+<tr class="memdesc:a9e45d8862148a49448c1b4bd6a742fae"><td class="mdescLeft">&#160;</td><td class="mdescRight">拷贝ota消息，用于异步执行  <a href="#a9e45d8862148a49448c1b4bd6a742fae">更多...</a><br /></td></tr>
+<tr class="separator:a9e45d8862148a49448c1b4bd6a742fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a879bbe55cc5658c54acfd290272aa69d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a879bbe55cc5658c54acfd290272aa69d">aiot_ota_msg_free</a> (<a class="el" href="structaiot__ota__msg__t.html">aiot_ota_msg_t</a> *msg)</td></tr>
+<tr class="memdesc:a879bbe55cc5658c54acfd290272aa69d"><td class="mdescLeft">&#160;</td><td class="mdescRight">拷贝ota消息，用于异步执行  <a href="#a879bbe55cc5658c54acfd290272aa69d">更多...</a><br /></td></tr>
+<tr class="separator:a879bbe55cc5658c54acfd290272aa69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">类型定义说明</h2>
+<a class="anchor" id="ade34e00d4ffead8f0256068148ba869b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* ota_msg_callback_t) (void *device, const <a class="el" href="structaiot__ota__msg__t.html">aiot_ota_msg_t</a> *msg, void *userdata)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a class="anchor" id="abcd098df34968ff006dce374a951453b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__ota__api_8h.html#abcd098df34968ff006dce374a951453b">aiot_ota_digest_type_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OTA过程中使用的digest方法类型, 分为MD5和SHA256两种 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="abcd098df34968ff006dce374a951453ba205fc161508b59a0d6d08add64eae637"></a>AIOT_OTA_DIGEST_MD5&#160;</td><td class="fielddoc">
+<p>收到的OTA固件的digest方法为MD5 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="abcd098df34968ff006dce374a951453ba51cf14aa662aa9c41705d3fbb0155852"></a>AIOT_OTA_DIGEST_SHA256&#160;</td><td class="fielddoc">
+<p>收到的OTA固件的digest方法为SHA256 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="abcd098df34968ff006dce374a951453ba8c14991bbc7a60b1afdd23893e44b4f4"></a>AIOT_OTA_DIGEST_MAX&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a29ee126a7b0f18879fef4e6865298536"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_device_ota_set_callback </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="aiot__ota__api_8h.html#ade34e00d4ffead8f0256068148ba869b">ota_msg_callback_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userdata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置OTA消息回调 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>设备句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>回调函数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userdata</td><td>执行回调函数后的上下文指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>参数配置成功 </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>入参为空 </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__ota__api_8h_a29ee126a7b0f18879fef4e6865298536_cgraph.png" border="0" usemap="#aiot__ota__api_8h_a29ee126a7b0f18879fef4e6865298536_cgraph" alt=""/></div>
+<map name="aiot__ota__api_8h_a29ee126a7b0f18879fef4e6865298536_cgraph" id="aiot__ota__api_8h_a29ee126a7b0f18879fef4e6865298536_cgraph">
+<area shape="rect" id="node2" href="aiot__ota__api_8c.html#aa25f5c47881a7f0973c9274d47c29425" title="_ota_get_handle" alt="" coords="427,5,544,32"/>
+<area shape="rect" id="node3" href="aiot__device__api_8c.html#aac2943ebe50e80a431f46a6452403cb6" title="设备注册感兴趣的topic，接收到该topic的消息，执行对应回调 " alt="" coords="209,82,348,123"/>
+<area shape="rect" id="node6" href="aiot__ota__api_8c.html#ab395fc45de40b80be928223ee52a438e" title="_ota_msg_notify_callback" alt="" coords="192,31,365,57"/>
+<area shape="rect" id="node4" href="aiot__device__api_8c.html#ae3b5c1fa33797955fab227411311939d" title="_core_device_topic\l_takeoff_pkdn" alt="" coords="418,69,553,110"/>
+<area shape="rect" id="node5" href="aiot__device__api_8c.html#a17429491661f0c6c8773c1bf51ceedf7" title="_core_device_sublist\l_insert" alt="" coords="413,134,557,175"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aeed39cb581245cba2d77b9571463e29b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_device_ota_report_version </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>module</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>version</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设备版本信息上报 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>设备句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">module</td><td>模块名，当设备有多个模块时，单个模块版本上报；只有一个模块，参数置为NULL； </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">version</td><td>版本号</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>参数配置成功 </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>入参为空 </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__ota__api_8h_aeed39cb581245cba2d77b9571463e29b_cgraph.png" border="0" usemap="#aiot__ota__api_8h_aeed39cb581245cba2d77b9571463e29b_cgraph" alt=""/></div>
+<map name="aiot__ota__api_8h_aeed39cb581245cba2d77b9571463e29b_cgraph" id="aiot__ota__api_8h_aeed39cb581245cba2d77b9571463e29b_cgraph">
+<area shape="rect" id="node2" href="aiot__device__api_8c.html#ad1eaf497ad46c2aa07a90dec084997e3" title="设备向云平台发送消息 " alt="" coords="207,5,389,32"/>
+<area shape="rect" id="node3" href="aiot__message__api_8c.html#ad78c30b2011b07ff6e29597928ef57fb" title="回收消息对象的资源 " alt="" coords="239,56,357,83"/>
+<area shape="rect" id="node4" href="aiot__message__api_8c.html#acf562841e53b0ab0550af8f17dd14aae" title="core_origin_msg_deinit" alt="" coords="437,56,592,83"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a94ad7633cbbdbc7868ec0e1ba52f3c7e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_device_ota_report_state </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>module</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设备升级状态上报 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>设备句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">module</td><td>模块名，当设备有多个模块时，单个模块版本上报；只有一个模块，参数置为NULL； </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">state</td><td>取值：0～100，升级进度 取值：-1， 升级失败 取值：-2， 下载失败 取值：-3， 校验失败 取值：-4， 烧写失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>参数配置成功 </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>入参为空 </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__ota__api_8h_a94ad7633cbbdbc7868ec0e1ba52f3c7e_cgraph.png" border="0" usemap="#aiot__ota__api_8h_a94ad7633cbbdbc7868ec0e1ba52f3c7e_cgraph" alt=""/></div>
+<map name="aiot__ota__api_8h_a94ad7633cbbdbc7868ec0e1ba52f3c7e_cgraph" id="aiot__ota__api_8h_a94ad7633cbbdbc7868ec0e1ba52f3c7e_cgraph">
+<area shape="rect" id="node2" href="aiot__device__api_8c.html#ad1eaf497ad46c2aa07a90dec084997e3" title="设备向云平台发送消息 " alt="" coords="207,5,389,32"/>
+<area shape="rect" id="node3" href="aiot__message__api_8c.html#ad78c30b2011b07ff6e29597928ef57fb" title="回收消息对象的资源 " alt="" coords="239,56,357,83"/>
+<area shape="rect" id="node4" href="aiot__message__api_8c.html#acf562841e53b0ab0550af8f17dd14aae" title="core_origin_msg_deinit" alt="" coords="437,56,592,83"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9f17550412a36216845241a38af2d63a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_device_ota_request_firmware </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>module</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设备端主动向云端查询升级任务 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>设备句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">module</td><td>模块名，当设备有多个模块时，单个模块版本上报；只有一个模块，参数置为NULL； </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>参数配置成功 </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>入参为空 </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__ota__api_8h_a9f17550412a36216845241a38af2d63a_cgraph.png" border="0" usemap="#aiot__ota__api_8h_a9f17550412a36216845241a38af2d63a_cgraph" alt=""/></div>
+<map name="aiot__ota__api_8h_a9f17550412a36216845241a38af2d63a_cgraph" id="aiot__ota__api_8h_a9f17550412a36216845241a38af2d63a_cgraph">
+<area shape="rect" id="node2" href="aiot__device__api_8c.html#ad1eaf497ad46c2aa07a90dec084997e3" title="设备向云平台发送消息 " alt="" coords="216,5,399,32"/>
+<area shape="rect" id="node3" href="aiot__message__api_8c.html#ad78c30b2011b07ff6e29597928ef57fb" title="回收消息对象的资源 " alt="" coords="249,56,366,83"/>
+<area shape="rect" id="node4" href="aiot__message__api_8c.html#acf562841e53b0ab0550af8f17dd14aae" title="core_origin_msg_deinit" alt="" coords="447,56,601,83"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9e45d8862148a49448c1b4bd6a742fae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structaiot__ota__msg__t.html">aiot_ota_msg_t</a>* aiot_ota_msg_clone </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structaiot__ota__msg__t.html">aiot_ota_msg_t</a> *&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>拷贝ota消息，用于异步执行 </p>
+
+</div>
+</div>
+<a class="anchor" id="a879bbe55cc5658c54acfd290272aa69d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void aiot_ota_msg_free </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structaiot__ota__msg__t.html">aiot_ota_msg_t</a> *&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>拷贝ota消息，用于异步执行 </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

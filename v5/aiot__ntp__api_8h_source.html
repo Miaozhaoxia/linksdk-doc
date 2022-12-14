@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: device-modules/ntp/aiot_ntp_api.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">5.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97807256e5481b5817f198b161bc0824.html">device-modules</a></li><li class="navelem"><a class="el" href="dir_83c6aa6ccff743220a832fe503c4d44b.html">ntp</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">aiot_ntp_api.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="aiot__ntp__api_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _AIOT_NTP_API_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _AIOT_NTP_API_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#if defined(__cplusplus)</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="structaiot__ntp__time__t.html">   13</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structaiot__ntp__time__t.html#a85c786cdfdea04ff445dd5842152dd1d">   14</a></span>&#160;    uint64_t <a class="code" href="structaiot__ntp__time__t.html#a85c786cdfdea04ff445dd5842152dd1d">timestamp</a>;</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structaiot__ntp__time__t.html#a90908382c75ef03c53eb851532e0ed53">   15</a></span>&#160;    uint32_t <a class="code" href="structaiot__ntp__time__t.html#a90908382c75ef03c53eb851532e0ed53">year</a>;</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structaiot__ntp__time__t.html#a51ca03fe37cb33ad79534e1377dccfd5">   16</a></span>&#160;    uint32_t <a class="code" href="structaiot__ntp__time__t.html#a51ca03fe37cb33ad79534e1377dccfd5">mon</a>;</div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structaiot__ntp__time__t.html#ad35a6a6b8c395bf73f78ba1e66b356f4">   17</a></span>&#160;    uint32_t <a class="code" href="structaiot__ntp__time__t.html#ad35a6a6b8c395bf73f78ba1e66b356f4">day</a>;</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structaiot__ntp__time__t.html#af028e4fec95dcebe89994f7f00f27f69">   18</a></span>&#160;    uint32_t <a class="code" href="structaiot__ntp__time__t.html#af028e4fec95dcebe89994f7f00f27f69">hour</a>;</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="structaiot__ntp__time__t.html#a3aee8696ab583fb83bacdf3bae1c888a">   19</a></span>&#160;    uint32_t <a class="code" href="structaiot__ntp__time__t.html#a3aee8696ab583fb83bacdf3bae1c888a">min</a>;</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structaiot__ntp__time__t.html#a24a2c85621de828e2ab55269ab47f609">   20</a></span>&#160;    uint32_t <a class="code" href="structaiot__ntp__time__t.html#a24a2c85621de828e2ab55269ab47f609">sec</a>;</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structaiot__ntp__time__t.html#a1e7dd362d9a16b02dafca661fd0f199a">   21</a></span>&#160;    uint32_t <a class="code" href="structaiot__ntp__time__t.html#a1e7dd362d9a16b02dafca661fd0f199a">msec</a>;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;} <a class="code" href="structaiot__ntp__time__t.html">aiot_ntp_time_t</a>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="aiot__ntp__api_8h.html#ab3bf03f5634597fbc0adad76bfe56db5">   24</a></span>&#160;<span class="keyword">typedef</span> void (*<a class="code" href="aiot__ntp__api_8h.html#ab3bf03f5634597fbc0adad76bfe56db5">ntp_callback_t</a>)(<span class="keywordtype">void</span> *device, <span class="keyword">const</span> <a class="code" href="structaiot__ntp__time__t.html">aiot_ntp_time_t</a> *recv_time, <span class="keywordtype">void</span> *userdata);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;int32_t <a class="code" href="aiot__ntp__api_8h.html#aa34c5b694ab8a023f18081022389186b">aiot_device_ntp_set_zone</a>(<span class="keywordtype">void</span> *device, int8_t zone);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;int32_t <a class="code" href="aiot__ntp__api_8h.html#ae9a4e25d2660e5d502311c578f0d5077">aiot_device_ntp_set_callback</a>(<span class="keywordtype">void</span> *device, <a class="code" href="aiot__ntp__api_8h.html#ab3bf03f5634597fbc0adad76bfe56db5">ntp_callback_t</a> callback, <span class="keywordtype">void</span> *userdata);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;int32_t <a class="code" href="aiot__ntp__api_8h.html#ab7965f7b11be16798a4e9056384fba81">aiot_device_ntp_request</a>(<span class="keywordtype">void</span> *device);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#if defined(__cplusplus)</span></div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="structaiot__ntp__time__t_html_a85c786cdfdea04ff445dd5842152dd1d"><div class="ttname"><a href="structaiot__ntp__time__t.html#a85c786cdfdea04ff445dd5842152dd1d">aiot_ntp_time_t::timestamp</a></div><div class="ttdeci">uint64_t timestamp</div><div class="ttdef"><b>Definition:</b> aiot_ntp_api.h:14</div></div>
+<div class="ttc" id="structaiot__ntp__time__t_html_af028e4fec95dcebe89994f7f00f27f69"><div class="ttname"><a href="structaiot__ntp__time__t.html#af028e4fec95dcebe89994f7f00f27f69">aiot_ntp_time_t::hour</a></div><div class="ttdeci">uint32_t hour</div><div class="ttdef"><b>Definition:</b> aiot_ntp_api.h:18</div></div>
+<div class="ttc" id="structaiot__ntp__time__t_html"><div class="ttname"><a href="structaiot__ntp__time__t.html">aiot_ntp_time_t</a></div><div class="ttdoc">时间结构体 </div><div class="ttdef"><b>Definition:</b> aiot_ntp_api.h:13</div></div>
+<div class="ttc" id="aiot__ntp__api_8h_html_ab7965f7b11be16798a4e9056384fba81"><div class="ttname"><a href="aiot__ntp__api_8h.html#ab7965f7b11be16798a4e9056384fba81">aiot_device_ntp_request</a></div><div class="ttdeci">int32_t aiot_device_ntp_request(void *device)</div><div class="ttdoc">请求时间同步 </div><div class="ttdef"><b>Definition:</b> aiot_ntp_api.c:104</div></div>
+<div class="ttc" id="aiot__ntp__api_8h_html_ae9a4e25d2660e5d502311c578f0d5077"><div class="ttname"><a href="aiot__ntp__api_8h.html#ae9a4e25d2660e5d502311c578f0d5077">aiot_device_ntp_set_callback</a></div><div class="ttdeci">int32_t aiot_device_ntp_set_callback(void *device, ntp_callback_t callback, void *userdata)</div><div class="ttdoc">设置时间同步回调 </div><div class="ttdef"><b>Definition:</b> aiot_ntp_api.c:87</div></div>
+<div class="ttc" id="structaiot__ntp__time__t_html_a24a2c85621de828e2ab55269ab47f609"><div class="ttname"><a href="structaiot__ntp__time__t.html#a24a2c85621de828e2ab55269ab47f609">aiot_ntp_time_t::sec</a></div><div class="ttdeci">uint32_t sec</div><div class="ttdef"><b>Definition:</b> aiot_ntp_api.h:20</div></div>
+<div class="ttc" id="aiot__ntp__api_8h_html_aa34c5b694ab8a023f18081022389186b"><div class="ttname"><a href="aiot__ntp__api_8h.html#aa34c5b694ab8a023f18081022389186b">aiot_device_ntp_set_zone</a></div><div class="ttdeci">int32_t aiot_device_ntp_set_zone(void *device, int8_t zone)</div><div class="ttdoc">设置时区 </div><div class="ttdef"><b>Definition:</b> aiot_ntp_api.c:26</div></div>
+<div class="ttc" id="aiot__ntp__api_8h_html_ab3bf03f5634597fbc0adad76bfe56db5"><div class="ttname"><a href="aiot__ntp__api_8h.html#ab3bf03f5634597fbc0adad76bfe56db5">ntp_callback_t</a></div><div class="ttdeci">void(* ntp_callback_t)(void *device, const aiot_ntp_time_t *recv_time, void *userdata)</div><div class="ttdef"><b>Definition:</b> aiot_ntp_api.h:24</div></div>
+<div class="ttc" id="structaiot__ntp__time__t_html_a3aee8696ab583fb83bacdf3bae1c888a"><div class="ttname"><a href="structaiot__ntp__time__t.html#a3aee8696ab583fb83bacdf3bae1c888a">aiot_ntp_time_t::min</a></div><div class="ttdeci">uint32_t min</div><div class="ttdef"><b>Definition:</b> aiot_ntp_api.h:19</div></div>
+<div class="ttc" id="structaiot__ntp__time__t_html_a1e7dd362d9a16b02dafca661fd0f199a"><div class="ttname"><a href="structaiot__ntp__time__t.html#a1e7dd362d9a16b02dafca661fd0f199a">aiot_ntp_time_t::msec</a></div><div class="ttdeci">uint32_t msec</div><div class="ttdef"><b>Definition:</b> aiot_ntp_api.h:21</div></div>
+<div class="ttc" id="structaiot__ntp__time__t_html_a90908382c75ef03c53eb851532e0ed53"><div class="ttname"><a href="structaiot__ntp__time__t.html#a90908382c75ef03c53eb851532e0ed53">aiot_ntp_time_t::year</a></div><div class="ttdeci">uint32_t year</div><div class="ttdef"><b>Definition:</b> aiot_ntp_api.h:15</div></div>
+<div class="ttc" id="structaiot__ntp__time__t_html_ad35a6a6b8c395bf73f78ba1e66b356f4"><div class="ttname"><a href="structaiot__ntp__time__t.html#ad35a6a6b8c395bf73f78ba1e66b356f4">aiot_ntp_time_t::day</a></div><div class="ttdeci">uint32_t day</div><div class="ttdef"><b>Definition:</b> aiot_ntp_api.h:17</div></div>
+<div class="ttc" id="structaiot__ntp__time__t_html_a51ca03fe37cb33ad79534e1377dccfd5"><div class="ttname"><a href="structaiot__ntp__time__t.html#a51ca03fe37cb33ad79534e1377dccfd5">aiot_ntp_time_t::mon</a></div><div class="ttdeci">uint32_t mon</div><div class="ttdef"><b>Definition:</b> aiot_ntp_api.h:16</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>
